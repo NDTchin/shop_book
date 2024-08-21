@@ -11,22 +11,26 @@
                 <input type="text" name="name" value="{{ $menu->name }}" class="form-control"  placeholder="Nhập tên danh mục">
             </div>
 
-            <div class="form-group">
-                <label>Danh Mục</label>
-                <select class="form-control" name="parent_id">
-                    <option value="0" {{ $menu->parent_id == 0 ? 'selected' : '' }}> Danh Mục Cha </option>
-                    @foreach($menus as $menuParent)
-                        <option value="{{ $menuParent->id }}"
-                            {{ $menu->parent_id == $menuParent->id ? 'selected' : '' }}>
-                            {{ $menuParent->name }}
-                        </option>
-                    @endforeach
-                </select>
-            </div>
+{{--            <div class="form-group">--}}
+{{--                <label>Danh Mục</label>--}}
+{{--                <select class="form-control" name="parent_id">--}}
+{{--                    <option value="0" {{ $menu->parent_id == 0 ? 'selected' : '' }}> Danh Mục Cha </option>--}}
+{{--                    @foreach($menus as $menuParent)--}}
+{{--                        <option value="{{ $menuParent->id }}"--}}
+{{--                            {{ $menu->parent_id == $menuParent->id ? 'selected' : '' }}>--}}
+{{--                            {{ $menuParent->name }}--}}
+{{--                        </option>--}}
+{{--                    @endforeach--}}
+{{--                </select>--}}
+{{--            </div>--}}
 
             <div class="form-group">
                 <label>Mô Tả </label>
                 <textarea name="description" class="form-control">{{ $menu->description }}</textarea>
+            </div>
+            <div class="form-group">
+                <label>Category </label>
+                <textarea name="category" class="form-control">{{ $menu->category }}</textarea>
             </div>
 
             <div class="form-group">
@@ -34,6 +38,11 @@
                 <textarea name="content" id="content" class="form-control">{{ $menu->content }}</textarea>
             </div>
 
+            <div class="form-group">
+                <label>Ảnh</label>
+                <input type="hidden" name="image" value="{{ $product->image }}" class="form-control"/>
+                <button class="btn btn-primary mt-2" type="button" id="upload_widget">Upload ảnh</button>
+            </div>
 
             <div class="form-group">
                 <label>Kích Hoạt</label>
