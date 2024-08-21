@@ -1,9 +1,14 @@
 <?php
 
+use App\Http\Controllers\Admin\EventController;
+use App\Http\Controllers\Admin\MainController;
 use App\Http\Controllers\Admin\Users\LoginController;
 use App\Http\Controllers\Admin\MenuController;
 
-use App\Http\Controllers\Admin\MainController;
+use App\Http\Controllers\Client\AuthorInformationController;
+use App\Http\Controllers\Client\HomeController;
+use App\Http\Controllers\Client\ProductController;
+use App\Http\Controllers\Client\ShopCartController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -38,5 +43,56 @@ Route::middleware(['auth'])->group(function () {
             Route::get('destroy/{id}',[MenuController::class,'destroy']);
         });
     });
+
+    //Route::Client
+
 });
-Route::get('client/index', [LoginController::class, 'indexclient']);
+
+//Route::Client
+//Route::view('/', 'main.index');
+Route::view('/about', 'main.about');
+
+//Route::view('/shop', 'main.shop');
+Route::get('/shop', [ProductController::class,'index'])->name('main.shop');
+
+//Route::view('/shop-list', 'main.shop-list');
+Route::get('/shop-list', [ProductController::class,'index2'])->name('main.shop-list');
+
+// search
+Route::get('/shop-cart/search', [ShopCartController::class, 'search'])->name('shop-cart.search');
+
+
+Route::view('/404', 'main.404');
+Route::view('/checkout', 'main.checkout');
+Route::view('/contact', 'main.contact');
+Route::view('/faq', 'main.faq');
+
+Route::view('/index', 'main.index');
+Route::get('/index', [HomeController::class, 'index']);
+//Route::get('/index', [ProductController::class,'home_index'])->name('main.index');
+
+
+//Route::view('/news', 'main.news');
+Route::get('/news', [EventController::class, 'index']) -> name('main.news'); // done
+
+//Route::view('/news-details', 'main.news-details');
+Route::view('/news-grid', 'main.news-grid');
+
+//Route::view('/shop-details', 'main.shop-details');
+Route::get('/shop-details/{id}', [ProductController::class, 'shop_details']);
+
+Route::view('/wishlist', 'main.wishlist');
+
+
+//Route::view('/shop-cart', 'main.shop-cart');
+Route::get('/shop-cart', [ShopCartController::class, 'show']);
+Route::post('/shop-cart/add', [ShopCartController::class, 'add'])->name('main.shop-cart');
+Route::post('/shop-cart/update', [ShopCartController::class, 'update'])->name('shop-cart.update');
+Route::get('/shop-cart/remove', [ShopCartController::class, 'remove']);
+
+
+//Route::view('/team', 'main.team'); // done
+Route::get('/team', [AuthorInformationController::class, 'index']) -> name('main.team'); // done
+//Route::view('/team-details', 'main.team-details'); // done
+Route::get('/team-details', [AuthorInformationController::class, 'showTeamDetails']) -> name('main.team-details'); // done
+

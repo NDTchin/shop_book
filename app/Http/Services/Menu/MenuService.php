@@ -24,6 +24,7 @@ class MenuService
                 'parent_id' => (int)$request->input('parent_id'),
                 'description' => (string)$request->input('description'),
                 'content' => (string)$request->input('content'),
+                'image' => (string)$request->input('image'),
                 'active' => (string)$request->input('active'),
             ]);
 
@@ -44,10 +45,11 @@ class MenuService
 
         $menu->description = (string)$request->input('description');
         $menu->content = (string)$request->input('content');
+        $menu->image = (string)$request->input('image');
         $menu->active = (string)$request->input('active');
         $menu->save();
 
-        Session::flash('succes', 'Cap nhat thanh cong');
+        Session::flash('success', 'Cap nhat thanh cong');
         return true;
     }
     public function destroy($request){
