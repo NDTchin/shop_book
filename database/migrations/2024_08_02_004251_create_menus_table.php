@@ -19,6 +19,7 @@ return new class extends Migration
             $table->integer('parent_id');
             $table->string('description');
             $table->string('content');
+            $table->string('image')->nullable();
             $table->integer('active');
             $table->timestamps();
         });
