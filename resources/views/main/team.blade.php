@@ -217,12 +217,7 @@
                                             <li>
                                                 <a href="{{ url('/index') }}">
                                                     Home
-                                                    <i class="fas fa-angle-down"></i>
                                                 </a>
-                                                <ul class="submenu">
-                                                    <li><a href="{{ url('/index') }}">Home 01</a></li>
-                                                    <li><a href="{{ url('/index-2') }}">Home 02</a></li>
-                                                </ul>
                                             </li>
                                             <li>
                                                 <a href="{{ url('/shop-details') }}">
@@ -232,7 +227,6 @@
                                                 <ul class="submenu">
                                                     <li><a href="{{ url('/shop') }}">Shop Default</a></li>
                                                     <li><a href="{{ url('/shop-list') }}">Shop List</a></li>
-                                                    <li><a href="{{ url('/shop-details') }}">Shop Details</a></li>
                                                     <li><a href="{{ url('/shop-cart') }}">Shop Cart</a></li>
                                                     <li><a href="{{ url('/wishlist') }}">Wishlist</a></li>
                                                     <li><a href="{{ url('/checkout') }}">Checkout</a></li>
@@ -356,12 +350,7 @@
                                             <li>
                                                 <a href="{{ url('/index') }}">
                                                     Home
-                                                    <i class="fas fa-angle-down"></i>
                                                 </a>
-                                                <ul class="submenu">
-                                                    <li><a href="{{ url('/index') }}">Home 01</a></li>
-                                                    <li><a href="{{ url('/index-2') }}">Home 02</a></li>
-                                                </ul>
                                             </li>
                                             <li>
                                                 <a href="{{ url('/shop-details') }}">
@@ -371,7 +360,6 @@
                                                 <ul class="submenu">
                                                     <li><a href="{{ url('/shop') }}">Shop Default</a></li>
                                                     <li><a href="{{ url('/shop-list') }}">Shop List</a></li>
-                                                    <li><a href="{{ url('/shop-details') }}">Shop Details</a></li>
                                                     <li><a href="{{ url('/shop-cart') }}">Shop Cart</a></li>
                                                     <li><a href="{{ url('/wishlist') }}">Wishlist</a></li>
                                                     <li><a href="{{ url('/checkout') }}">Checkout</a></li>
@@ -404,9 +392,7 @@
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
                                                 <ul class="submenu">
-                                                    <li><a href="{{ url('/news-grid') }}">Blog Grid</a></li>
                                                     <li><a href="{{ url('/news') }}">Blog List</a></li>
-                                                    <li><a href="{{ url('/news-details') }}">Blog Details</a></li>
                                                 </ul>
                                             </li>
                                             <li>

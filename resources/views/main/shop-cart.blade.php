@@ -99,7 +99,9 @@
             <div class="offcanvas__content">
                 <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                     <div class="offcanvas__logo">
-                        <a href="index.html">
+
+                        <a href="{{ url('/index') }}">
+
                             <img src="assets/img/logo/black-logo.svg" alt="logo-img">
                         </a>
                     </div>
@@ -152,7 +154,8 @@
                         </li>
                     </ul>
                     <div class="header-button mt-4">
-                        <a href="contact.html" class="theme-btn text-center">
+                        <a href="{{ url('/contact') }}" class="theme-btn text-center">
+
                             Get A Quote <i class="fa-solid fa-arrow-right-long"></i>
                         </a>
                     </div>
@@ -187,7 +190,8 @@
                 </li>
             </ul>
             <ul class="list">
-                <li><i class="fa-light fa-comments"></i><a href="contact.html">Live Chat</a></li>
+                <li><i class="fa-light fa-comments"></i><a href="{{ url('/contact') }}">Live Chat</a></li>
+
                 <li><i class="fa-light fa-user"></i>
                     <button data-bs-toggle="modal" data-bs-target="#loginModal">
                         Login
@@ -207,7 +211,8 @@
                     <div class="col-6 col-md-6 col-lg-10 col-xl-8 col-xxl-10">
                         <div class="header-left">
                             <div class="logo">
-                                <a href="index.html" class="header-logo">
+                                <a href="{{ url('/index') }}" class="header-logo">
+
                                     <img src="assets/img/logo/white-logo.svg" alt="logo-img">
                                 </a>
                             </div>
@@ -216,63 +221,64 @@
                                     <nav>
                                         <ul>
                                             <li>
-                                                <a href="index.html">
+                                                <a href="{{ url('/index') }}">
                                                     Home
-                                                    <i class="fas fa-angle-down"></i>
                                                 </a>
-                                                <ul class="submenu">
-                                                    <li><a href="index.html">Home 01</a></li>
-                                                    <li><a href="index-2.html">Home 02</a></li>
-                                                </ul>
+
                                             </li>
                                             <li>
-                                                <a href="shop-details.html">
+                                                <a href="{{ url('/shop-details') }}">
+
                                                     Shop
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
                                                 <ul class="submenu">
-                                                    <li><a href="shop.html">Shop Default</a></li>
-                                                    <li><a href="shop-list.html">Shop List</a></li>
-                                                    <li><a href="shop-details.html">Shop Details</a></li>
+                                                    <li><a href="{{ url('/shop') }}">Shop Default</a></li>
+                                                    <li><a href="{{ url('/shop-list') }}">Shop List</a></li>
+                                                    <li><a href="{{ url('/shop-details') }}">Shop Details</a></li>
                                                     <li><a href="shop-cart.html">Shop Cart</a></li>
                                                     <li><a href="wishlist.html">Wishlist</a></li>
-                                                    <li><a href="checkout.html">Checkout</a></li>
+                                                    <li><a href="{{ url('/checkout') }}">Checkout</a></li>
                                                 </ul>
                                             </li>
                                             <li class="has-dropdown">
-                                                <a href="about.html">
+                                                <a href="{{ url('/about') }}">
+
                                                     Pages
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
                                                 <ul class="submenu">
-                                                    <li><a href="about.html">About Us</a></li>
+                                                    <li><a href="{{ url('/about') }}">About Us</a></li>
                                                     <li class="has-dropdown">
-                                                        <a href="team-details.html">
+                                                        <a href="{{ url('/team-details') }}">
+
                                                             Author
                                                             <i class="fas fa-angle-down"></i>
                                                         </a>
                                                         <ul class="submenu">
-                                                            <li><a href="team.html">Author</a></li>
-                                                            <li><a href="team-details.html">Author Profile</a></li>
+                                                            <li><a href="{{ url('/team') }}">Author</a></li>
+                                                            <li><a href="{{ url('/team-details') }}">Author Profile</a></li>
                                                         </ul>
                                                     </li>
-                                                    <li><a href="faq.html">Faq's</a></li>
-                                                    <li><a href="404.html">404 Page</a></li>
+                                                    <li><a href="{{ url('/faq') }}">Faq's</a></li>
+                                                    <li><a href="{{ url('/404') }}">404 Page</a></li>
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="news.html">
+                                                <a href="{{ url('/news') }}">
+
                                                     Blog
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
                                                 <ul class="submenu">
                                                     <li><a href="news-grid.html">Blog Grid</a></li>
-                                                    <li><a href="news.html">Blog List</a></li>
-                                                    <li><a href="news-details.html">Blog Details</a></li>
+                                                    <li><a href="{{ url('/news') }}">Blog List</a></li>
+                                                    <li><a href="{{ url('/news-details') }}">Blog Details</a></li>
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="contact.html">Contact</a>
+                                                <a href="{{ url('/contact') }}">Contact</a>
+
                                             </li>
                                         </ul>
                                     </nav>
@@ -346,7 +352,8 @@
                     <div class="col-6 col-md-6 col-lg-10 col-xl-8 col-xxl-10">
                         <div class="header-left">
                             <div class="logo">
-                                <a href="index.html" class="header-logo">
+                                <a href="{{ url('/index') }}" class="header-logo">
+
                                     <img src="assets/img/logo/white-logo.svg" alt="logo-img">
                                 </a>
                             </div>
@@ -355,63 +362,65 @@
                                     <nav id="mobile-menu">
                                         <ul>
                                             <li>
-                                                <a href="index.html">
+                                                <a href="{{ url('/index') }}">
                                                     Home
-                                                    <i class="fas fa-angle-down"></i>
+
                                                 </a>
-                                                <ul class="submenu">
-                                                    <li><a href="index.html">Home 01</a></li>
-                                                    <li><a href="index-2.html">Home 02</a></li>
-                                                </ul>
+
                                             </li>
                                             <li>
-                                                <a href="shop-details.html">
+                                                <a href="{{ url('/shop-details') }}">
+
                                                     Shop
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
                                                 <ul class="submenu">
-                                                    <li><a href="shop.html">Shop Default</a></li>
-                                                    <li><a href="shop-list.html">Shop List</a></li>
-                                                    <li><a href="shop-details.html">Shop Details</a></li>
+                                                    <li><a href="{{ url('/shop') }}">Shop Default</a></li>
+                                                    <li><a href="{{ url('/shop-list') }}">Shop List</a></li>
+                                                    <li><a href="{{ url('/shop-details') }}">Shop Details</a></li>
                                                     <li><a href="shop-cart.html">Shop Cart</a></li>
                                                     <li><a href="wishlist.html">Wishlist</a></li>
-                                                    <li><a href="checkout.html">Checkout</a></li>
+                                                    <li><a href="{{ url('/checkout') }}">Checkout</a></li>
                                                 </ul>
                                             </li>
                                             <li class="has-dropdown">
-                                                <a href="about.html">
+                                                <a href="{{ url('/about') }}">
+
                                                     Pages
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
                                                 <ul class="submenu">
-                                                    <li><a href="about.html">About Us</a></li>
+                                                    <li><a href="{{ url('/about') }}">About Us</a></li>
                                                     <li class="has-dropdown">
-                                                        <a href="team-details.html">
+                                                        <a href="{{ url('/team-details') }}">
+
                                                             Author
                                                             <i class="fas fa-angle-down"></i>
                                                         </a>
                                                         <ul class="submenu">
-                                                            <li><a href="team.html">Author</a></li>
-                                                            <li><a href="team-details.html">Author Profile</a></li>
+                                                            <li><a href="{{ url('/team') }}">Author</a></li>
+                                                            <li><a href="{{ url('/team-details') }}">Author Profile</a></li>
                                                         </ul>
                                                     </li>
-                                                    <li><a href="faq.html">Faq's</a></li>
-                                                    <li><a href="404.html">404 Page</a></li>
+                                                    <li><a href="{{ url('/faq') }}">Faq's</a></li>
+                                                    <li><a href="{{ url('/404') }}">404 Page</a></li>
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="news.html">
+                                                <a href="{{ url('/news') }}">
+
                                                     Blog
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
                                                 <ul class="submenu">
                                                     <li><a href="news-grid.html">Blog Grid</a></li>
-                                                    <li><a href="news.html">Blog List</a></li>
-                                                    <li><a href="news-details.html">Blog Details</a></li>
+                                                    <li><a href="{{ url('/news') }}">Blog List</a></li>
+                                                    <li><a href="{{ url('/news-details') }}">Blog Details</a></li>
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="contact.html">Contact</a>
+                                                <a href="{{ url('/contact') }}">Contact</a>
+
                                             </li>
                                         </ul>
                                     </nav>
@@ -621,7 +630,8 @@
             <div class="page-header">
                 <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".3s">
                     <li>
-                        <a href="index.html">
+                        <a href="{{ url('/index') }}">
+
                             Home
                         </a>
                     </li>
@@ -670,7 +680,8 @@
                                     }
                                     ?>
                                 <tr>
-                                    <form action="/shop-cart/update" method="get">
+                                    <form action="{{route('shop-cart.update')}}" method="post">
+
                                         @csrf
                                         <input type="hidden" name="id" value="{{$cartItem->id}}">
                                         <td>{{$cartItem->id}}</td>
@@ -678,14 +689,20 @@
                                         <td>${{$cartItem->price}}</td>
                                         <td>
                                             <input type="hidden" name="id" value="{{$cartItem->id}}">
-                                            <input name="quantity" class="w3-input w3-border w3-quarter" type="number" min="1" value="{{$cartItem->amount}}">
+                                            <input name="amount" class="w3-input w3-border w3-quarter" type="number" min="1" value="{{$cartItem->amount}}">
                                         </td>
                                         <td>{{$cartItem->price * $cartItem->amount}}</td>
                                         <td>
-                                            <button class="w3-button w3-indigo" >Update</button>
+                                            <button type="submit" class="w3-button w3-indigo" >Update</button>
                                             <a href="/shop-cart/remove?id={{$cartItem->id}}" onclick="return confirm('Bạn có chắc muốn xoá sản phẩm này khỏi giỏ hàng?')" class="w3-button w3-red">Delete</a>
                                         </td>
                                     </form>
+                                    @if (Session::has('success'))
+                                        <div class="alert alert-success">
+                                            {{ Session::get('success') }}
+                                        </div>
+                                    @endif
+
                                 </tr>
                             @endforeach
                         </table>
@@ -730,7 +747,8 @@
                             </tr>
                             </tbody>
                         </table>
-                        <a href="checkout.html" class="theme-btn">Proceed to checkout</a>
+                        <a href="{{ url('/checkout') }}" class="theme-btn">Proceed to checkout</a>
+
                     </div>
                 </div>
             </div>
@@ -797,7 +815,8 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                     <div class="single-footer-widget">
                         <div class="widget-head">
-                            <a href="index.html">
+                            <a href="{{ url('/index') }}">
+
                                 <img src="assets/img/logo/white-logo.svg" alt="logo-img">
                             </a>
                         </div>
@@ -822,25 +841,29 @@
                         </div>
                         <ul class="list-area">
                             <li>
-                                <a href="shop.html">
+                                <a href="shop">
+
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Store List
                                 </a>
                             </li>
                             <li>
-                                <a href="contact.html">
+                                <a href="{{ url('/contact') }}">
+
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Opening Hours
                                 </a>
                             </li>
                             <li>
-                                <a href="contact.html">
+                                <a href="{{ url('/contact') }}">
+
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Contact Us
                                 </a>
                             </li>
                             <li>
-                                <a href="contact.html">
+                                <a href="{{ url('/contact') }}">
+
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Return Policy
                                 </a>
@@ -855,25 +878,29 @@
                         </div>
                         <ul class="list-area">
                             <li>
-                                <a href="shop.html">
+                                <a href="shop">
+
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Novel Books
                                 </a>
                             </li>
                             <li>
-                                <a href="shop.html">
+                                <a href="shop">
+
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Poetry Books
                                 </a>
                             </li>
                             <li>
-                                <a href="contact.html">
+                                <a href="contact">
+
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Political Books
                                 </a>
                             </li>
                             <li>
-                                <a href="contact.html">
+                                <a href="contact">
+
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     History Books
                                 </a>
@@ -904,26 +931,30 @@
         <div class="container">
             <div class="footer-wrapper d-flex align-items-center justify-content-between">
                 <p class="wow fadeInLeft" data-wow-delay=".3s">
-                    © All Copyright 2024 by <a href="index.html">Bookle</a>
+                    © All Copyright 2024 by <a href="index">Bookle</a>
                 </p>
                 <ul class="brand-logo wow fadeInRight" data-wow-delay=".5s">
                     <li>
-                        <a href="contact.html">
+                        <a href="contact">
+
                             <img src="assets/img/visa-logo.png" alt="img">
                         </a>
                     </li>
                     <li>
-                        <a href="contact.html">
+                        <a href="contact">
+
                             <img src="assets/img/mastercard.png" alt="img">
                         </a>
                     </li>
                     <li>
-                        <a href="contact.html">
+                        <a href="contact">
+
                             <img src="assets/img/payoneer.png" alt="img">
                         </a>
                     </li>
                     <li>
-                        <a href="contact.html">
+                        <a href="contact">
+
                             <img src="assets/img/affirm.png" alt="img">
                         </a>
                     </li>

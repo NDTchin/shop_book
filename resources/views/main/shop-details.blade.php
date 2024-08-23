@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--<< Header Area >>-->
+<base href="/public">
 <link rel="stylesheet" href="{{ asset('main/assets/css/all.min.css') }}">
 <link rel="stylesheet" href="{{ asset('main/assets/css/main.css') }}">
 <img src="{{ asset('main/assets/img/logo.png') }}" alt="Logo">
@@ -39,7 +40,7 @@
 
 <body>
 <!-- Cursor follower -->
-<div class="cursor-follower"></div>
+
 
 <!-- Preloader start -->
 <div id="preloader" class="preloader">
@@ -217,12 +218,7 @@
                                             <li>
                                                 <a href="{{ url('/index') }}">
                                                     Home
-                                                    <i class="fas fa-angle-down"></i>
                                                 </a>
-                                                <ul class="submenu">
-                                                    <li><a href="{{ url('/index') }}">Home 01</a></li>
-                                                    <li><a href="{{ url('/index-2') }}">Home 02</a></li>
-                                                </ul>
                                             </li>
                                             <li>
                                                 <a href="{{ url('/shop-details') }}">
@@ -356,12 +352,7 @@
                                             <li>
                                                 <a href="{{ url('/index') }}">
                                                     Home
-                                                    <i class="fas fa-angle-down"></i>
                                                 </a>
-                                                <ul class="submenu">
-                                                    <li><a href="{{ url('/index') }}">Home 01</a></li>
-                                                    <li><a href="{{ url('/index-2') }}">Home 02</a></li>
-                                                </ul>
                                             </li>
                                             <li>
                                                 <a href="{{ url('/shop-details') }}">
@@ -637,7 +628,7 @@
 </div>
 
 <!-- Shop Details Section Start -->
-@foreach($products as $product)
+
 <section class="shop-details-section fix section-padding">
     <div class="container">
         <div class="shop-details-wrapper">
@@ -647,7 +638,9 @@
                         <div class="tab-content">
                             <div id="thumb1" class="tab-pane fade show active">
                                 <div class="shop-details-thumb">
-                                    <img src="{{ $product->image }}" alt="img">
+
+                                    <img src="{{ $product->image }}" alt="img" style="width: 330px; height: 430px;">
+
                                 </div>
                             </div>
                             <div id="thumb2" class="tab-pane fade">
@@ -718,50 +711,18 @@
                             {{ $product->description }}
                         </p>
                         <div class="price-list">
-                            <h3>{{ $product->price }}</h3>
+                            <h3>${{ $product->price }}</h3>
                         </div>
                         <div class="cart-wrapper">
                             <form action="{{ route('main.shop-cart') }}" method="POST">
-                                <div class="quantity-basket">
-                                    <p class="qty">
-                                        <button class="qtyminus" aria-hidden="true">−</button>
-                                        <input type="hidden" name="id" value="{{ $product->id }}">
-                                        <input type="number"  min="1" max="10" step="1" value="1">
-                                        <button class="qtyplus" aria-hidden="true">+</button>
-                                    </p>
-                                </div>
+                                @csrf
+                                <input type="hidden" name="id" value="{{ $product->id }}">
+                                <input type="number" name="amount" value="1" min="1">
+                                <button type="submit" class="theme-btn">
+                                    <i class="fa-solid fa-basket-shopping"></i> Add To Cart
+                                </button>
                             </form>
-                            <!-- Read More Modal -->
-                            <div class="modal fade" id="readMoreModal" tabindex="-1" aria-labelledby="readMoreModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-body" style="background-image: url(assets/img/popupBg.png);">
-                                            <div class="close-btn">
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                        aria-label="Close"></button>
-                                            </div>
-                                            <div class="readMoreBox">
-                                                <div class="content">
-                                                    <h3 id="readMoreModalLabel">The Role Of Book</h3>
-                                                    <p>
-                                                        Educating the Public <br>
-                                                        Political books play a crucial role in educating the public about political theories, historical events, policies, and the workings of governments. They provide readers with insights into complex political concepts and the historical context behind current events, helping to foster a more informed citizenry. <br><br>
 
-                                                        Shaping Public Opinion <br>
-                                                        Authors of political books often aim to influence public opinion by presenting arguments and perspectives on various issues. These books can sway readers' views, either reinforcing their existing beliefs or challenging them to consider alternative viewpoints. This influence can extend to political debates and discussions in the public sphere. <br><br>
-
-                                                        Documenting History <br>
-                                                        Political books serve as valuable records of historical events and political movements. They document the thoughts, actions, and decisions of political leaders and activists, providing future generations with a detailed account of significant periods and events. This historical documentation is essential for understanding the evolution of political systems and ideologies.
-
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="{{ url('/shop-details') }}" class="theme-btn"><i
-                                    class="fa-solid fa-basket-shopping"></i> Add To Cart</a>
                             <div class="icon-box">
                                 <a href="{{ url('/shop-details') }}" class="icon">
                                     <i class="far fa-heart"></i>
@@ -837,6 +798,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
             <div class="single-tab section-padding pb-0">
                 <ul class="nav mb-5" role="tablist">
@@ -855,6 +817,7 @@
 
                 </ul>
                 <div class="tab-content">
+
                     <div id="description" class="tab-pane fade show active" role="tabpanel">
                         <div class="description-items">
                             <p>
@@ -912,7 +875,7 @@
         </div>
     </div>
 </section>
-@endforeach
+
 <!-- Top Ratting Book Section Start -->
 <section class="top-ratting-book-section fix section-padding pt-0">
     <div class="container">
@@ -928,20 +891,8 @@
                 <div class="swiper-slide">
                     <div class="shop-box-items style-2">
                         <div class="book-thumb center">
-                            <a href="shop-details"><img src="assets/img/book/01.png" alt="img"></a>
-                            <ul class="post-box">
-                                <li>
-                                    Hot
-                                </li>
-                                <li>
-                                    -30%
-                                </li>
-                            </ul>
-                            <ul class="shop-icon d-grid justify-content-center align-items-center">
-                                <li>
-                                    <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
-                                </li>
-                            </ul>
+                            <a href="/shop-details/1" ><img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723467899/cvddd2o3nroemgefnfyv.jpg" alt="img" style="width: 200px; height: 242px;"></a>
+
                             <ul class="shop-icon d-grid justify-content-center align-items-center">
                                 <li>
                                     <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
@@ -958,20 +909,17 @@
                             </ul>
                         </div>
                         <div class="shop-content">
-                            <h5> Design Low Book </h5>
-                            <h3><a href="{{ url('/shop-details') }}">Simple Things You To <br> Save BOOK</a></h3>
+                            <h3><a href="/shop-details/1">Tắt Đèn</a></h3>
                             <ul class="price-list">
-                                <li>$30.00</li>
-                                <li>
-                                    <del>$39.99</del>
-                                </li>
+                                <li>$2</li>
+
                             </ul>
                             <ul class="author-post">
                                 <li class="authot-list">
                                         <span class="thumb">
-                                            <img src="assets/img/testimonial/client-1.png" alt="img">
+                                            <img src="assets/img/testimonial/client-1.png" alt="img" style="width: 30px; height: 30px;">
                                         </span>
-                                    <span class="content">Wilson</span>
+                                    <span class="content">Ngô Tất Tố</span>
                                 </li>
 
                                 <li class="star">
@@ -984,15 +932,17 @@
                             </ul>
                         </div>
                         <div class="shop-button">
-                            <a href="{{ url('/shop-details') }}" class="theme-btn"><i
-                                    class="fa-solid fa-basket-shopping"></i> Add To Cart</a>
+                            <a href="/shop-details/1" class="theme-btn"><i
+                                    class="fa-solid fa-basket"></i> View</a>
+
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="shop-box-items style-2">
                         <div class="book-thumb center">
-                            <a href="shop-details"><img src="assets/img/book/02.png" alt="img"></a>
+                            <a href="shop-details/4" ><img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723468175/nefxc9k0t6qohlokntwk.jpg" alt="img" style="width: 200px; height: 242px;"></a>
+
                             <ul class="shop-icon d-grid justify-content-center align-items-center">
                                 <li>
                                     <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
@@ -1009,20 +959,17 @@
                             </ul>
                         </div>
                         <div class="shop-content">
-                            <h5> Design Low Book </h5>
-                            <h3><a href="{{ url('/shop-details') }}">How Deal With Very <br> Bad BOOK</a></h3>
+                            <h3><a href="/shop-details/4">Đất Rừng Phương Nam</a></h3>
                             <ul class="price-list">
-                                <li>$30.00</li>
-                                <li>
-                                    <del>$39.99</del>
-                                </li>
+                                <li>$3</li>
+
                             </ul>
                             <ul class="author-post">
                                 <li class="authot-list">
                                         <span class="thumb">
-                                            <img src="assets/img/testimonial/client-2.png" alt="img">
+                                            <img src="assets/img/testimonial/client-1.png" alt="img" style="width: 30px; height: 30px;">
                                         </span>
-                                    <span class="content">Alexander</span>
+                                    <span class="content">Đoàn Giỏi</span>
                                 </li>
 
                                 <li class="star">
@@ -1035,22 +982,23 @@
                             </ul>
                         </div>
                         <div class="shop-button">
-                            <a href="{{ url('/shop-details') }}" class="theme-btn"><i
-                                    class="fa-solid fa-basket-shopping"></i> Add To Cart</a>
+                            <a href="/shop-details/1" class="theme-btn"><i
+                                    class="fa-solid fa-basket"></i> View</a>
+
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="shop-box-items style-2">
                         <div class="book-thumb center">
-                            <a href="shop-details"><img src="assets/img/book/03.png" alt="img"></a>
+                            <a href="/shop-details/11" ><img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723468816/dnarf2rw4fffjbqk0q01.jpg" alt="img" style="width: 200px; height: 242px;"></a>
+
                             <ul class="shop-icon d-grid justify-content-center align-items-center">
                                 <li>
                                     <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
                                 </li>
                                 <li>
                                     <a href="{{ url('/shop-cart') }}">
-
                                         <img class="icon" src="assets/img/icon/shuffle.svg" alt="svg-icon">
                                     </a>
                                 </li>
@@ -1060,20 +1008,17 @@
                             </ul>
                         </div>
                         <div class="shop-content">
-                            <h5> Design Low Book </h5>
-                            <h3><a href="{{ url('/shop-details') }}">Qple GPad With Retina <br> Sisplay</a></h3>
+                            <h3><a href="/shop-details/11">Cho Tôi Xin Một Vé Đi Tuổi Thơ</a></h3>
                             <ul class="price-list">
-                                <li>$30.00</li>
-                                <li>
-                                    <del>$39.99</del>
-                                </li>
+                                <li>$3</li>
+
                             </ul>
                             <ul class="author-post">
                                 <li class="authot-list">
                                         <span class="thumb">
-                                            <img src="assets/img/testimonial/client-3.png" alt="img">
+                                            <img src="https://res.cloudinary.com/dficfkyug/image/upload/v1724057665/z3zi2nhtq6coz3nkeazj.jpg" alt="img" style="width: 30px; height: 30px;">
                                         </span>
-                                    <span class="content">Esther</span>
+                                    <span class="content">Nguyễn Nhật Ánh</span>
                                 </li>
 
                                 <li class="star">
@@ -1086,27 +1031,21 @@
                             </ul>
                         </div>
                         <div class="shop-button">
-                            <a href="{{ url('/shop-details') }}" class="theme-btn"><i
-                                    class="fa-solid fa-basket-shopping"></i> Add To Cart</a>
+                            <a href="/shop-details/1" class="theme-btn"><i
+                                    class="fa-solid fa-basket"></i> View</a>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="shop-box-items style-2">
                         <div class="book-thumb center">
-                            <a href="shop-details"><img src="assets/img/book/04.png" alt="img"></a>
-                            <ul class="post-box">
-                                <li>
-                                    Hot
-                                </li>
-                            </ul>
+                            <a href="/shop-details/21" ><img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723470357/hyvofxrldacv6jnbfahp.jpg" alt="img" style="width: 200px; height: 242px;"></a>
                             <ul class="shop-icon d-grid justify-content-center align-items-center">
                                 <li>
                                     <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
                                 </li>
                                 <li>
                                     <a href="{{ url('/shop-cart') }}">
-
                                         <img class="icon" src="assets/img/icon/shuffle.svg" alt="svg-icon">
                                     </a>
                                 </li>
@@ -1116,22 +1055,17 @@
                             </ul>
                         </div>
                         <div class="shop-content">
-                            <h5> Design Low Book </h5>
-                            <h3><a href="{{ url('/shop-details') }}">Qple GPad With Retina <br> Sisplay</a></h3>
+                            <h3><a href="/shop-details/21">Dế Mèn Phiêu Lưu Ký</a></h3>
                             <ul class="price-list">
-                                <li>$30.00</li>
-                                <li>
-                                    <del>$39.99</del>
-                                </li>
+                                <li>$3</li>
                             </ul>
                             <ul class="author-post">
                                 <li class="authot-list">
                                         <span class="thumb">
-                                            <img src="assets/img/testimonial/client-4.png" alt="img">
+                                            <img src="https://res.cloudinary.com/dficfkyug/image/upload/v1724058196/rumjn7avlabno8bl6aea.jpg" alt="img" style="width: 30px; height: 30px;">
                                         </span>
-                                    <span class="content">Hawkins</span>
+                                    <span class="content">Tô Hoài</span>
                                 </li>
-
                                 <li class="star">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -1142,22 +1076,21 @@
                             </ul>
                         </div>
                         <div class="shop-button">
-                            <a href="{{ url('/shop-details') }}" class="theme-btn"><i
-                                    class="fa-solid fa-basket-shopping"></i> Add To Cart</a>
+                            <a href="/shop-details/1" class="theme-btn"><i
+                                    class="fa-solid fa-basket"></i> View</a>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="shop-box-items style-2">
                         <div class="book-thumb center">
-                            <a href="shop-details"><img src="assets/img/book/05.png" alt="img"></a>
+                            <a href="/shop-details/25" ><img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723470735/mkir0bdzeurqjgdmnqyj.jpg" alt="img" style="width: 200px; height: 242px;"></a>
                             <ul class="shop-icon d-grid justify-content-center align-items-center">
                                 <li>
                                     <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
                                 </li>
                                 <li>
                                     <a href="{{ url('/shop-cart') }}">
-
                                         <img class="icon" src="assets/img/icon/shuffle.svg" alt="svg-icon">
                                     </a>
                                 </li>
@@ -1167,20 +1100,16 @@
                             </ul>
                         </div>
                         <div class="shop-content">
-                            <h5> Design Low Book </h5>
-                            <h3><a href="{{ url('/shop-details') }}">Simple Things You To <br> Save BOOK</a></h3>
+                            <h3><a href="/shop-details/25">Harry Potter</a></h3>
                             <ul class="price-list">
-                                <li>$30.00</li>
-                                <li>
-                                    <del>$39.99</del>
-                                </li>
+                                <li>$8</li>
                             </ul>
                             <ul class="author-post">
                                 <li class="authot-list">
                                         <span class="thumb">
-                                            <img src="assets/img/testimonial/client-5.png" alt="img">
+                                            <img src="assets/img/testimonial/client-1.png" alt="img" style="width: 30px; height: 30px;">
                                         </span>
-                                    <span class="content">(Author) Albert</span>
+                                    <span class="content">J.K. Rowling (dịch)</span>
                                 </li>
 
                                 <li class="star">
@@ -1193,8 +1122,8 @@
                             </ul>
                         </div>
                         <div class="shop-button">
-                            <a href="{{ url('/shop-details') }}" class="theme-btn"><i
-                                    class="fa-solid fa-basket-shopping"></i> Add To Cart</a>
+                            <a href="/shop-details/1" class="theme-btn"><i
+                                    class="fa-solid fa-basket"></i> View</a>
                         </div>
                     </div>
                 </div>
@@ -1214,7 +1143,7 @@
                 <div class="content">
                     <p>Call Us 7/24</p>
                     <h3>
-                        <a href="tel:0986.999.888">0986.999.888</a>
+                        <a href="tel:+2085550112">+208-555-0112</a>
                     </h3>
                 </div>
             </div>
@@ -1225,7 +1154,7 @@
                 <div class="content">
                     <p>Make a Quote</p>
                     <h3>
-                        <a href="mailto:bookstoreaptech@gmail.com">bookstoreaptech@gmail.com</a>
+                        <a href="mailto:example@gmail.com">example@gmail.com</a>
                     </h3>
                 </div>
             </div>
@@ -1247,6 +1176,7 @@
                 <div class="content">
                     <p>Location</p>
                     <h3>
+
                         8 Tôn Thất Thuyết - Mỹ Đình, Cầu Giấy, Hà Nội
                     </h3>
                 </div>
@@ -1262,6 +1192,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                     <div class="single-footer-widget">
                         <div class="widget-head">
+
                             <a href="{{ url('/index') }}">
                                 <img src="assets/img/logo/white-logo.svg" alt="logo-img">
                             </a>
@@ -1287,12 +1218,14 @@
                         </div>
                         <ul class="list-area">
                             <li>
+
                                 <a href="{{ url('/shop') }}">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Store List
                                 </a>
                             </li>
                             <li>
+
                                 <a href="{{ url('/contact') }}">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Opening Hours
@@ -1305,6 +1238,7 @@
                                 </a>
                             </li>
                             <li>
+
                                 <a href="{{ url('/contact') }}">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Return Policy
@@ -1369,6 +1303,7 @@
         <div class="container">
             <div class="footer-wrapper d-flex align-items-center justify-content-between">
                 <p class="wow fadeInLeft" data-wow-delay=".3s">
+
                     © All Copyright 2024 by <a href="{{ url('/index') }}">Bookle</a>
                 </p>
                 <ul class="brand-logo wow fadeInRight" data-wow-delay=".5s">
@@ -1378,16 +1313,19 @@
                         </a>
                     </li>
                     <li>
+
                         <a href="{{ url('/contact') }}">
                             <img src="assets/img/mastercard.png" alt="img">
                         </a>
                     </li>
                     <li>
+
                         <a href="{{ url('/contact') }}">
                             <img src="assets/img/payoneer.png" alt="img">
                         </a>
                     </li>
                     <li>
+
                         <a href="{{ url('/contact') }}">
                             <img src="assets/img/affirm.png" alt="img">
                         </a>

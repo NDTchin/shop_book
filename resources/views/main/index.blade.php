@@ -39,7 +39,7 @@
 
 <body>
 <!-- Cursor follower -->
-<div class="cursor-follower"></div>
+
 
 <!-- Preloader start -->
 <div id="preloader" class="preloader">
@@ -217,12 +217,9 @@
                                             <li>
                                                 <a href="{{ url('/index') }}">
                                                     Home
-                                                    <i class="fas fa-angle-down"></i>
+
                                                 </a>
-                                                <ul class="submenu">
-                                                    <li><a href="{{ url('/index') }}">Home 01</a></li>
-                                                    <li><a href="{{ url('/index-2') }}">Home 02</a></li>
-                                                </ul>
+
                                             </li>
                                             <li>
                                                 <a href="{{ url('/shop') }}">
@@ -353,12 +350,7 @@
                                             <li>
                                                 <a href="{{ url('/index') }}">
                                                     Home
-                                                    <i class="fas fa-angle-down"></i>
                                                 </a>
-                                                <ul class="submenu">
-                                                    <li><a href="{{ url('/index') }}">Home 01</a></li>
-                                                    <li><a href="{{ url('/index-2') }}">Home 02</a></li>
-                                                </ul>
                                             </li>
                                             <li>
                                                 <a href="{{ url('/shop') }}">
@@ -367,7 +359,9 @@
                                                 </a>
                                                 <ul class="submenu">
                                                     <li><a href="{{ url('/shop') }}">Shop Default</a></li>
+
                                                     <li><a href="{{ url('/shop-list') }}">Shop List</a></li>
+
                                                     <li><a href="{{ url('/shop-details') }}">Shop Details</a></li>
                                                     <li><a href="{{ url('/shop-cart') }}">Shop Cart</a></li>
                                                     <li><a href="{{ url('/wishlist') }}">Wishlist</a></li>
@@ -391,7 +385,9 @@
                                                             <li><a href="{{ url('/team-details') }}">Author Profile</a></li>
                                                         </ul>
                                                     </li>
+
                                                     <li><a href="{{ url('/faq') }}">Faq's</a></li>
+
                                                     <li><a href="{{ url('/404') }}">404 Page</a></li>
                                                 </ul>
                                             </li>
@@ -401,7 +397,9 @@
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
                                                 <ul class="submenu">
+
                                                     <li><a href="{{ url('/news-grid') }}">Blog Grid</a></li>
+
                                                     <li><a href="{{ url('/news') }}">Blog List</a></li>
                                                     <li><a href="{{ url('/news-details') }}">Blog Details</a></li>
                                                 </ul>
@@ -711,7 +709,9 @@
                 <div class="swiper-slide">
                     <div class="shop-box-items style-2">
                         <div class="book-thumb center">
-                            <a href="http://127.0.0.1:8000/shop-details/1" ><img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723467899/cvddd2o3nroemgefnfyv.jpg" alt="img"></a>
+
+                            <a href="/shop-details/1" ><img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723467899/cvddd2o3nroemgefnfyv.jpg" alt="img" style="width: 200px; height: 242px;"></a>
+
                             <ul class="shop-icon d-grid justify-content-center align-items-center">
                                 <li>
                                     <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
@@ -727,14 +727,18 @@
                             </ul>
                         </div>
                         <div class="shop-content">
-                            <h3><a href="http://127.0.0.1:8000/shop-details/1">Tắt Đèn</a></h3>
+
+                            <h3><a href="/shop-details/1">Tắt Đèn</a></h3>
+
                             <ul class="price-list">
                                 <li>$2</li>
                             </ul>
                             <ul class="author-post">
                                 <li class="authot-list">
                                         <span class="thumb">
-                                            <img src="assets/img/testimonial/client-1.png" alt="img">
+
+                                            <img src="assets/img/testimonial/client-1.png" alt="img" style="width: 30px; height: 30px;">
+
                                         </span>
                                     <span class="content">Ngô Tất Tố</span>
                                 </li>
@@ -748,7 +752,9 @@
                             </ul>
                         </div>
                         <div class="shop-button">
-                            <a href="http://127.0.0.1:8000/shop-details/1" class="theme-btn"><i
+
+                            <a href="/shop-details/1" class="theme-btn"><i
+
                                     class="fa-solid fa-basket"></i> View</a>
                         </div>
                     </div>
@@ -756,7 +762,9 @@
                 <div class="swiper-slide">
                     <div class="shop-box-items style-2">
                         <div class="book-thumb center">
-                            <a href="http://127.0.0.1:8000/shop-details/1" ><img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723467899/cvddd2o3nroemgefnfyv.jpg" alt="img"></a>
+
+                            <a href="shop-details/4" ><img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723468175/nefxc9k0t6qohlokntwk.jpg" alt="img" style="width: 200px; height: 242px;"></a>
+
                             <ul class="shop-icon d-grid justify-content-center align-items-center">
                                 <li>
                                     <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
@@ -772,16 +780,20 @@
                             </ul>
                         </div>
                         <div class="shop-content">
-                            <h3><a href="http://127.0.0.1:8000/shop-details/1">Tắt Đèn</a></h3>
+
+                            <h3><a href="/shop-details/4">Đất Rừng Phương Nam</a></h3>
                             <ul class="price-list">
-                                <li>$2</li>
+                                <li>$3</li>
+
                             </ul>
                             <ul class="author-post">
                                 <li class="authot-list">
                                         <span class="thumb">
-                                            <img src="assets/img/testimonial/client-1.png" alt="img">
+
+                                            <img src="assets/img/testimonial/client-1.png" alt="img" style="width: 30px; height: 30px;">
                                         </span>
-                                    <span class="content">Ngô Tất Tố</span>
+                                    <span class="content">Đoàn Giỏi</span>
+
                                 </li>
                                 <li class="star">
                                     <i class="fa-solid fa-star"></i>
@@ -793,7 +805,9 @@
                             </ul>
                         </div>
                         <div class="shop-button">
-                            <a href="http://127.0.0.1:8000/shop-details/1" class="theme-btn"><i
+
+                            <a href="/shop-details/1" class="theme-btn"><i
+
                                     class="fa-solid fa-basket"></i> View</a>
                         </div>
                     </div>
@@ -801,7 +815,9 @@
                 <div class="swiper-slide">
                     <div class="shop-box-items style-2">
                         <div class="book-thumb center">
-                            <a href="http://127.0.0.1:8000/shop-details/1" ><img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723467899/cvddd2o3nroemgefnfyv.jpg" alt="img"></a>
+
+                            <a href="/shop-details/11" ><img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723468816/dnarf2rw4fffjbqk0q01.jpg" alt="img" style="width: 200px; height: 242px;"></a>
+
                             <ul class="shop-icon d-grid justify-content-center align-items-center">
                                 <li>
                                     <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
@@ -817,16 +833,20 @@
                             </ul>
                         </div>
                         <div class="shop-content">
-                            <h3><a href="http://127.0.0.1:8000/shop-details/1">Tắt Đèn</a></h3>
+
+                            <h3><a href="/shop-details/11">Cho Tôi Xin Một Vé Đi Tuổi Thơ</a></h3>
                             <ul class="price-list">
-                                <li>$2</li>
+                                <li>$3</li>
+
                             </ul>
                             <ul class="author-post">
                                 <li class="authot-list">
                                         <span class="thumb">
-                                            <img src="assets/img/testimonial/client-1.png" alt="img">
+
+                                            <img src="https://res.cloudinary.com/dficfkyug/image/upload/v1724057665/z3zi2nhtq6coz3nkeazj.jpg" alt="img" style="width: 30px; height: 30px;">
                                         </span>
-                                    <span class="content">Ngô Tất Tố</span>
+                                    <span class="content">Nguyễn Nhật Ánh</span>
+
                                 </li>
                                 <li class="star">
                                     <i class="fa-solid fa-star"></i>
@@ -838,7 +858,9 @@
                             </ul>
                         </div>
                         <div class="shop-button">
-                            <a href="http://127.0.0.1:8000/shop-details/1" class="theme-btn"><i
+
+                            <a href="/shop-details/1" class="theme-btn"><i
+
                                     class="fa-solid fa-basket"></i> View</a>
                         </div>
                     </div>
@@ -846,7 +868,9 @@
                 <div class="swiper-slide">
                     <div class="shop-box-items style-2">
                         <div class="book-thumb center">
-                            <a href="http://127.0.0.1:8000/shop-details/1" ><img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723467899/cvddd2o3nroemgefnfyv.jpg" alt="img"></a>
+
+                            <a href="/shop-details/21" ><img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723470357/hyvofxrldacv6jnbfahp.jpg" alt="img" style="width: 200px; height: 242px;"></a>
+
                             <ul class="shop-icon d-grid justify-content-center align-items-center">
                                 <li>
                                     <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
@@ -862,16 +886,20 @@
                             </ul>
                         </div>
                         <div class="shop-content">
-                            <h3><a href="http://127.0.0.1:8000/shop-details/1">Tắt Đèn</a></h3>
+
+                            <h3><a href="/shop-details/21">Dế Mèn Phiêu Lưu Ký</a></h3>
                             <ul class="price-list">
-                                <li>$2</li>
+                                <li>$3</li>
+
                             </ul>
                             <ul class="author-post">
                                 <li class="authot-list">
                                         <span class="thumb">
-                                            <img src="assets/img/testimonial/client-1.png" alt="img">
+
+                                            <img src="https://res.cloudinary.com/dficfkyug/image/upload/v1724058196/rumjn7avlabno8bl6aea.jpg" alt="img" style="width: 30px; height: 30px;">
                                         </span>
-                                    <span class="content">Ngô Tất Tố</span>
+                                    <span class="content">Tô Hoài</span>
+
                                 </li>
                                 <li class="star">
                                     <i class="fa-solid fa-star"></i>
@@ -883,7 +911,9 @@
                             </ul>
                         </div>
                         <div class="shop-button">
-                            <a href="http://127.0.0.1:8000/shop-details/1" class="theme-btn"><i
+
+                            <a href="/shop-details/1" class="theme-btn"><i
+
                                     class="fa-solid fa-basket"></i> View</a>
                         </div>
                     </div>
@@ -891,7 +921,9 @@
                 <div class="swiper-slide">
                     <div class="shop-box-items style-2">
                         <div class="book-thumb center">
-                            <a href="http://127.0.0.1:8000/shop-details/1" ><img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723467899/cvddd2o3nroemgefnfyv.jpg" alt="img"></a>
+
+                            <a href="/shop-details/25" ><img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723470735/mkir0bdzeurqjgdmnqyj.jpg" alt="img" style="width: 200px; height: 242px;"></a>
+
                             <ul class="shop-icon d-grid justify-content-center align-items-center">
                                 <li>
                                     <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
@@ -907,16 +939,20 @@
                             </ul>
                         </div>
                         <div class="shop-content">
-                            <h3><a href="http://127.0.0.1:8000/shop-details/1">Tắt Đèn</a></h3>
+
+                            <h3><a href="/shop-details/25">Harry Potter</a></h3>
                             <ul class="price-list">
-                                <li>$2</li>
+                                <li>$8</li>
+
                             </ul>
                             <ul class="author-post">
                                 <li class="authot-list">
                                         <span class="thumb">
-                                            <img src="assets/img/testimonial/client-1.png" alt="img">
+
+                                            <img src="assets/img/testimonial/client-1.png" alt="img" style="width: 30px; height: 30px;">
                                         </span>
-                                    <span class="content">Ngô Tất Tố</span>
+                                    <span class="content">J.K. Rowling (dịch)</span>
+
                                 </li>
                                 <li class="star">
                                     <i class="fa-solid fa-star"></i>
@@ -928,13 +964,18 @@
                             </ul>
                         </div>
                         <div class="shop-button">
-                            <a href="http://127.0.0.1:8000/shop-details/1" class="theme-btn"><i
+
+                            <a href="/shop-details/1" class="theme-btn"><i
+
                                     class="fa-solid fa-basket"></i> View</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+    </div>
+
 </section>
 <!-- Book Catagories Section start  -->
 <section class="book-catagories-section fix section-padding">
@@ -952,61 +993,81 @@
                     <div class="swiper-slide">
                         <div class="book-catagories-items">
                             <div class="book-thumb">
-                                <img src="assets/img/book-categori/01.png" alt="img">
+
+                                <img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723467899/cvddd2o3nroemgefnfyv.jpg" alt="img" style="width: 124px; height: 165px;">
+
                                 <div class="circle-shape">
                                     <img src="assets/img/book-categori/circle-shape.png" alt="shape-img">
                                 </div>
                             </div>
                             <div class="number"> 01 </div>
-                            <h3><a href="{{ url('/shop-details') }}">Romance Books (80)</a></h3>
+
+                            <h3><a href="{{ url('/shop') }}">Tiểu thuyết</a></h3>
+
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="book-catagories-items">
                             <div class="book-thumb">
-                                <img src="assets/img/book-categori/02.png" alt="img">
+
+                                <img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723467991/mdjs3ykb5dy8qbhll4ac.webp" alt="img" style="width: 124px; height: 165px;">
+
                                 <div class="circle-shape">
                                     <img src="assets/img/book-categori/circle-shape.png" alt="shape-img">
                                 </div>
                             </div>
                             <div class="number"> 02 </div>
-                            <h3><a href="{{ url('/shop-details') }}">Design Low Book (6)</a></h3>
+
+                            <h3><a href="{{ url('/shop') }}">Truyện ngắn</a></h3>
+
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="book-catagories-items">
                             <div class="book-thumb">
-                                <img src="assets/img/book-categori/03.png" alt="img">
+
+                                <img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723468816/dnarf2rw4fffjbqk0q01.jpg" alt="img" style="width: 124px; height: 165px;">
+
                                 <div class="circle-shape">
                                     <img src="assets/img/book-categori/circle-shape.png" alt="shape-img">
                                 </div>
                             </div>
                             <div class="number"> 03 </div>
-                            <h3><a href="{{ url('/shop-details') }}">safe Home (5)</a></h3>
+
+                            <h3><a href="{{ url('/shop') }}">Văn học hiện đại, thiếu nhi</a></h3>
+
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="book-catagories-items">
                             <div class="book-thumb">
-                                <img src="assets/img/book-categori/04.png" alt="img">
+
+                                <img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723991069/ks2fwyo4evzodhvfd6to.jpg" alt="img" style="width: 124px; height: 165px;">
+
                                 <div class="circle-shape">
                                     <img src="assets/img/book-categori/circle-shape.png" alt="shape-img">
                                 </div>
                             </div>
                             <div class="number"> 04 </div>
-                            <h3><a href="{{ url('/shop-details') }}">Grow flower (7)</a></h3>
+
+                            <h3><a href="{{ url('/shop') }}">Khoa học viễn tưởng, Xã hội</a></h3>
+
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="book-catagories-items">
                             <div class="book-thumb">
-                                <img src="assets/img/book-categori/05.png" alt="img">
+
+                                <img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723973672/k2r6lqca1odsycqgite9.jpg" alt="img" style="width: 124px; height: 165px;">
+
                                 <div class="circle-shape">
                                     <img src="assets/img/book-categori/circle-shape.png" alt="shape-img">
                                 </div>
                             </div>
                             <div class="number"> 05 </div>
-                            <h3><a href="{{ url('/shop-details') }}">Adventure book (4)</a></h3>
+
+                            <h3><a href="{{ url('/shop') }}">Khoa học, vũ trụ học</a></h3>
+
                         </div>
                     </div>
                 </div>
@@ -1033,7 +1094,9 @@
 <section class="cta-banner-section fix section-padding pt-0">
     <div class="container">
         <div class="cta-banner-wrapper section-padding bg-cover"
-             style="background-image: url('assets/img/cta-banner.jpg');">
+
+             style="background-image: url('/public/assets/img/cta-banner.jpg');">
+
             <div class="book-shape">
                 <img src="assets/img/book-shape.png" alt="shape-img">
             </div>
@@ -1065,229 +1128,24 @@
                         class="fa-solid fa-arrow-right-long"></i></a>
             </div>
             <div class="row">
+                @foreach( $products as $product )
+
                 <div class="col-xl-6 wow fadeInUp" data-wow-delay=".3s">
                     <div class="top-ratting-box-items">
                         <div class="book-thumb">
                             <a href="{{ url('/shop-details') }}">
-                                <img src="assets/img/top-book/01.png" alt="img">
-                            </a>
-                        </div>
-                        <div class="book-content">
-                            <div class="title-header">
-                                <div>
-                                    <h5> Design Low Book </h5>
-                                    <h3>
-                                        <a href="{{ url('/shop-details') }}">Simple Things You To Save BOOK</a>
-                                    </h3>
-                                </div>
-                                <ul class="shop-icon d-flex justify-content-center align-items-center">
-                                    <li>
-                                        <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('/shop-cart') }}">
-                                            <img class="icon" src="assets/img/icon/shuffle.svg" alt="svg-icon">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('/shop-details') }}"><i class="far fa-eye"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <span class="mt-10">$30.00</span>
-                            <ul class="author-post">
-                                <li class="authot-list">
-                                        <span class="thumb">
-                                            <img src="assets/img/testimonial/client-2.png" alt="img">
-                                        </span>
-                                    <span class="content mt-10">Wilson</span>
-                                </li>
-                            </ul>
-                            <div class="shop-btn">
-                                <div class="star">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-                                <a href="{{ url('/shop-details') }}" class="theme-btn"><i
-                                        class="fa-solid fa-basket-shopping"></i> Add To Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 wow fadeInUp" data-wow-delay=".5s">
-                    <div class="top-ratting-box-items">
-                        <div class="book-thumb">
-                            <a href="{{ url('/shop-details') }}">
-                                <img src="assets/img/top-book/02.png" alt="img">
-                            </a>
-                        </div>
-                        <div class="book-content">
-                            <div class="title-header">
-                                <div>
-                                    <h5> Design Low Book </h5>
-                                    <h3>
-                                        <a href="{{ url('/shop-details') }}">How Deal With Very Bad BOOK</a>
-                                    </h3>
-                                </div>
-                                <ul class="shop-icon d-flex justify-content-center align-items-center">
-                                    <li>
-                                        <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('/shop-cart') }}">
+                                <img src="{{$product ->image}}" alt="img" style="width: 90px; height: 110px; object-fit: cover;">
 
-                                            <img class="icon" src="assets/img/icon/shuffle.svg" alt="svg-icon">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('/shop-details') }}"><i class="far fa-eye"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <span class="mt-10">$39.00</span>
-                            <ul class="author-post">
-                                <li class="authot-list">
-                                        <span class="thumb">
-                                            <img src="assets/img/testimonial/client-2.png" alt="img">
-                                        </span>
-                                    <span class="content mt-10">Wilson</span>
-                                </li>
-                            </ul>
-                            <div class="shop-btn">
-                                <div class="star">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-                                <a href="{{ url('/shop-details') }}" class="theme-btn"><i
-                                        class="fa-solid fa-basket-shopping"></i> Add To Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="top-ratting-box-items">
-                        <div class="book-thumb">
-                            <a href="{{ url('/shop-details') }}">
-                                <img src="assets/img/top-book/03.png" alt="img">
                             </a>
                         </div>
                         <div class="book-content">
                             <div class="title-header">
                                 <div>
-                                    <h5> Design Low Book </h5>
-                                    <h3>
-                                        <a href="{{ url('/shop-details') }}">Qple GPad With Retina Sisplay</a>
-                                    </h3>
-                                </div>
-                                <ul class="shop-icon d-flex justify-content-center align-items-center">
-                                    <li>
-                                        <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('/shop-cart') }}">
-                                            <img class="icon" src="assets/img/icon/shuffle.svg" alt="svg-icon">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('/shop-details') }}"><i class="far fa-eye"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <span class="mt-10">$30.00</span>
-                            <ul class="author-post">
-                                <li class="authot-list">
-                                        <span class="thumb">
-                                            <img src="assets/img/testimonial/client-2.png" alt="img">
-                                        </span>
-                                    <span class="content mt-10">Wilson</span>
-                                </li>
-                            </ul>
-                            <div class="shop-btn">
-                                <div class="star">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-                                <a href="{{ url('/shop-details') }}" class="theme-btn"><i
-                                        class="fa-solid fa-basket-shopping"></i> Add To Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 wow fadeInUp" data-wow-delay=".5s">
-                    <div class="top-ratting-box-items">
-                        <div class="book-thumb">
-                            <a href="{{ url('/shop-details') }}">
-                                <img src="assets/img/top-book/04.png" alt="img">
-                            </a>
-                        </div>
-                        <div class="book-content">
-                            <div class="title-header">
-                                <div>
-                                    <h5> Design Low Book </h5>
-                                    <h3>
-                                        <a href="{{ url('/shop-details') }}">Flovely and Unicom Erna</a>
-                                    </h3>
-                                </div>
-                                <ul class="shop-icon d-flex justify-content-center align-items-center">
-                                    <li>
-                                        <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('/shop-cart') }}">
 
-                                            <img class="icon" src="assets/img/icon/shuffle.svg" alt="svg-icon">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('/shop-details') }}"><i class="far fa-eye"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <span class="mt-10">$19.00</span>
-                            <ul class="author-post">
-                                <li class="authot-list">
-                                        <span class="thumb">
-                                            <img src="assets/img/testimonial/client-2.png" alt="img">
-                                        </span>
-                                    <span class="content mt-10">Wilson</span>
-                                </li>
-                            </ul>
-                            <div class="shop-btn">
-                                <div class="star">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-                                <a href="{{ url('/shop-details') }}" class="theme-btn"><i
-                                        class="fa-solid fa-basket-shopping"></i> Add To Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="top-ratting-box-items">
-                        <div class="book-thumb">
-                            <a href="{{ url('/shop-details') }}">
-                                <img src="assets/img/top-book/05.png" alt="img">
-                            </a>
-                        </div>
-                        <div class="book-content">
-                            <div class="title-header">
-                                <div>
-                                    <h5> Design Low Book </h5>
+                                    <h5> Top </h5>
                                     <h3>
-                                        <a href="{{ url('/shop-details') }}">Castle In The Sky</a>
+                                        <a href="{{ url('/shop-details') }}">{{$product ->name}}</a>
+
                                     </h3>
                                 </div>
                                 <ul class="shop-icon d-flex justify-content-center align-items-center">
@@ -1296,7 +1154,6 @@
                                     </li>
                                     <li>
                                         <a href="{{ url('/shop-cart') }}">
-
                                             <img class="icon" src="assets/img/icon/shuffle.svg" alt="svg-icon">
                                         </a>
                                     </li>
@@ -1305,13 +1162,12 @@
                                     </li>
                                 </ul>
                             </div>
-                            <span class="mt-10">$16.00</span>
+
+                            <span class="mt-10">${{$product ->price}}</span>
                             <ul class="author-post">
                                 <li class="authot-list">
-                                        <span class="thumb">
-                                            <img src="assets/img/testimonial/client-2.png" alt="img">
-                                        </span>
-                                    <span class="content mt-10">Wilson</span>
+                                    <span class="content mt-10">{{$product ->author}}</span>
+
                                 </li>
                             </ul>
                             <div class="shop-btn">
@@ -1322,65 +1178,24 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-regular fa-star"></i>
                                 </div>
-                                <a href="{{ url('/shop-details') }}" class="theme-btn"><i
-                                        class="fa-solid fa-basket-shopping"></i> Add To Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 wow fadeInUp" data-wow-delay=".5s">
-                    <div class="top-ratting-box-items">
-                        <div class="book-thumb">
-                            <a href="{{ url('/shop-details') }}">
-                                <img src="assets/img/top-book/06.png" alt="img">
-                            </a>
-                        </div>
-                        <div class="book-content">
-                            <div class="title-header">
-                                <div>
-                                    <h5> Design Low Book </h5>
-                                    <h3>
-                                        <a href="{{ url('/shop-details') }}">The Hidden Mystery Behind</a>
-                                    </h3>
-                                </div>
-                                <ul class="shop-icon d-flex justify-content-center align-items-center">
-                                    <li>
-                                        <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('/shop-cart') }}">
 
-                                            <img class="icon" src="assets/img/icon/shuffle.svg" alt="svg-icon">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('/shop-details') }}"><i class="far fa-eye"></i></a>
-                                    </li>
-                                </ul>
                             </div>
-                            <span class="mt-10">$30.00</span>
-                            <ul class="author-post">
-                                <li class="authot-list">
-                                        <span class="thumb">
-                                            <img src="assets/img/testimonial/client-2.png" alt="img">
-                                        </span>
-                                    <span class="content mt-10">Wilson</span>
-                                </li>
-                            </ul>
                             <div class="shop-btn">
-                                <div class="star">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-                                <a href="{{ url('/shop-details') }}" class="theme-btn"><i
-                                        class="fa-solid fa-basket-shopping"></i> Add To Cart</a>
+                                <form action="{{ route('main.shop-cart') }}" method="POST">
+                                    @csrf
+                                    <input type="hidden" name="id" value="{{ $product->id }}">
+                                    <input type="number" name="amount" value="1" min="1">
+                                    <button type="submit" class="theme-btn">
+                                        <i class="fa-solid fa-basket-shopping"></i> Add To Cart
+                                    </button>
+                                </form>
+
                             </div>
                         </div>
                     </div>
                 </div>
+                @endforeach
+
             </div>
         </div>
     </div>
@@ -1392,12 +1207,15 @@
 <!-- Testimonial Section start  -->
 
 <!-- Team Section start  -->
-<section class="team-section fix section-padding pt-0 margin-bottom-30">
+
+<section class="team-section fix section-padding margin-bottom-30">
     <div class="container">
         <div class="section-title text-center">
-            <h2 class="mt-5 mb-3 wow fadeInUp" data-wow-delay=".3s">Featured Author</h2>
-            <p class="wow fadeInUp" data-wow-delay=".5s">Interdum et malesuada fames ac ante ipsum primis in
-                faucibus. <br> Donec at nulla nulla. Duis posuere ex lacus</p>
+            <h2 class="mb-3 wow fadeInUp" data-wow-delay=".3s">Featured Author</h2>
+            <p class="wow fadeInUp" data-wow-delay=".5s">
+                Interdum et malesuada fames ac ante ipsum primis in faucibus. <br> Donec at nulla nulla. Duis posuere ex lacus
+            </p>
+
         </div>
         <div class="array-button">
             <button class="array-prev"><i class="fal fa-arrow-left"></i></button>
@@ -1405,102 +1223,23 @@
         </div>
         <div class="swiper team-slider">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="team-box-items">
-                        <div class="team-image">
-                            <div class="thumb">
-                                <img src="assets/img/team/01.jpg" alt="img">
+
+                @foreach($authors as $author)
+                    <div class="swiper-slide" style="display: flex; justify-content: center; align-items: center; height: auto;">
+                        <div class="team-box-items" style="display: flex; flex-direction: column; justify-content: space-between; align-items: center; padding: 15px; box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); background-color: #fff; border-radius: 10px; height: 100%;">
+                            <div class="team-image" style="width: 100%; max-height: 200px; overflow: hidden; display: flex; justify-content: center; align-items: center;">
+                                <div class="thumb">
+                                    <img src="{{ $author->photo }}" alt="img" style="width: auto; max-width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                                </div>
                             </div>
-                            <div class="shape-img">
-                                <img src="assets/img/team/shape-img.png" alt="img">
+                            <div class="team-content text-center" style="text-align: center; margin-top: 15px;">
+                                <h6 style="margin: 10px 0; font-size: 18px; font-weight: 600;"><a href="{{ url('/team-details') }}">{{ $author->name }}</a></h6>
+                                <p style="margin: 0; font-size: 14px; color: #666;">{{ $author->published_books }} </p>
                             </div>
-                        </div>
-                        <div class="team-content text-center">
-                            <h6><a href="{{ url('/team-details') }}">Esther Howard</a></h6>
-                            <p>10 Published Books</p>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="team-box-items">
-                        <div class="team-image">
-                            <div class="thumb">
-                                <img src="assets/img/team/02.jpg" alt="img">
-                            </div>
-                            <div class="shape-img">
-                                <img src="assets/img/team/shape-img.png" alt="img">
-                            </div>
-                        </div>
-                        <div class="team-content text-center">
-                            <h6><a href="{{ url('/team-details') }}">Shikhon Islam</a></h6>
-                            <p>07 Published Books</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="team-box-items">
-                        <div class="team-image">
-                            <div class="thumb">
-                                <img src="assets/img/team/03.jpg" alt="img">
-                            </div>
-                            <div class="shape-img">
-                                <img src="assets/img/team/shape-img.png" alt="img">
-                            </div>
-                        </div>
-                        <div class="team-content text-center">
-                            <h6><a href="{{ url('/team-details') }}">Kawser Ahmed</a></h6>
-                            <p>04 Published Books</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="team-box-items">
-                        <div class="team-image">
-                            <div class="thumb">
-                                <img src="assets/img/team/04.jpg" alt="img">
-                            </div>
-                            <div class="shape-img">
-                                <img src="assets/img/team/shape-img.png" alt="img">
-                            </div>
-                        </div>
-                        <div class="team-content text-center">
-                            <h6><a href="{{ url('/team-details') }}">Brooklyn Simmons</a></h6>
-                            <p>15 Published Books</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="team-box-items">
-                        <div class="team-image">
-                            <div class="thumb">
-                                <img src="assets/img/team/05.jpg" alt="img">
-                            </div>
-                            <div class="shape-img">
-                                <img src="assets/img/team/shape-img.png" alt="img">
-                            </div>
-                        </div>
-                        <div class="team-content text-center">
-                            <h6><a href="{{ url('/team-details') }}">Leslie Alexander</a></h6>
-                            <p>05 Published Books</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="team-box-items">
-                        <div class="team-image">
-                            <div class="thumb">
-                                <img src="assets/img/team/06.jpg" alt="img">
-                            </div>
-                            <div class="shape-img">
-                                <img src="assets/img/team/shape-img.png" alt="img">
-                            </div>
-                        </div>
-                        <div class="team-content text-center">
-                            <h6><a href="{{ url('/team-details') }}">Guy Hawkins</a></h6>
-                            <p>12 Published Books</p>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
+
             </div>
         </div>
     </div>
@@ -1515,11 +1254,13 @@
                 faucibus. <br> Donec at nulla nulla. Duis posuere ex lacus</p>
         </div>
         <div class="row">
+
+            @foreach($events as $event)
             <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                 <div class="news-card-items">
                     <div class="news-image">
-                        <img src="assets/img/news/09.jpg" alt="img">
-                        <img src="assets/img/news/09.jpg" alt="img">
+                        <img src="{{ $event -> image }}" alt="img">
+
                         <div class="post-box">
                             Activities
                         </div>
@@ -1528,98 +1269,25 @@
                         <ul>
                             <li>
                                 <i class="fa-light fa-calendar-days"></i>
-                                Feb 10, 2024
+
+                                {{ $event -> start_time }} - {{ $event -> end_time }}
+
                             </li>
                             <li>
                                 <i class="fa-regular fa-user"></i>
                                 By Admin
                             </li>
                         </ul>
-                        <h3><a href="{{ url('/news-details') }}">Montes suspendisse massa curae malesuada</a></h3>
-                        <a href="{{ url('/news-details') }}" class="theme-btn-2">Read More <i
+
+                        <h3><a href="{{ url('/news') }}">{{ $event -> name }}</a></h3>
+                        <a href="{{ url('/news') }}" class="theme-btn-2">Read More <i
+
                                 class="fa-regular fa-arrow-right-long"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                <div class="news-card-items">
-                    <div class="news-image">
-                        <img src="assets/img/news/10.jpg" alt="img">
-                        <img src="assets/img/news/10.jpg" alt="img">
-                        <div class="post-box">
-                            Activities
-                        </div>
-                    </div>
-                    <div class="news-content">
-                        <ul>
-                            <li>
-                                <i class="fa-light fa-calendar-days"></i>
-                                Mar 20, 2024
-                            </li>
-                            <li>
-                                <i class="fa-regular fa-user"></i>
-                                By Admin
-                            </li>
-                        </ul>
-                        <h3><a href="{{ url('/news-details') }}">Playful Picks Paradise: Kids’ Essentials with Dash.</a></h3>
-                        <a href="{{ url('/news-details') }}" class="theme-btn-2">Read More <i
-                                class="fa-regular fa-arrow-right-long"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                <div class="news-card-items">
-                    <div class="news-image">
-                        <img src="assets/img/news/11.jpg" alt="img">
-                        <img src="assets/img/news/11.jpg" alt="img">
-                        <div class="post-box">
-                            Activities
-                        </div>
-                    </div>
-                    <div class="news-content">
-                        <ul>
-                            <li>
-                                <i class="fa-light fa-calendar-days"></i>
-                                Jun 14, 2024
-                            </li>
-                            <li>
-                                <i class="fa-regular fa-user"></i>
-                                By Admin
-                            </li>
-                        </ul>
-                        <h3><a href="{{ url('/news-details') }}">Tiny Emporium: Playful Picks for Kids’ Delightful Days.</a>
-                        </h3>
-                        <a href="{{ url('/news-details') }}" class="theme-btn-2">Read More <i
-                                class="fa-regular fa-arrow-right-long"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
-                <div class="news-card-items">
-                    <div class="news-image">
-                        <img src="assets/img/news/12.jpg" alt="img">
-                        <img src="assets/img/news/12.jpg" alt="img">
-                        <div class="post-box">
-                            Activities
-                        </div>
-                    </div>
-                    <div class="news-content">
-                        <ul>
-                            <li>
-                                <i class="fa-light fa-calendar-days"></i>
-                                Mar 12, 2024
-                            </li>
-                            <li>
-                                <i class="fa-regular fa-user"></i>
-                                By Admin
-                            </li>
-                        </ul>
-                        <h3><a href="{{ url('/news-details') }}">Eu parturient dictumst fames quam tempor</a></h3>
-                        <a href="{{ url('/news-details') }}" class="theme-btn-2">Read More <i
-                                class="fa-regular fa-arrow-right-long"></i></a>
-                    </div>
-                </div>
-            </div>
+            @endforeach
+
         </div>
     </div>
 </section>

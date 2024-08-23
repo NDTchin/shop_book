@@ -217,12 +217,10 @@
                                             <li>
                                                 <a href="{{ url('/index') }}">
                                                     Home
-                                                    <i class="fas fa-angle-down"></i>
+
                                                 </a>
-                                                <ul class="submenu">
-                                                    <li><a href="{{ url('/index') }}">Home 01</a></li>
-                                                    <li><a href="{{ url('/index-2') }}">Home 02</a></li>
-                                                </ul>
+
+
                                             </li>
                                             <li>
                                                 <a href="{{ url('/shop-details') }}">
@@ -356,12 +354,10 @@
                                             <li>
                                                 <a href="{{ url('/index') }}">
                                                     Home
-                                                    <i class="fas fa-angle-down"></i>
+
                                                 </a>
-                                                <ul class="submenu">
-                                                    <li><a href="{{ url('/index') }}">Home 01</a></li>
-                                                    <li><a href="{{ url('/index-2') }}">Home 02</a></li>
-                                                </ul>
+
+
                                             </li>
                                             <li>
                                                 <a href="{{ url('/shop-details') }}">

@@ -132,7 +132,9 @@ class ShopCartController
         }
         // update thông tin shopping cart vào session.
         Session::put('shoppingCart', $shoppingCart);
-        return response()->json(['success' => 'Sản phẩm đã được cập nhật trong giỏ hàng.']);
+
+        Session::flash('success', 'Cập nhật giỏ hàng thành công!');
+        return redirect('/shop-cart');
 
     }
 
@@ -149,6 +151,9 @@ class ShopCartController
         }
         unset($shoppingCart[$productId]); // Xoá giá trị theo key ở trong map với php.
         Session::put('shoppingCart', $shoppingCart);
+
+        Session::flash('success', 'Xóa sản phẩm khỏi giỏ hàng thành công!');
+
         return redirect('/shop-cart');
     }
 }

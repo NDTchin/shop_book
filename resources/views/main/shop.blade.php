@@ -35,7 +35,8 @@
 
 <body>
 <!-- Cursor follower -->
-<div class="cursor-follower"></div>
+
+
 
 <!-- Preloader start -->
 <div id="preloader" class="preloader">
@@ -94,7 +95,7 @@
             <div class="offcanvas__content">
                 <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                     <div class="offcanvas__logo">
-                        <a href="index.html">
+                        <a href="{{ url('/index' )}}">
                             <img src="assets/img/logo/black-logo.svg" alt="logo-img">
                         </a>
                     </div>
@@ -117,7 +118,7 @@
                                 <i class="fal fa-map-marker-alt"></i>
                             </div>
                             <div class="offcanvas__contact-text">
-                                <a target="_blank" href="shop.html">Main Street, Melbourne, Australia</a>
+                                <a target="_blank" href="{{ url('/shop') }}">Main Street, Melbourne, Australia</a>
                             </div>
                         </li>
                         <li class="d-flex align-items-center">
@@ -134,7 +135,7 @@
                                 <i class="fal fa-clock"></i>
                             </div>
                             <div class="offcanvas__contact-text">
-                                <a target="_blank" href="shop.html">Mod-friday, 09am -05pm</a>
+                                <a target="_blank" href="{{ url('/shop') }}">Mod-friday, 09am -05pm</a>
                             </div>
                         </li>
                         <li class="d-flex align-items-center">
@@ -147,7 +148,8 @@
                         </li>
                     </ul>
                     <div class="header-button mt-4">
-                        <a href="contact.html" class="theme-btn text-center">
+                        <a href="{{ url('/contact' )}}" class="theme-btn text-center">
+
                             Get A Quote <i class="fa-solid fa-arrow-right-long"></i>
                         </a>
                     </div>
@@ -182,7 +184,7 @@
                 </li>
             </ul>
             <ul class="list">
-                <li><i class="fa-light fa-comments"></i><a href="contact.html">Live Chat</a></li>
+                <li><i class="fa-light fa-comments"></i><a href="{{ url('/contact') }}">Live Chat</a></li>
                 <li><i class="fa-light fa-user"></i>
                     <button data-bs-toggle="modal" data-bs-target="#loginModal">
                         Login
@@ -202,7 +204,8 @@
                     <div class="col-6 col-md-6 col-lg-10 col-xl-8 col-xxl-10">
                         <div class="header-left">
                             <div class="logo">
-                                <a href="index.html" class="header-logo">
+                                <a href="{{ url('/index') }}" class="header-logo">
+
                                     <img src="assets/img/logo/white-logo.svg" alt="logo-img">
                                 </a>
                             </div>
@@ -211,63 +214,62 @@
                                     <nav>
                                         <ul>
                                             <li>
-                                                <a href="index.html">
+                                                <a href="{{ url('/index') }}">
                                                     Home
-                                                    <i class="fas fa-angle-down"></i>
                                                 </a>
-                                                <ul class="submenu">
-                                                    <li><a href="index.html">Home 01</a></li>
-                                                    <li><a href="index-2.html">Home 02</a></li>
-                                                </ul>
                                             </li>
                                             <li>
-                                                <a href="shop-details.html">
+                                                <a href="{{ url('/shop-details') }}">
+
                                                     Shop
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
                                                 <ul class="submenu">
-                                                    <li><a href="shop.html">Shop Default</a></li>
-                                                    <li><a href="shop-list.html">Shop List</a></li>
-                                                    <li><a href="shop-details.html">Shop Details</a></li>
-                                                    <li><a href="shop-cart.html">Shop Cart</a></li>
-                                                    <li><a href="wishlist.html">Wishlist</a></li>
-                                                    <li><a href="checkout.html">Checkout</a></li>
+                                                    <li><a href="{{ url('/shop') }}">Shop Default</a></li>
+                                                    <li><a href="{{ url('/shop-list') }}">Shop List</a></li>
+                                                    <li><a href="{{ url('/shop-cart') }}">Shop Cart</a></li>
+                                                    <li><a href="{{ url('/wishlist') }}">Wishlist</a></li>
+                                                    <li><a href="{{ url('/checkout') }}">Checkout</a></li>
                                                 </ul>
                                             </li>
                                             <li class="has-dropdown">
-                                                <a href="about.html">
+                                                <a href="{{ url('/about' )}}">
+
                                                     Pages
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
                                                 <ul class="submenu">
-                                                    <li><a href="about.html">About Us</a></li>
+                                                    <li><a href="{{ url('/about') }}">About Us</a></li>
                                                     <li class="has-dropdown">
-                                                        <a href="team-details.html">
+                                                        <a href="{{ url('/team-details' )}}">
+
                                                             Author
                                                             <i class="fas fa-angle-down"></i>
                                                         </a>
                                                         <ul class="submenu">
-                                                            <li><a href="team.html">Author</a></li>
-                                                            <li><a href="team-details.html">Author Profile</a></li>
+                                                            <li><a href="{{ url('/team' )}}">Author</a></li>
+                                                            <li><a href="{{ url('/team-details' )}}">Author Profile</a></li>
                                                         </ul>
                                                     </li>
-                                                    <li><a href="faq.html">Faq's</a></li>
-                                                    <li><a href="404.html">404 Page</a></li>
+                                                    <li><a href="{{ url('/faq') }}">Faq's</a></li>
+                                                    <li><a href="{{ url('/404' )}}">404 Page</a></li>
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="news.html">
+                                                <a href="{{ url('/news' )}}">
+
                                                     Blog
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
                                                 <ul class="submenu">
-                                                    <li><a href="news-grid.html">Blog Grid</a></li>
-                                                    <li><a href="news.html">Blog List</a></li>
-                                                    <li><a href="news-details.html">Blog Details</a></li>
+                                                    <li><a href="{{ url('/news-grid' )}}">Blog Grid</a></li>
+                                                    <li><a href="{{ url('/news' )}}">Blog List</a></li>
+                                                    <li><a href="{{ url('/news-details' )}}">Blog Details</a></li>
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="contact.html">Contact</a>
+                                                <a href="{{ url('/contact') }}">Contact</a>
+
                                             </li>
                                         </ul>
                                     </nav>
@@ -308,10 +310,11 @@
                                 </form>
                             </div>
                             <div class="menu-cart">
-                                <a href="wishlist.html" class="cart-icon">
+                                <a href="{{ url('/wishlist') }}" class="cart-icon">
                                     <i class="fa-regular fa-heart"></i>
                                 </a>
-                                <a href="shop-cart.html" class="cart-icon">
+                                <a href="{{ url('/shop-cart') }}" class="cart-icon">
+
                                     <i class="fa-regular fa-cart-shopping"></i>
                                 </a>
                                 <div class="header-humbager ml-30">
@@ -341,7 +344,8 @@
                     <div class="col-6 col-md-6 col-lg-10 col-xl-8 col-xxl-10">
                         <div class="header-left">
                             <div class="logo">
-                                <a href="index.html" class="header-logo">
+                                <a href="{{ url('/index') }}" class="header-logo">
+
                                     <img src="assets/img/logo/white-logo.svg" alt="logo-img">
                                 </a>
                             </div>
@@ -350,63 +354,64 @@
                                     <nav>
                                         <ul>
                                             <li>
-                                                <a href="index.html">
+                                                <a href="{{ url('/index') }}">
                                                     Home
-                                                    <i class="fas fa-angle-down"></i>
+
                                                 </a>
-                                                <ul class="submenu">
-                                                    <li><a href="index.html">Home 01</a></li>
-                                                    <li><a href="index-2.html">Home 02</a></li>
-                                                </ul>
+
                                             </li>
                                             <li>
-                                                <a href="shop-details.html">
+                                                <a href="{{ url('/shop-details') }}">
+
                                                     Shop
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
                                                 <ul class="submenu">
-                                                    <li><a href="shop.html">Shop Default</a></li>
-                                                    <li><a href="shop-list.html">Shop List</a></li>
-                                                    <li><a href="shop-details.html">Shop Details</a></li>
-                                                    <li><a href="shop-cart.html">Shop Cart</a></li>
-                                                    <li><a href="wishlist.html">Wishlist</a></li>
-                                                    <li><a href="checkout.html">Checkout</a></li>
+                                                    <li><a href="{{ url('/shop') }}">Shop Default</a></li>
+                                                    <li><a href="{{ url('/shop-list') }}">Shop List</a></li>
+                                                    <li><a href="{{ url('/shop-details') }}">Shop Details</a></li>
+                                                    <li><a href="{{ url('/shop-cart') }}">Shop Cart</a></li>
+                                                    <li><a href="{{ url('/wishlist' )}}">Wishlist</a></li>
+                                                    <li><a href="{{ url('/checkout') }}">Checkout</a></li>
                                                 </ul>
                                             </li>
                                             <li class="has-dropdown">
-                                                <a href="about.html">
+                                                <a href="{{ url('/about') }}">
+
                                                     Pages
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
                                                 <ul class="submenu">
-                                                    <li><a href="about.html">About Us</a></li>
+                                                    <li><a href="{{ url('/about' )}}">About Us</a></li>
                                                     <li class="has-dropdown">
-                                                        <a href="team-details.html">
+                                                        <a href="{{ url('/team-details' )}}">
+
                                                             Author
                                                             <i class="fas fa-angle-down"></i>
                                                         </a>
                                                         <ul class="submenu">
-                                                            <li><a href="team.html">Author</a></li>
-                                                            <li><a href="team-details.html">Author Profile</a></li>
+                                                            <li><a href="{{ url('/team' )}}">Author</a></li>
+                                                            <li><a href="{{ url('/team-details') }}">Author Profile</a></li>
                                                         </ul>
                                                     </li>
-                                                    <li><a href="faq.html">Faq's</a></li>
-                                                    <li><a href="404.html">404 Page</a></li>
+                                                    <li><a href="{{ url('/faq') }}">Faq's</a></li>
+                                                    <li><a href="{{ url('/404') }}">404 Page</a></li>
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="news.html">
-                                                    Blog
+                                                <a href="{{ url('/news' )}}">
+                                     Blog
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
                                                 <ul class="submenu">
-                                                    <li><a href="news-grid.html">Blog Grid</a></li>
-                                                    <li><a href="news.html">Blog List</a></li>
-                                                    <li><a href="news-details.html">Blog Details</a></li>
+                                                    <li><a href="{{ url('/new-grid') }}">Blog Grid</a></li>
+                                                    <li><a href="{{ url('/news') }}">Blog List</a></li>
+                                                    <li><a href="{{ url('/news-details' )}}">Blog Details</a></li>
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="contact.html">Contact</a>
+                                                <a href="{{ url('/contact') }}">Contact</a>
+
                                             </li>
                                         </ul>
                                     </nav>
@@ -447,10 +452,10 @@
                                 </form>
                             </div>
                             <div class="menu-cart">
-                                <a href="wishlist.html" class="cart-icon">
+                                <a href="{{ url('/wishlist') }}" class="cart-icon">
                                     <i class="fa-regular fa-heart"></i>
                                 </a>
-                                <a href="shop-cart.html" class="cart-icon">
+                                <a href="{{ url('/shop-cart' )}}" class="cart-icon">
                                     <i class="fa-regular fa-cart-shopping"></i>
                                 </a>
                                 <div class="header-humbager ml-30">
@@ -616,7 +621,7 @@
             <div class="page-header">
                 <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".3s">
                     <li>
-                        <a href="index.html">
+                        <a href="{{ url('/index' )}}">
                             Home
                         </a>
                     </li>
@@ -639,38 +644,43 @@
             <div class="row">
                 <div class="col-12">
                     <div class="woocommerce-notices-wrapper wow fadeInUp" data-wow-delay=".3s">
-                        <p>Showing 1-3 Of 34 Results </p>
+                        <p>Showing Results </p>
                         <div class="form-clt">
                             <div class="nice-select" tabindex="0">
                                     <span class="current">
                                         Default Sorting
                                     </span>
                                 <ul class="list">
-                                    <li data-value="1" class="option selected focus">
-                                        Default sorting
+                                    <li data-value="1" class="option">
+                                        Price: Low to high
                                     </li>
                                     <li data-value="1" class="option">
-                                        Sort by popularity
-                                    </li>
-                                    <li data-value="1" class="option">
-                                        Sort by average rating
+                                        Price: High to low
                                     </li>
                                     <li data-value="1" class="option">
                                         Sort by latest
                                     </li>
+                                    <li data-value="1" class="option">
+                                        Sort by oldest
+
+                                    </li>
                                 </ul>
                             </div>
                             <div class="icon">
-                                <a href="shop-list.html"><i class="fas fa-list"></i></a>
+                                <a href="{{ url('/shop-list') }}"><i class="fas fa-list"></i></a>
                             </div>
                             <div class="icon-2 active">
-                                <a href="shop.html"><i class="fa-sharp fa-regular fa-grid-2"></i></a>
+                                <a href="{{ url('/shop') }}"><i class="fa-sharp fa-regular fa-grid-2"></i></a>
+
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 order-2 order-md-1 wow fadeInUp" data-wow-delay=".3s">
                     <div class="main-sidebar">
+
+{{--                    Search--}}
+
                         <div class="single-sidebar-widget">
                             <div class="wid-title">
                                 <h5>Search</h5>
@@ -684,133 +694,120 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="single-sidebar-widget">
-                            <div class="wid-title">
-                                <h5>Categories</h5>
-                            </div>
-                            <div class="categories-list">
-                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link active" id="pills-arts-tab" data-bs-toggle="pill"
-                                                data-bs-target="#pills-arts" type="button" role="tab"
-                                                aria-controls="pills-arts" aria-selected="true">Arts &
-                                            Photography</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="pills-Biographies-tab" data-bs-toggle="pill"
-                                                data-bs-target="#pills-Biographies" type="button" role="tab"
-                                                aria-controls="pills-Biographies" aria-selected="false">Biographies &
-                                            Memoirs</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="pills-ChristianBooks-tab" data-bs-toggle="pill"
-                                                data-bs-target="#pills-ChristianBooks" type="button" role="tab"
-                                                aria-controls="pills-ChristianBooks" aria-selected="false">Christian
-                                            Books & Bibles</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="pills-ResearchPublishing-tab"
-                                                data-bs-toggle="pill" data-bs-target="#pills-ResearchPublishing"
-                                                type="button" role="tab" aria-controls="pills-ResearchPublishing"
-                                                aria-selected="false">Research & Publishing Guides</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="pills-SportsOutdoors-tab" data-bs-toggle="pill"
-                                                data-bs-target="#pills-SportsOutdoors" type="button" role="tab"
-                                                aria-controls="pills-SportsOutdoors" aria-selected="false">Sports &
-                                            Outdoors</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="pills-FoodDrink-tab" data-bs-toggle="pill"
-                                                data-bs-target="#pills-FoodDrink" type="button" role="tab"
-                                                aria-controls="pills-FoodDrink" aria-selected="false">Food &
-                                            Drink</button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="single-sidebar-widget">
-                            <div class="wid-title">
-                                <h5>Product Status</h5>
-                            </div>
-                            <div class="product-status">
-                                <div class="product-status_stock  gap-6 d-flex align-items-center">
-                                    <div class="nice-select category" tabindex="0"><span class="current">
-                                                In Stock
-                                            </span>
-                                        <ul class="list">
-                                            <li data-value="1" class="option selected">
-                                                In Stock
-                                            </li>
-                                            <li data-value="1" class="option">
-                                                Castle In The Sky
-                                            </li>
-                                            <li data-value="1" class="option">
-                                                The Hidden Mystery Behind
-                                            </li>
-                                            <li data-value="1" class="option">
-                                                Flovely And Unicom Erna
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-status_sale gap-6 d-flex align-items-center">
-                                    <div class="nice-select category" tabindex="0">
-                                            <span class="current">
-                                                On Sale
-                                            </span>
-                                        <ul class="list">
-                                            <li data-value="1" class="option selected">
-                                                On Sale
-                                            </li>
-                                            <li data-value="1" class="option">
-                                                Flovely And Unicom Erna
-                                            </li>
-                                            <li data-value="1" class="option">
-                                                Castle In The Sky
-                                            </li>
-                                            <li data-value="1" class="option">
-                                                How Deal With Very Bad BOOK
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
 
-                        </div>
-                        <div class="single-sidebar-widget mb-50">
-                            <div class="wid-title">
-                                <h5>Filter By Price</h5>
+{{--                    Categories--}}
+
+                        <div class="single-sidebar-widget">
+                            <div class="categories"><div class="wid-title">
+                                    <h5>Categories</h5>
+                                </div>
+                                <div class="categories-list">
+                                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#pills-all" type="button" role="tab"
+                                                    aria-controls="pills-all" aria-selected="true">
+                                                All
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link category-item " id="pills-1-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#pills-1" type="button" role="tab"
+                                                    aria-controls="pills-1" aria-selected="true">
+                                                Tiểu Thuyết
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link category-item" id="pills-2-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#pills-2" type="button" role="tab"
+                                                    aria-controls="pills-2" aria-selected="false">
+                                                Truyện Ngắn
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link category-item" id="pills-3-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#pills-3" type="button" role="tab"
+                                                    aria-controls="pills-3" aria-selected="false">
+                                                Văn học hiện đại, thiếu nhi
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link category-item" id="pills-4-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#pills-4" type="button" role="tab"
+                                                    aria-controls="pills-4" aria-selected="false">
+                                                Khoa học viễn tưởng, Xã hội
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link category-item" id="pills-5-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#pills-5" type="button" role="tab"
+                                                    aria-controls="pills-5" aria-selected="false">
+                                                Sách kỹ năng sống, tự lực
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link category-item" id="pills-6-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#pills-6" type="button" role="tab"
+                                                    aria-controls="pills-6" aria-selected="false">
+                                                Khoa học, vũ trụ học
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link category-item" id="pills-7-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#pills-7" type="button" role="tab"
+                                                    aria-controls="pills-7" aria-selected="false">
+                                                Tâm lý học, xã hội
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link category-item" id="pills-8-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#pills-8" type="button" role="tab"
+                                                    aria-controls="pills-8" aria-selected="false">
+                                                Du lịch, khám phá
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="range__barcustom">
-                                <div class="slider">
-                                    <div class="progress" style="left: 15.29%; right: 58.9%;"></div>
+                            <div class="publish_at">
+                                <div class="wid-title" n>
+                                    <h5>Public At  </h5>
                                 </div>
-                                <div class="range-input">
-                                    <input type="range" class="range-min" min="0" max="10000" value="2500">
-                                    <input type="range" class="range-max" min="100" max="10000" value="7500">
-                                </div>
-                                <div class="range-items">
-                                    <div class="price-input">
-                                        <div class="d-flex align-items-center">
-                                            <a href="shop-left-sidebar.html" class="filter-btn mt-2 me-3">Filter</a>
-                                            <div class="field">
-                                                <span>Price:</span>
-                                            </div>
-                                            <div class="field">
-                                                <span>$</span>
-                                                <input type="number" class="input-min" value="100">
-                                            </div>
-                                            <div class="separators">-</div>
-                                            <div class="field">
-                                                <span>$</span>
-                                                <input type="number" class="input-max" value="1000">
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="categories-list">
+                                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link " id="pills-2024-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#pills-2024" type="button" role="tab"
+                                                    aria-controls="pills-2024" aria-selected="true">
+                                                2024
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link " id="pills-2000-2024-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#pills-2000-2024" type="button" role="tab"
+                                                    aria-controls="pills-2000-2024" aria-selected="true">
+                                                2000 - 2024
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-before2000-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#pills-before2000" type="button" role="tab"
+                                                    aria-controls="pills-before2000" aria-selected="false">
+                                                Before 2000
+                                            </button>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
+
+
+
+{{--                    Public At   --}}
+
+
+{{--                        By Review --}}
+
                         <div class="single-sidebar-widget mb-0">
                             <div class="wid-title">
                                 <h5>By Review</h5>
@@ -912,15 +909,480 @@
                 </div>
                 <div class="col-xl-9 col-lg-8 order-1 order-md-2">
                     <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-arts" role="tabpanel"
-                             aria-labelledby="pills-arts-tab" tabindex="0">
-                            <div class="tab-pane fade show active" id="pills-arts" role="tabpanel" aria-labelledby="pills-arts-tab" tabindex="0">
+                        <div class="tab-pane fade show active" id="pills-all" role="tabpanel"
+                             aria-labelledby="pills-all-tab" tabindex="0">
+                            <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0">
+
                                 <div class="row">
                                     @foreach ($products as $product)
                                         <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
                                             <div class="shop-box-items">
                                                 <div class="book-thumb center">
-                                                    <a href="shop-details"><img src="{{ $product->image }}" alt="img"></a>
+                                                    <a href="shop-details"><img src="{{ $product->image }}" alt="img" style="width: 190px; height: 265px; object-fit: cover;"></a>
+
+                                                    <ul class="shop-icon d-grid justify-content-center align-items-center">
+                                                        <li>
+                                                            <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="{{ url('/shop-cart') }}">
+                                                                <img class="icon" src="assets/img/icon/shuffle.svg" alt="svg-icon">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="{{ url('/shop-details') }}"><i class="far fa-eye"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="shop-content">
+                                                    <h3><a href="{{ url('/shop-details', $product->id) }}">{{ $product->name }}</a></h3>
+                                                    <h3>Author:{{ $product->author }}</h3>
+                                                    <h3>Category:{{ $product->category }}</h3>
+                                                    <ul class="price-list">
+                                                        <li>${{ $product->price }}</li>
+                                                    </ul>
+
+                                                    <form action="{{ route('main.shop-cart') }}" method="POST">
+                                                        @csrf
+                                                        <input type="hidden" name="id" value="{{ $product->id }}">
+                                                        <input type="number" name="amount" value="1" min="1">
+                                                        <button type="submit" class="theme-btn">
+                                                            <i class="fa-solid fa-basket-shopping"></i> Add To Cart
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        @if($loop->iteration % 4 == 0) <!-- Đóng hàng sau mỗi 4 mục -->
+                                </div>
+                                <div class="row">
+                                    @endif
+                                    @endforeach
+                                </div>
+                            </div>
+                            <div class="page-nav-wrap text-center">
+                                @include('pagination.default', ['paginator' => $products])
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show " id="pills-1" role="tabpanel"
+                             aria-labelledby="pills-1-tab" tabindex="0">
+                            <div class="tab-pane fade show " id="pills-th" role="tabpanel" aria-labelledby="pills-1-tab" tabindex="0">
+                                <div class="row">
+                                    @foreach ($products1 as $product1)
+                                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                                            <div class="shop-box-items">
+                                                <div class="book-thumb center">
+                                                    <a href="shop-details"><img src="{{ $product1->image }}" alt="img" style="width: 190px; height: 265px; object-fit: cover;"></a>
+                                                    <ul class="shop-icon d-grid justify-content-center align-items-center">
+                                                        <li>
+                                                            <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="{{ url('/shop-cart') }}">
+                                                                <img class="icon" src="assets/img/icon/shuffle.svg" alt="svg-icon">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="{{ url('/shop-details') }}"><i class="far fa-eye"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="shop-content">
+                                                    <h3><a href="{{ url('/shop-details', $product1->id) }}">{{ $product1->name }}</a></h3>
+                                                    <h3>Author:{{ $product1->author }}</h3>
+                                                    <h3>Category:{{ $product1->category }}</h3>
+                                                    <ul class="price-list">
+                                                        <li>${{ $product1->price }}</li>
+                                                    </ul>
+
+                                                    <form action="{{ route('main.shop-cart') }}" method="POST">
+                                                        @csrf
+                                                        <input type="hidden" name="id" value="{{ $product1->id }}">
+                                                        <input type="number" name="amount" value="1" min="1">
+                                                        <button type="submit" class="theme-btn">
+                                                            <i class="fa-solid fa-basket-shopping"></i> Add To Cart
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        @if($loop->iteration % 4 == 0) <!-- Đóng hàng sau mỗi 4 mục -->
+                                </div>
+                                <div class="row">
+                                    @endif
+                                    @endforeach
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade show " id="pills-2" role="tabpanel"
+                             aria-labelledby="pills-2-tab" tabindex="0">
+                            <div class="tab-pane fade show " id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab" tabindex="0">
+                                <div class="row">
+                                    @foreach ($products2 as $product2)
+                                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                                            <div class="shop-box-items">
+                                                <div class="book-thumb center">
+                                                    <a href="shop-details"><img src="{{ $product2->image }}" alt="img" style="width: 190px; height: 265px; object-fit: cover;"></a>
+                                                    <ul class="shop-icon d-grid justify-content-center align-items-center">
+                                                        <li>
+                                                            <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="{{ url('/shop-cart') }}">
+                                                                <img class="icon" src="assets/img/icon/shuffle.svg" alt="svg-icon">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="{{ url('/shop-details') }}"><i class="far fa-eye"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="shop-content">
+                                                    <h3><a href="{{ url('/shop-details', $product2->id) }}">{{ $product2->name }}</a></h3>
+                                                    <h3>Author:{{ $product2->author }}</h3>
+                                                    <h3>Category:{{ $product2->category }}</h3>
+                                                    <ul class="price-list">
+                                                        <li>${{ $product2->price }}</li>
+                                                    </ul>
+
+                                                    <form action="{{ route('main.shop-cart') }}" method="POST">
+                                                        @csrf
+                                                        <input type="hidden" name="id" value="{{ $product2->id }}">
+                                                        <input type="number" name="amount" value="1" min="1">
+                                                        <button type="submit" class="theme-btn">
+                                                            <i class="fa-solid fa-basket-shopping"></i> Add To Cart
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        @if($loop->iteration % 4 == 0) <!-- Đóng hàng sau mỗi 4 mục -->
+                                </div>
+                                <div class="row">
+                                    @endif
+                                    @endforeach
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show " id="pills-3" role="tabpanel"
+                             aria-labelledby="pills-3-tab" tabindex="0">
+                            <div class="tab-pane fade show " id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab" tabindex="0">
+                                <div class="row">
+                                    @foreach ($products3 as $product3)
+                                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                                            <div class="shop-box-items">
+                                                <div class="book-thumb center">
+                                                    <a href="shop-details"><img src="{{ $product3->image }}" alt="img" style="width: 190px; height: 265px; object-fit: cover;"></a>
+                                                    <ul class="shop-icon d-grid justify-content-center align-items-center">
+                                                        <li>
+                                                            <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="{{ url('/shop-cart') }}">
+                                                                <img class="icon" src="assets/img/icon/shuffle.svg" alt="svg-icon">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="{{ url('/shop-details') }}"><i class="far fa-eye"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="shop-content">
+                                                    <h3><a href="{{ url('/shop-details', $product3->id) }}">{{ $product3->name }}</a></h3>
+                                                    <h3>Author:{{ $product3->author }}</h3>
+                                                    <h3>Category:{{ $product3->category }}</h3>
+                                                    <ul class="price-list">
+                                                        <li>${{ $product3->price }}</li>
+                                                    </ul>
+
+                                                    <form action="{{ route('main.shop-cart') }}" method="POST">
+                                                        @csrf
+                                                        <input type="hidden" name="id" value="{{ $product3->id }}">
+                                                        <input type="number" name="amount" value="1" min="1">
+                                                        <button type="submit" class="theme-btn">
+                                                            <i class="fa-solid fa-basket-shopping"></i> Add To Cart
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        @if($loop->iteration % 4 == 0) <!-- Đóng hàng sau mỗi 4 mục -->
+                                </div>
+                                <div class="row">
+                                    @endif
+                                    @endforeach
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show " id="pills-4" role="tabpanel"
+                             aria-labelledby="pills-4-tab" tabindex="0">
+                            <div class="tab-pane fade show " id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab" tabindex="0">
+                                <div class="row">
+                                    @foreach ($products4 as $product4)
+                                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                                            <div class="shop-box-items">
+                                                <div class="book-thumb center">
+                                                    <a href="shop-details"><img src="{{ $product4->image }}" alt="img" style="width: 190px; height: 265px; object-fit: cover;"></a>
+                                                    <ul class="shop-icon d-grid justify-content-center align-items-center">
+                                                        <li>
+                                                            <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="{{ url('/shop-cart') }}">
+                                                                <img class="icon" src="assets/img/icon/shuffle.svg" alt="svg-icon">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="{{ url('/shop-details') }}"><i class="far fa-eye"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="shop-content">
+                                                    <h3><a href="{{ url('/shop-details', $product4->id) }}">{{ $product4->name }}</a></h3>
+                                                    <h3>Author:{{ $product4->author }}</h3>
+                                                    <h3>Category:{{ $product4->category }}</h3>
+                                                    <ul class="price-list">
+                                                        <li>${{ $product4->price }}</li>
+                                                    </ul>
+
+                                                    <form action="{{ route('main.shop-cart') }}" method="POST">
+                                                        @csrf
+                                                        <input type="hidden" name="id" value="{{ $product4->id }}">
+                                                        <input type="number" name="amount" value="1" min="1">
+                                                        <button type="submit" class="theme-btn">
+                                                            <i class="fa-solid fa-basket-shopping"></i> Add To Cart
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        @if($loop->iteration % 4 == 0) <!-- Đóng hàng sau mỗi 4 mục -->
+                                </div>
+                                <div class="row">
+                                    @endif
+                                    @endforeach
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show " id="pills-5" role="tabpanel"
+                             aria-labelledby="pills-5-tab" tabindex="0">
+                            <div class="tab-pane fade show " id="pills-5" role="tabpanel" aria-labelledby="pills-5-tab" tabindex="0">
+                                <div class="row">
+                                    @foreach ($products5 as $product5)
+                                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                                            <div class="shop-box-items">
+                                                <div class="book-thumb center">
+                                                    <a href="shop-details"><img src="{{ $product5->image }}" alt="img" style="width: 190px; height: 265px; object-fit: cover;"></a>
+                                                    <ul class="shop-icon d-grid justify-content-center align-items-center">
+                                                        <li>
+                                                            <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="{{ url('/shop-cart') }}">
+                                                                <img class="icon" src="assets/img/icon/shuffle.svg" alt="svg-icon">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="{{ url('/shop-details') }}"><i class="far fa-eye"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="shop-content">
+                                                    <h3><a href="{{ url('/shop-details', $product5->id) }}">{{ $product5->name }}</a></h3>
+                                                    <h3>Author:{{ $product5->author }}</h3>
+                                                    <h3>Category:{{ $product5->category }}</h3>
+                                                    <ul class="price-list">
+                                                        <li>${{ $product5->price }}</li>
+                                                    </ul>
+
+                                                    <form action="{{ route('main.shop-cart') }}" method="POST">
+                                                        @csrf
+                                                        <input type="hidden" name="id" value="{{ $product5->id }}">
+                                                        <input type="number" name="amount" value="1" min="1">
+                                                        <button type="submit" class="theme-btn">
+                                                            <i class="fa-solid fa-basket-shopping"></i> Add To Cart
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        @if($loop->iteration % 4 == 0) <!-- Đóng hàng sau mỗi 4 mục -->
+                                </div>
+                                <div class="row">
+                                    @endif
+                                    @endforeach
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show " id="pills-6" role="tabpanel"
+                             aria-labelledby="pills-6-tab" tabindex="0">
+                            <div class="tab-pane fade show " id="pills-6" role="tabpanel" aria-labelledby="pills-6-tab" tabindex="0">
+                                <div class="row">
+                                    @foreach ($products6 as $product6)
+                                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                                            <div class="shop-box-items">
+                                                <div class="book-thumb center">
+                                                    <a href="shop-details"><img src="{{ $product6->image }}" alt="img" style="width: 190px; height: 265px; object-fit: cover;"></a>
+                                                    <ul class="shop-icon d-grid justify-content-center align-items-center">
+                                                        <li>
+                                                            <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="{{ url('/shop-cart') }}">
+                                                                <img class="icon" src="assets/img/icon/shuffle.svg" alt="svg-icon">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="{{ url('/shop-details') }}"><i class="far fa-eye"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="shop-content">
+                                                    <h3><a href="{{ url('/shop-details', $product6->id) }}">{{ $product6->name }}</a></h3>
+                                                    <h3>Author:{{ $product6->author }}</h3>
+                                                    <h3>Category:{{ $product6->category }}</h3>
+                                                    <ul class="price-list">
+                                                        <li>${{ $product6->price }}</li>
+                                                    </ul>
+
+                                                    <form action="{{ route('main.shop-cart') }}" method="POST">
+                                                        @csrf
+                                                        <input type="hidden" name="id" value="{{ $product6->id }}">
+                                                        <input type="number" name="amount" value="1" min="1">
+                                                        <button type="submit" class="theme-btn">
+                                                            <i class="fa-solid fa-basket-shopping"></i> Add To Cart
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        @if($loop->iteration % 4 == 0) <!-- Đóng hàng sau mỗi 4 mục -->
+                                </div>
+                                <div class="row">
+                                    @endif
+                                    @endforeach
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show " id="pills-7" role="tabpanel"
+                             aria-labelledby="pills-7-tab" tabindex="0">
+                            <div class="tab-pane fade show " id="pills-7" role="tabpanel" aria-labelledby="pills-7-tab" tabindex="0">
+                                <div class="row">
+                                    @foreach ($products7 as $product7)
+                                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                                            <div class="shop-box-items">
+                                                <div class="book-thumb center">
+                                                    <a href="shop-details"><img src="{{ $product7->image }}" alt="img" style="width: 190px; height: 265px; object-fit: cover;"></a>
+                                                    <ul class="shop-icon d-grid justify-content-center align-items-center">
+                                                        <li>
+                                                            <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="{{ url('/shop-cart') }}">
+                                                                <img class="icon" src="assets/img/icon/shuffle.svg" alt="svg-icon">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="{{ url('/shop-details') }}"><i class="far fa-eye"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="shop-content">
+                                                    <h3><a href="{{ url('/shop-details', $product7->id) }}">{{ $product7->name }}</a></h3>
+                                                    <h3>Author:{{ $product7->author }}</h3>
+                                                    <h3>Category:{{ $product7->category }}</h3>
+                                                    <ul class="price-list">
+                                                        <li>${{ $product7->price }}</li>
+                                                    </ul>
+
+                                                    <form action="{{ route('main.shop-cart') }}" method="POST">
+                                                        @csrf
+                                                        <input type="hidden" name="id" value="{{ $product7->id }}">
+                                                        <input type="number" name="amount" value="1" min="1">
+                                                        <button type="submit" class="theme-btn">
+                                                            <i class="fa-solid fa-basket-shopping"></i> Add To Cart
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        @if($loop->iteration % 4 == 0) <!-- Đóng hàng sau mỗi 4 mục -->
+                                </div>
+                                <div class="row">
+                                    @endif
+                                    @endforeach
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show " id="pills-8" role="tabpanel"
+                             aria-labelledby="pills-8-tab" tabindex="0">
+                            <div class="tab-pane fade show " id="pills-8" role="tabpanel" aria-labelledby="pills-8-tab" tabindex="0">
+                                <div class="row">
+                                    @foreach ($products8 as $product8)
+                                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                                            <div class="shop-box-items">
+                                                <div class="book-thumb center">
+                                                    <a href="shop-details"><img src="{{ $product8->image }}" alt="img" style="width: 190px; height: 265px; object-fit: cover;"></a>
+                                                    <ul class="shop-icon d-grid justify-content-center align-items-center">
+                                                        <li>
+                                                            <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="{{ url('/shop-cart') }}">
+                                                                <img class="icon" src="assets/img/icon/shuffle.svg" alt="svg-icon">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="{{ url('/shop-details') }}"><i class="far fa-eye"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="shop-content">
+                                                    <h3><a href="{{ url('/shop-details', $product8->id) }}">{{ $product8->name }}</a></h3>
+                                                    <h3>Author:{{ $product8->author }}</h3>
+                                                    <h3>Category:{{ $product8->category }}</h3>
+                                                    <ul class="price-list">
+                                                        <li>${{ $product8->price }}</li>
+                                                    </ul>
+
+                                                    <form action="{{ route('main.shop-cart') }}" method="POST">
+                                                        @csrf
+                                                        <input type="hidden" name="id" value="{{ $product8->id }}">
+                                                        <input type="number" name="amount" value="1" min="1">
+                                                        <button type="submit" class="theme-btn">
+                                                            <i class="fa-solid fa-basket-shopping"></i> Add To Cart
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        @if($loop->iteration % 4 == 0) <!-- Đóng hàng sau mỗi 4 mục -->
+                                </div>
+                                <div class="row">
+                                    @endif
+                                    @endforeach
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show " id="pills-2024" role="tabpanel"
+                             aria-labelledby="pills-2024-tab" tabindex="0">
+                            <div class="tab-pane fade show " id="pills-2024" role="tabpanel" aria-labelledby="pills-2024-tab" tabindex="0">
+                                <div class="row">
+                                    @foreach ($products_2024 as $product)
+                                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                                            <div class="shop-box-items">
+                                                <div class="book-thumb center">
+                                                    <a href="shop-details"><img src="{{ $product->image }}" alt="img" style="width: 190px; height: 265px; object-fit: cover;"></a>
                                                     <ul class="shop-icon d-grid justify-content-center align-items-center">
                                                         <li>
                                                             <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
@@ -963,7 +1425,61 @@
                                 </div>
                             </div>
                         </div>
-                        @include('pagination.default', ['paginator' => $products])
+                        <div class="tab-pane fade show " id="pills-2000-2024" role="tabpanel"
+                             aria-labelledby="pills-2000-2024-tab" tabindex="0">
+                            <div class="tab-pane fade show " id="pills-2000-2024" role="tabpanel" aria-labelledby="pills-2000-2024-tab" tabindex="0">
+                                <div class="row">
+                                    @foreach ($products_2000_2024 as $product)
+                                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                                            <div class="shop-box-items">
+                                                <div class="book-thumb center">
+                                                    <a href="shop-details"><img src="{{ $product->image }}" alt="img" style="width: 190px; height: 265px; object-fit: cover;"></a>
+                                                    <ul class="shop-icon d-grid justify-content-center align-items-center">
+                                                        <li>
+                                                            <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="{{ url('/shop-cart') }}">
+                                                                <img class="icon" src="assets/img/icon/shuffle.svg" alt="svg-icon">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="{{ url('/shop-details') }}"><i class="far fa-eye"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="shop-content">
+                                                    <h3><a href="{{ url('/shop-details', $product->id) }}">{{ $product->name }}</a></h3>
+                                                    <h3>Author:{{ $product->author }}</h3>
+                                                    <h3>Category:{{ $product->category }}</h3>
+                                                    <ul class="price-list">
+                                                        <li>${{ $product->price }}</li>
+                                                    </ul>
+
+                                                    <form action="{{ route('main.shop-cart') }}" method="POST">
+                                                        @csrf
+                                                        <input type="hidden" name="id" value="{{ $product->id }}">
+                                                        <input type="number" name="amount" value="1" min="1">
+                                                        <button type="submit" class="theme-btn">
+                                                            <i class="fa-solid fa-basket-shopping"></i> Add To Cart
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        @if($loop->iteration % 4 == 0) <!-- Đóng hàng sau mỗi 4 mục -->
+                                </div>
+                                <div class="row">
+                                    @endif
+                                    @endforeach
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -1028,7 +1544,8 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                     <div class="single-footer-widget">
                         <div class="widget-head">
-                            <a href="index.html">
+                            <a href="index">
+
                                 <img src="assets/img/logo/white-logo.svg" alt="logo-img">
                             </a>
                         </div>
@@ -1053,25 +1570,29 @@
                         </div>
                         <ul class="list-area">
                             <li>
-                                <a href="shop.html">
+                                <a href="shop">
+
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Store List
                                 </a>
                             </li>
                             <li>
-                                <a href="contact.html">
+                                <a href="contact">
+
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Opening Hours
                                 </a>
                             </li>
                             <li>
-                                <a href="contact.html">
+                                <a href="contact">
+
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Contact Us
                                 </a>
                             </li>
                             <li>
-                                <a href="contact.html">
+                                <a href="contact">
+
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Return Policy
                                 </a>
@@ -1086,25 +1607,31 @@
                         </div>
                         <ul class="list-area">
                             <li>
-                                <a href="shop.html">
+
+                                <a href="shop">
+
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Novel Books
                                 </a>
                             </li>
                             <li>
-                                <a href="shop.html">
+
+                                <a href="shop">
+
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Poetry Books
                                 </a>
                             </li>
                             <li>
-                                <a href="contact.html">
+                                <a href="contact">
+
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Political Books
                                 </a>
                             </li>
                             <li>
-                                <a href="contact.html">
+                                <a href="contact">
+
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     History Books
                                 </a>
@@ -1135,26 +1662,30 @@
         <div class="container">
             <div class="footer-wrapper d-flex align-items-center justify-content-between">
                 <p class="wow fadeInLeft" data-wow-delay=".3s">
-                    © All Copyright 2024 by <a href="index.html">Bookle</a>
+                    © All Copyright 2024 by <a href="index">Bookle</a>
                 </p>
                 <ul class="brand-logo wow fadeInRight" data-wow-delay=".5s">
                     <li>
-                        <a href="contact.html">
+                        <a href="contact">
+
                             <img src="assets/img/visa-logo.png" alt="img">
                         </a>
                     </li>
                     <li>
-                        <a href="contact.html">
+                        <a href="contact">
+
                             <img src="assets/img/mastercard.png" alt="img">
                         </a>
                     </li>
                     <li>
-                        <a href="contact.html">
+                        <a href="contact">
+
                             <img src="assets/img/payoneer.png" alt="img">
                         </a>
                     </li>
                     <li>
-                        <a href="contact.html">
+                        <a href="contact">
+
                             <img src="assets/img/affirm.png" alt="img">
                         </a>
                     </li>
