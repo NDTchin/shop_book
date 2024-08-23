@@ -1555,19 +1555,19 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="contact">
+                                <a href="{{ url('/index' )}}">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Opening Hours
                                 </a>
                             </li>
                             <li>
-                                <a href="contact">
+                                <a href="{{ url('/index' )}}">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Contact Us
                                 </a>
                             </li>
                             <li>
-                                <a href="contact">
+                                <a href="{{ url('/index' )}}">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Return Policy
                                 </a>
@@ -1594,13 +1594,13 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="contact">
+                                <a href="{{ url('/index' )}}">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Political Books
                                 </a>
                             </li>
                             <li>
-                                <a href="contact">
+                                <a href="{{ url('/index' )}}">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     History Books
                                 </a>
@@ -1635,22 +1635,22 @@
                 </p>
                 <ul class="brand-logo wow fadeInRight" data-wow-delay=".5s">
                     <li>
-                        <a href="contact">
+                        <a href="{{ url('/index' )}}">
                             <img src="assets/img/visa-logo.png" alt="img">
                         </a>
                     </li>
                     <li>
-                        <a href="contact">
+                        <a href="{{ url('/index' )}}">
                             <img src="assets/img/mastercard.png" alt="img">
                         </a>
                     </li>
                     <li>
-                        <a href="contact">
+                        <a href="{{ url('/index' )}}">
                             <img src="assets/img/payoneer.png" alt="img">
                         </a>
                     </li>
                     <li>
-                        <a href="contact">
+                        <a href="{{ url('/index' )}}">
                             <img src="assets/img/affirm.png" alt="img">
                         </a>
                     </li>
