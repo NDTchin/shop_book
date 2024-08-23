@@ -217,7 +217,9 @@
                                             <li>
                                                 <a href="{{ url('/index') }}">
                                                     Home
+
                                                 </a>
+
 
                                             </li>
                                             <li>
@@ -352,7 +354,9 @@
                                             <li>
                                                 <a href="{{ url('/index') }}">
                                                     Home
+
                                                 </a>
+
 
                                             </li>
                                             <li>

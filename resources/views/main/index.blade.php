@@ -40,6 +40,7 @@
 <body>
 <!-- Cursor follower -->
 
+
 <!-- Preloader start -->
 <div id="preloader" class="preloader">
     <div class="animation-preloader">
@@ -216,6 +217,7 @@
                                             <li>
                                                 <a href="{{ url('/index') }}">
                                                     Home
+
                                                 </a>
 
                                             </li>
@@ -357,6 +359,9 @@
                                                 </a>
                                                 <ul class="submenu">
                                                     <li><a href="{{ url('/shop') }}">Shop Default</a></li>
+
+                                                    <li><a href="{{ url('/shop-list') }}">Shop List</a></li>
+
                                                     <li><a href="{{ url('/shop-details') }}">Shop Details</a></li>
                                                     <li><a href="{{ url('/shop-cart') }}">Shop Cart</a></li>
                                                     <li><a href="{{ url('/wishlist') }}">Wishlist</a></li>
@@ -380,6 +385,9 @@
                                                             <li><a href="{{ url('/team-details') }}">Author Profile</a></li>
                                                         </ul>
                                                     </li>
+
+                                                    <li><a href="{{ url('/faq') }}">Faq's</a></li>
+
                                                     <li><a href="{{ url('/404') }}">404 Page</a></li>
                                                 </ul>
                                             </li>
@@ -389,6 +397,9 @@
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
                                                 <ul class="submenu">
+
+                                                    <li><a href="{{ url('/news-grid') }}">Blog Grid</a></li>
+
                                                     <li><a href="{{ url('/news') }}">Blog List</a></li>
                                                     <li><a href="{{ url('/news-details') }}">Blog Details</a></li>
                                                 </ul>
@@ -698,7 +709,9 @@
                 <div class="swiper-slide">
                     <div class="shop-box-items style-2">
                         <div class="book-thumb center">
+
                             <a href="/shop-details/1" ><img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723467899/cvddd2o3nroemgefnfyv.jpg" alt="img" style="width: 200px; height: 242px;"></a>
+
                             <ul class="shop-icon d-grid justify-content-center align-items-center">
                                 <li>
                                     <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
@@ -714,14 +727,18 @@
                             </ul>
                         </div>
                         <div class="shop-content">
+
                             <h3><a href="/shop-details/1">Tắt Đèn</a></h3>
+
                             <ul class="price-list">
                                 <li>$2</li>
                             </ul>
                             <ul class="author-post">
                                 <li class="authot-list">
                                         <span class="thumb">
+
                                             <img src="assets/img/testimonial/client-1.png" alt="img" style="width: 30px; height: 30px;">
+
                                         </span>
                                     <span class="content">Ngô Tất Tố</span>
                                 </li>
@@ -735,7 +752,9 @@
                             </ul>
                         </div>
                         <div class="shop-button">
+
                             <a href="/shop-details/1" class="theme-btn"><i
+
                                     class="fa-solid fa-basket"></i> View</a>
                         </div>
                     </div>
@@ -743,7 +762,9 @@
                 <div class="swiper-slide">
                     <div class="shop-box-items style-2">
                         <div class="book-thumb center">
+
                             <a href="shop-details/4" ><img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723468175/nefxc9k0t6qohlokntwk.jpg" alt="img" style="width: 200px; height: 242px;"></a>
+
                             <ul class="shop-icon d-grid justify-content-center align-items-center">
                                 <li>
                                     <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
@@ -759,16 +780,20 @@
                             </ul>
                         </div>
                         <div class="shop-content">
+
                             <h3><a href="/shop-details/4">Đất Rừng Phương Nam</a></h3>
                             <ul class="price-list">
                                 <li>$3</li>
+
                             </ul>
                             <ul class="author-post">
                                 <li class="authot-list">
                                         <span class="thumb">
+
                                             <img src="assets/img/testimonial/client-1.png" alt="img" style="width: 30px; height: 30px;">
                                         </span>
                                     <span class="content">Đoàn Giỏi</span>
+
                                 </li>
                                 <li class="star">
                                     <i class="fa-solid fa-star"></i>
@@ -780,7 +805,9 @@
                             </ul>
                         </div>
                         <div class="shop-button">
+
                             <a href="/shop-details/1" class="theme-btn"><i
+
                                     class="fa-solid fa-basket"></i> View</a>
                         </div>
                     </div>
@@ -788,7 +815,9 @@
                 <div class="swiper-slide">
                     <div class="shop-box-items style-2">
                         <div class="book-thumb center">
+
                             <a href="/shop-details/11" ><img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723468816/dnarf2rw4fffjbqk0q01.jpg" alt="img" style="width: 200px; height: 242px;"></a>
+
                             <ul class="shop-icon d-grid justify-content-center align-items-center">
                                 <li>
                                     <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
@@ -804,16 +833,20 @@
                             </ul>
                         </div>
                         <div class="shop-content">
+
                             <h3><a href="/shop-details/11">Cho Tôi Xin Một Vé Đi Tuổi Thơ</a></h3>
                             <ul class="price-list">
                                 <li>$3</li>
+
                             </ul>
                             <ul class="author-post">
                                 <li class="authot-list">
                                         <span class="thumb">
+
                                             <img src="https://res.cloudinary.com/dficfkyug/image/upload/v1724057665/z3zi2nhtq6coz3nkeazj.jpg" alt="img" style="width: 30px; height: 30px;">
                                         </span>
                                     <span class="content">Nguyễn Nhật Ánh</span>
+
                                 </li>
                                 <li class="star">
                                     <i class="fa-solid fa-star"></i>
@@ -825,7 +858,9 @@
                             </ul>
                         </div>
                         <div class="shop-button">
+
                             <a href="/shop-details/1" class="theme-btn"><i
+
                                     class="fa-solid fa-basket"></i> View</a>
                         </div>
                     </div>
@@ -833,7 +868,9 @@
                 <div class="swiper-slide">
                     <div class="shop-box-items style-2">
                         <div class="book-thumb center">
+
                             <a href="/shop-details/21" ><img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723470357/hyvofxrldacv6jnbfahp.jpg" alt="img" style="width: 200px; height: 242px;"></a>
+
                             <ul class="shop-icon d-grid justify-content-center align-items-center">
                                 <li>
                                     <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
@@ -849,16 +886,20 @@
                             </ul>
                         </div>
                         <div class="shop-content">
+
                             <h3><a href="/shop-details/21">Dế Mèn Phiêu Lưu Ký</a></h3>
                             <ul class="price-list">
                                 <li>$3</li>
+
                             </ul>
                             <ul class="author-post">
                                 <li class="authot-list">
                                         <span class="thumb">
+
                                             <img src="https://res.cloudinary.com/dficfkyug/image/upload/v1724058196/rumjn7avlabno8bl6aea.jpg" alt="img" style="width: 30px; height: 30px;">
                                         </span>
                                     <span class="content">Tô Hoài</span>
+
                                 </li>
                                 <li class="star">
                                     <i class="fa-solid fa-star"></i>
@@ -870,7 +911,9 @@
                             </ul>
                         </div>
                         <div class="shop-button">
+
                             <a href="/shop-details/1" class="theme-btn"><i
+
                                     class="fa-solid fa-basket"></i> View</a>
                         </div>
                     </div>
@@ -878,7 +921,9 @@
                 <div class="swiper-slide">
                     <div class="shop-box-items style-2">
                         <div class="book-thumb center">
+
                             <a href="/shop-details/25" ><img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723470735/mkir0bdzeurqjgdmnqyj.jpg" alt="img" style="width: 200px; height: 242px;"></a>
+
                             <ul class="shop-icon d-grid justify-content-center align-items-center">
                                 <li>
                                     <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
@@ -894,16 +939,20 @@
                             </ul>
                         </div>
                         <div class="shop-content">
+
                             <h3><a href="/shop-details/25">Harry Potter</a></h3>
                             <ul class="price-list">
                                 <li>$8</li>
+
                             </ul>
                             <ul class="author-post">
                                 <li class="authot-list">
                                         <span class="thumb">
+
                                             <img src="assets/img/testimonial/client-1.png" alt="img" style="width: 30px; height: 30px;">
                                         </span>
                                     <span class="content">J.K. Rowling (dịch)</span>
+
                                 </li>
                                 <li class="star">
                                     <i class="fa-solid fa-star"></i>
@@ -915,14 +964,18 @@
                             </ul>
                         </div>
                         <div class="shop-button">
+
                             <a href="/shop-details/1" class="theme-btn"><i
+
                                     class="fa-solid fa-basket"></i> View</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
+
 </section>
 <!-- Book Catagories Section start  -->
 <section class="book-catagories-section fix section-padding">
@@ -940,61 +993,81 @@
                     <div class="swiper-slide">
                         <div class="book-catagories-items">
                             <div class="book-thumb">
+
                                 <img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723467899/cvddd2o3nroemgefnfyv.jpg" alt="img" style="width: 124px; height: 165px;">
+
                                 <div class="circle-shape">
                                     <img src="assets/img/book-categori/circle-shape.png" alt="shape-img">
                                 </div>
                             </div>
                             <div class="number"> 01 </div>
+
                             <h3><a href="{{ url('/shop') }}">Tiểu thuyết</a></h3>
+
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="book-catagories-items">
                             <div class="book-thumb">
+
                                 <img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723467991/mdjs3ykb5dy8qbhll4ac.webp" alt="img" style="width: 124px; height: 165px;">
+
                                 <div class="circle-shape">
                                     <img src="assets/img/book-categori/circle-shape.png" alt="shape-img">
                                 </div>
                             </div>
                             <div class="number"> 02 </div>
+
                             <h3><a href="{{ url('/shop') }}">Truyện ngắn</a></h3>
+
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="book-catagories-items">
                             <div class="book-thumb">
+
                                 <img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723468816/dnarf2rw4fffjbqk0q01.jpg" alt="img" style="width: 124px; height: 165px;">
+
                                 <div class="circle-shape">
                                     <img src="assets/img/book-categori/circle-shape.png" alt="shape-img">
                                 </div>
                             </div>
                             <div class="number"> 03 </div>
+
                             <h3><a href="{{ url('/shop') }}">Văn học hiện đại, thiếu nhi</a></h3>
+
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="book-catagories-items">
                             <div class="book-thumb">
+
                                 <img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723991069/ks2fwyo4evzodhvfd6to.jpg" alt="img" style="width: 124px; height: 165px;">
+
                                 <div class="circle-shape">
                                     <img src="assets/img/book-categori/circle-shape.png" alt="shape-img">
                                 </div>
                             </div>
                             <div class="number"> 04 </div>
+
                             <h3><a href="{{ url('/shop') }}">Khoa học viễn tưởng, Xã hội</a></h3>
+
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="book-catagories-items">
                             <div class="book-thumb">
+
                                 <img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723973672/k2r6lqca1odsycqgite9.jpg" alt="img" style="width: 124px; height: 165px;">
+
                                 <div class="circle-shape">
                                     <img src="assets/img/book-categori/circle-shape.png" alt="shape-img">
                                 </div>
                             </div>
                             <div class="number"> 05 </div>
+
                             <h3><a href="{{ url('/shop') }}">Khoa học, vũ trụ học</a></h3>
+
                         </div>
                     </div>
                 </div>
@@ -1021,7 +1094,9 @@
 <section class="cta-banner-section fix section-padding pt-0">
     <div class="container">
         <div class="cta-banner-wrapper section-padding bg-cover"
+
              style="background-image: url('/public/assets/img/cta-banner.jpg');">
+
             <div class="book-shape">
                 <img src="assets/img/book-shape.png" alt="shape-img">
             </div>
@@ -1054,19 +1129,23 @@
             </div>
             <div class="row">
                 @foreach( $products as $product )
+
                 <div class="col-xl-6 wow fadeInUp" data-wow-delay=".3s">
                     <div class="top-ratting-box-items">
                         <div class="book-thumb">
                             <a href="{{ url('/shop-details') }}">
                                 <img src="{{$product ->image}}" alt="img" style="width: 90px; height: 110px; object-fit: cover;">
+
                             </a>
                         </div>
                         <div class="book-content">
                             <div class="title-header">
                                 <div>
+
                                     <h5> Top </h5>
                                     <h3>
                                         <a href="{{ url('/shop-details') }}">{{$product ->name}}</a>
+
                                     </h3>
                                 </div>
                                 <ul class="shop-icon d-flex justify-content-center align-items-center">
@@ -1083,10 +1162,12 @@
                                     </li>
                                 </ul>
                             </div>
+
                             <span class="mt-10">${{$product ->price}}</span>
                             <ul class="author-post">
                                 <li class="authot-list">
                                     <span class="content mt-10">{{$product ->author}}</span>
+
                                 </li>
                             </ul>
                             <div class="shop-btn">
@@ -1097,6 +1178,7 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-regular fa-star"></i>
                                 </div>
+
                             </div>
                             <div class="shop-btn">
                                 <form action="{{ route('main.shop-cart') }}" method="POST">
@@ -1107,11 +1189,13 @@
                                         <i class="fa-solid fa-basket-shopping"></i> Add To Cart
                                     </button>
                                 </form>
+
                             </div>
                         </div>
                     </div>
                 </div>
                 @endforeach
+
             </div>
         </div>
     </div>
@@ -1123,6 +1207,7 @@
 <!-- Testimonial Section start  -->
 
 <!-- Team Section start  -->
+
 <section class="team-section fix section-padding margin-bottom-30">
     <div class="container">
         <div class="section-title text-center">
@@ -1130,6 +1215,7 @@
             <p class="wow fadeInUp" data-wow-delay=".5s">
                 Interdum et malesuada fames ac ante ipsum primis in faucibus. <br> Donec at nulla nulla. Duis posuere ex lacus
             </p>
+
         </div>
         <div class="array-button">
             <button class="array-prev"><i class="fal fa-arrow-left"></i></button>
@@ -1137,6 +1223,7 @@
         </div>
         <div class="swiper team-slider">
             <div class="swiper-wrapper">
+
                 @foreach($authors as $author)
                     <div class="swiper-slide" style="display: flex; justify-content: center; align-items: center; height: auto;">
                         <div class="team-box-items" style="display: flex; flex-direction: column; justify-content: space-between; align-items: center; padding: 15px; box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); background-color: #fff; border-radius: 10px; height: 100%;">
@@ -1152,6 +1239,7 @@
                         </div>
                     </div>
                 @endforeach
+
             </div>
         </div>
     </div>
@@ -1166,11 +1254,13 @@
                 faucibus. <br> Donec at nulla nulla. Duis posuere ex lacus</p>
         </div>
         <div class="row">
+
             @foreach($events as $event)
             <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                 <div class="news-card-items">
                     <div class="news-image">
                         <img src="{{ $event -> image }}" alt="img">
+
                         <div class="post-box">
                             Activities
                         </div>
@@ -1179,20 +1269,25 @@
                         <ul>
                             <li>
                                 <i class="fa-light fa-calendar-days"></i>
+
                                 {{ $event -> start_time }} - {{ $event -> end_time }}
+
                             </li>
                             <li>
                                 <i class="fa-regular fa-user"></i>
                                 By Admin
                             </li>
                         </ul>
+
                         <h3><a href="{{ url('/news') }}">{{ $event -> name }}</a></h3>
                         <a href="{{ url('/news') }}" class="theme-btn-2">Read More <i
+
                                 class="fa-regular fa-arrow-right-long"></i></a>
                     </div>
                 </div>
             </div>
             @endforeach
+
         </div>
     </div>
 </section>

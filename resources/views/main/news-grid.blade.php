@@ -121,7 +121,7 @@
                                 <i class="fal fa-map-marker-alt"></i>
                             </div>
                             <div class="offcanvas__contact-text">
-                                <a target="_blank" href="{{ url('/team-details') }}">Main Street, Melbourne, Australia</a>
+                                <a target="_blank" href="{{ url('/news-grid') }}">Main Street, Melbourne, Australia</a>
                             </div>
                         </li>
                         <li class="d-flex align-items-center">
@@ -138,7 +138,7 @@
                                 <i class="fal fa-clock"></i>
                             </div>
                             <div class="offcanvas__contact-text">
-                                <a target="_blank" href="{{ url('/team-details') }}">Mod-friday, 09am -05pm</a>
+                                <a target="_blank" href="{{ url('/news-grid') }}">Mod-friday, 09am -05pm</a>
                             </div>
                         </li>
                         <li class="d-flex align-items-center">
@@ -217,7 +217,12 @@
                                             <li>
                                                 <a href="{{ url('/index') }}">
                                                     Home
+                                                    <i class="fas fa-angle-down"></i>
                                                 </a>
+                                                <ul class="submenu">
+                                                    <li><a href="{{ url('/index') }}">Home 01</a></li>
+                                                    <li><a href="{{ url('/index-2') }}">Home 02</a></li>
+                                                </ul>
                                             </li>
                                             <li>
                                                 <a href="{{ url('/shop-details') }}">
@@ -351,7 +356,12 @@
                                             <li>
                                                 <a href="{{ url('/index') }}">
                                                     Home
+                                                    <i class="fas fa-angle-down"></i>
                                                 </a>
+                                                <ul class="submenu">
+                                                    <li><a href="{{ url('/index') }}">Home 01</a></li>
+                                                    <li><a href="{{ url('/index-2') }}">Home 02</a></li>
+                                                </ul>
                                             </li>
                                             <li>
                                                 <a href="{{ url('/shop-details') }}">
@@ -606,7 +616,7 @@
     </div>
     <div class="container">
         <div class="page-heading">
-            <h1>Author Profile</h1>
+            <h1>Blog Grid</h1>
             <div class="page-header">
                 <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".3s">
                     <li>
@@ -618,7 +628,7 @@
                         <i class="fa-solid fa-chevron-right"></i>
                     </li>
                     <li>
-                        Author Profile
+                        Blog Grid
                     </li>
                 </ul>
             </div>
@@ -626,310 +636,337 @@
     </div>
 </div>
 
-<!-- Team Details Section Start -->
-<section class="team-details-section fix section-padding">
+<!-- News Section Start -->
+<section class="news-section fix section-padding">
     <div class="container">
-
-        @foreach($authors as $author)
-            <div class="team-details-wrapper" style="margin-bottom: 30px;">
-                <div class="team-details-items">
-                    <div class="details-image wow fadeInUp" data-wow-delay=".3s">
-                        <img src="{{ $author->photo }}" alt="{{ $author->name }}">
-                    </div>
-                    <div class="details-content wow fadeInUp" data-wow-delay=".5s">
-                        <h3>Author: {{ $author->name }}</h3>
-                        <span>{{ $author->nationality }}</span>
-                        <div class="social-icon d-flex align-items-center">
-                            <a href="mailto:{{ $author->email }}"><i class="fas fa-envelope"></i></a>
-                            <a href="{{ $author->facebook }}"><i class="fab fa-facebook-f"></i></a>
-                            <a href="{{ $author->twitter }}"><i class="fab fa-twitter"></i></a>
-                            <a href="{{ $author->youtube }}"><i class="fab fa-youtube"></i></a>
-                            <a href="{{ $author->linkedin }}"><i class="fab fa-linkedin-in"></i></a>
+        <div class="row g-4">
+            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                <div class="news-card-items style-2 mt-0">
+                    <div class="news-image">
+                        <img src="assets/img/news/05.jpg" alt="img">
+                        <img src="assets/img/news/05.jpg" alt="img">
+                        <div class="post-box">
+                            Books Store
                         </div>
                     </div>
-                </div>
-
-                <p class="wow fadeInUp" data-wow-delay=".7s">
-                    {{ $author->bio }}
-                </p>
-                <div class="details-counter-area">
-                    <div class="counter-items wow fadeInUp" data-wow-delay=".3s">
-                        <h2><span class="count">{{ $author->published_books }}</span>+</h2>
-                        <p>Books</p>
-                    </div>
-                    <div class="counter-items wow fadeInUp" data-wow-delay=".5s">
-                        <h2><span class="count">{{ $author->sales }}</span>+</h2>
-                        <p>Sales</p>
-                    </div>
-                    <div class="counter-items wow fadeInUp" data-wow-delay=".7s">
-                        <h2><span class="count">{{ $author->reviews }}</span>+</h2>
-                        <p>Reviews</p>
+                    <div class="news-content">
+                        <ul>
+                            <li>
+                                <i class="fa-light fa-calendar-days"></i>
+                                Feb 10, 2024
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-user"></i>
+                                By Admin
+                            </li>
+                        </ul>
+                        <h3><a href="{{ url('/news-details') }}">Top 5 Tarot Decks for the Tarot World Summit</a></h3>
+                        <a href="{{ url('/news-details') }}" class="theme-btn-2">Read More <i
+                                class="fa-regular fa-arrow-right-long"></i></a>
                     </div>
                 </div>
             </div>
-        @endforeach
-
-        <!-- Phân trang -->
-        <div class="page-nav-wrap text-center">
+            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                <div class="news-card-items style-2 mt-0">
+                    <div class="news-image">
+                        <img src="assets/img/news/06.jpg" alt="img">
+                        <img src="assets/img/news/06.jpg" alt="img">
+                        <div class="post-box">
+                            Educations
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <ul>
+                            <li>
+                                <i class="fa-light fa-calendar-days"></i>
+                                Mar 20, 2024
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-user"></i>
+                                By Admin
+                            </li>
+                        </ul>
+                        <h3><a href="{{ url('/news-details') }}">Behind the Scenes with Author Victoria Aveyard</a></h3>
+                        <a href="{{ url('/news-details') }}" class="theme-btn-2">Read More <i
+                                class="fa-regular fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                <div class="news-card-items style-2 mt-0">
+                    <div class="news-image">
+                        <img src="assets/img/news/07.jpg" alt="img">
+                        <img src="assets/img/news/07.jpg" alt="img">
+                        <div class="post-box">
+                            Romance
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <ul>
+                            <li>
+                                <i class="fa-light fa-calendar-days"></i>
+                                Jun 14, 2024
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-user"></i>
+                                By Admin
+                            </li>
+                        </ul>
+                        <h3><a href="{{ url('/news-details') }}">Tiny Emporium: Playful Picks for Kids’ Delightful Days.</a>
+                        </h3>
+                        <a href="{{ url('/news-details') }}" class="theme-btn-2">Read More <i
+                                class="fa-regular fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                <div class="news-card-items style-2 mt-0">
+                    <div class="news-image">
+                        <img src="assets/img/news/08.jpg" alt="img">
+                        <img src="assets/img/news/08.jpg" alt="img">
+                        <div class="post-box">
+                            Activities
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <ul>
+                            <li>
+                                <i class="fa-light fa-calendar-days"></i>
+                                Mar 12, 2024
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-user"></i>
+                                By Admin
+                            </li>
+                        </ul>
+                        <h3><a href="{{ url('/news-details') }}">Eu parturient dictumst fames quam tempor</a></h3>
+                        <a href="{{ url('/news-details') }}" class="theme-btn-2">Read More <i
+                                class="fa-regular fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                <div class="news-card-items style-2 mt-0">
+                    <div class="news-image">
+                        <img src="assets/img/news/09.jpg" alt="img">
+                        <img src="assets/img/news/09.jpg" alt="img">
+                        <div class="post-box">
+                            Books Store
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <ul>
+                            <li>
+                                <i class="fa-light fa-calendar-days"></i>
+                                Feb 10, 2024
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-user"></i>
+                                By Admin
+                            </li>
+                        </ul>
+                        <h3><a href="{{ url('/news-details') }}">How to Keep Children Safe Online In Simple Steps</a></h3>
+                        <a href="{{ url('/news-details') }}" class="theme-btn-2">Read More <i
+                                class="fa-regular fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                <div class="news-card-items style-2 mt-0">
+                    <div class="news-image">
+                        <img src="assets/img/news/10.jpg" alt="img">
+                        <img src="assets/img/news/10.jpg" alt="img">
+                        <div class="post-box">
+                            Activities
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <ul>
+                            <li>
+                                <i class="fa-light fa-calendar-days"></i>
+                                Mar 20, 2024
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-user"></i>
+                                By Admin
+                            </li>
+                        </ul>
+                        <h3><a href="{{ url('/news-details') }}">That jerk Form Finance
+                                really threw me</a></h3>
+                        <a href="{{ url('/news-details') }}" class="theme-btn-2">Read More <i
+                                class="fa-regular fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                <div class="news-card-items style-2 mt-0">
+                    <div class="news-image">
+                        <img src="assets/img/news/11.jpg" alt="img">
+                        <img src="assets/img/news/11.jpg" alt="img">
+                        <div class="post-box">
+                            Adventure
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <ul>
+                            <li>
+                                <i class="fa-light fa-calendar-days"></i>
+                                Jun 14, 2024
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-user"></i>
+                                By Admin
+                            </li>
+                        </ul>
+                        <h3><a href="{{ url('/news-details') }}">Students Intelligence in Education Building Resilient</a>
+                        </h3>
+                        <a href="{{ url('/news-details') }}" class="theme-btn-2">Read More <i
+                                class="fa-regular fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                <div class="news-card-items style-2 mt-0">
+                    <div class="news-image">
+                        <img src="assets/img/news/12.jpg" alt="img">
+                        <img src="assets/img/news/12.jpg" alt="img">
+                        <div class="post-box">
+                            Books Store
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <ul>
+                            <li>
+                                <i class="fa-light fa-calendar-days"></i>
+                                Mar 12, 2024
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-user"></i>
+                                By Admin
+                            </li>
+                        </ul>
+                        <h3><a href="{{ url('/news-details') }}">From without content
+                                style without </a></h3>
+                        <a href="{{ url('/news-details') }}" class="theme-btn-2">Read More <i
+                                class="fa-regular fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                <div class="news-card-items style-2 mt-0">
+                    <div class="news-image">
+                        <img src="assets/img/news/13.jpg" alt="img">
+                        <img src="assets/img/news/13.jpg" alt="img">
+                        <div class="post-box">
+                            Romance
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <ul>
+                            <li>
+                                <i class="fa-light fa-calendar-days"></i>
+                                Feb 10, 2024
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-user"></i>
+                                By Admin
+                            </li>
+                        </ul>
+                        <h3><a href="{{ url('/news-details') }}">All Inclusive Ultimate Circle Island Day with Lunch</a></h3>
+                        <a href="{{ url('/news-details') }}" class="theme-btn-2">Read More <i
+                                class="fa-regular fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                <div class="news-card-items style-2 mt-0">
+                    <div class="news-image">
+                        <img src="assets/img/news/14.jpg" alt="img">
+                        <img src="assets/img/news/14.jpg" alt="img">
+                        <div class="post-box">
+                            Adnenture
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <ul>
+                            <li>
+                                <i class="fa-light fa-calendar-days"></i>
+                                Mar 20, 2024
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-user"></i>
+                                By Admin
+                            </li>
+                        </ul>
+                        <h3><a href="{{ url('/news-details') }}">Playful Picks Paradise: Kids’ Essentials with Dash.</a></h3>
+                        <a href="{{ url('/news-details') }}" class="theme-btn-2">Read More <i
+                                class="fa-regular fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                <div class="news-card-items style-2 mt-0">
+                    <div class="news-image">
+                        <img src="assets/img/news/15.jpg" alt="img">
+                        <img src="assets/img/news/15.jpg" alt="img">
+                        <div class="post-box">
+                            Educations
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <ul>
+                            <li>
+                                <i class="fa-light fa-calendar-days"></i>
+                                Jun 14, 2024
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-user"></i>
+                                By Admin
+                            </li>
+                        </ul>
+                        <h3><a href="{{ url('/news-details') }}">Tiny Emporium: Playful Picks for Kids’ Delightful Days.</a>
+                        </h3>
+                        <a href="{{ url('/news-details') }}" class="theme-btn-2">Read More <i
+                                class="fa-regular fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                <div class="news-card-items style-2 mt-0">
+                    <div class="news-image">
+                        <img src="assets/img/news/16.jpg" alt="img">
+                        <img src="assets/img/news/16.jpg" alt="img">
+                        <div class="post-box">
+                            Books Store
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <ul>
+                            <li>
+                                <i class="fa-light fa-calendar-days"></i>
+                                Mar 12, 2024
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-user"></i>
+                                By Admin
+                            </li>
+                        </ul>
+                        <h3><a href="{{ url('/news-details') }}">Top 10 Tarot Decks for the Tarot World Summit</a></h3>
+                        <a href="{{ url('/news-details') }}" class="theme-btn-2">Read More <i
+                                class="fa-regular fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-nav-wrap text-center wow fadeInUp" data-wow-delay=".3s">
             <ul>
-                @if ($authors->onFirstPage())
-                    <li><span class="previous disabled">Previous</span></li>
-                @else
-                    <li><a class="previous" href="{{ $authors->previousPageUrl() }}">Previous</a></li>
-                @endif
-
-                @for ($i = 1; $i <= $authors->lastPage(); $i++)
-                    <li><a class="page-numbers {{ $i == $authors->currentPage() ? 'active' : '' }}" href="{{ $authors->url($i) }}">{{ $i }}</a></li>
-                @endfor
-
-                @if ($authors->hasMorePages())
-                    <li><a class="next" href="{{ $authors->nextPageUrl() }}">Next</a></li>
-                @else
-                    <li><span class="next disabled">Next</span></li>
-                @endif
+                <li><a class="previous" href="{{ url('/news-grid') }}">Previous</a></li>
+                <li><a class="page-numbers" href="{{ url('/news-grid') }}">1</a></li>
+                <li><a class="page-numbers" href="{{ url('/news-grid') }}">2</a></li>
+                <li><a class="page-numbers" href="{{ url('/news-grid') }}">3</a></li>
+                <li><a class="page-numbers" href="{{ url('/news-grid') }}">...</a></li>
+                <li><a class="next" href="{{ url('/news-grid') }}">Next</a></li>
             </ul>
-        </div>
-    </div>
-</section>
-
-<!-- Shop Section Start -->
-<section class="shop-section section-padding fix pt-0">
-    <div class="container">
-        <div class="section-title wow fadeInUp" data-wow-delay=".3s">
-            <h2>Books By Wade Warren</h2>
-        </div>
-        <div class="swiper book-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="shop-box-items style-2">
-                        <div class="book-thumb center">
-                            <a href="/shop-details/1" ><img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723467899/cvddd2o3nroemgefnfyv.jpg" alt="img" style="width: 200px; height: 242px;"></a>
-                            <ul class="shop-icon d-grid justify-content-center align-items-center">
-                                <li>
-                                    <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
-                                </li>
-                                <li>
-                                    <a href="{{ url('/shop-cart') }}">
-                                        <img class="icon" src="assets/img/icon/shuffle.svg" alt="svg-icon">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{{ url('/shop-details') }}"><i class="far fa-eye"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="shop-content">
-                            <h3><a href="/shop-details/1">Tắt Đèn</a></h3>
-                            <ul class="price-list">
-                                <li>$2</li>
-                            </ul>
-                            <ul class="author-post">
-                                <li class="authot-list">
-                                        <span class="thumb">
-                                            <img src="assets/img/testimonial/client-1.png" alt="img" style="width: 30px; height: 30px;">
-                                        </span>
-                                    <span class="content">Ngô Tất Tố</span>
-                                </li>
-
-                                <li class="star">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="shop-button">
-                            <a href="/shop-details/1" class="theme-btn"><i
-                                    class="fa-solid fa-basket"></i> View</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="shop-box-items style-2">
-                        <div class="book-thumb center">
-                            <a href="shop-details/4" ><img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723468175/nefxc9k0t6qohlokntwk.jpg" alt="img" style="width: 200px; height: 242px;"></a>
-                            <ul class="shop-icon d-grid justify-content-center align-items-center">
-                                <li>
-                                    <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
-                                </li>
-                                <li>
-                                    <a href="{{ url('/shop-cart') }}">
-                                        <img class="icon" src="assets/img/icon/shuffle.svg" alt="svg-icon">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{{ url('/shop-details') }}"><i class="far fa-eye"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="shop-content">
-                            <h3><a href="/shop-details/4">Đất Rừng Phương Nam</a></h3>
-                            <ul class="price-list">
-                                <li>$3</li>
-                            </ul>
-                            <ul class="author-post">
-                                <li class="authot-list">
-                                        <span class="thumb">
-                                            <img src="assets/img/testimonial/client-1.png" alt="img" style="width: 30px; height: 30px;">
-                                        </span>
-                                    <span class="content">Đoàn Giỏi</span>
-                                </li>
-
-                                <li class="star">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="shop-button">
-                            <a href="/shop-details/1" class="theme-btn"><i
-                                    class="fa-solid fa-basket"></i> View</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="shop-box-items style-2">
-                        <div class="book-thumb center">
-                            <a href="/shop-details/11" ><img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723468816/dnarf2rw4fffjbqk0q01.jpg" alt="img" style="width: 200px; height: 242px;"></a>
-                            <ul class="shop-icon d-grid justify-content-center align-items-center">
-                                <li>
-                                    <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
-                                </li>
-                                <li>
-                                    <a href="{{ url('/shop-cart') }}">
-                                        <img class="icon" src="assets/img/icon/shuffle.svg" alt="svg-icon">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{{ url('/shop-details') }}"><i class="far fa-eye"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="shop-content">
-                            <h3><a href="/shop-details/11">Cho Tôi Xin Một Vé Đi Tuổi Thơ</a></h3>
-                            <ul class="price-list">
-                                <li>$3</li>
-                            </ul>
-                            <ul class="author-post">
-                                <li class="authot-list">
-                                        <span class="thumb">
-                                            <img src="https://res.cloudinary.com/dficfkyug/image/upload/v1724057665/z3zi2nhtq6coz3nkeazj.jpg" alt="img" style="width: 30px; height: 30px;">
-                                        </span>
-                                    <span class="content">Nguyễn Nhật Ánh</span>
-                                </li>
-                                <li class="star">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="shop-button">
-                            <a href="/shop-details/1" class="theme-btn"><i
-                                    class="fa-solid fa-basket"></i> View</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="shop-box-items style-2">
-                        <div class="book-thumb center">
-                            <a href="/shop-details/21" ><img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723470357/hyvofxrldacv6jnbfahp.jpg" alt="img" style="width: 200px; height: 242px;"></a>
-                            <ul class="shop-icon d-grid justify-content-center align-items-center">
-                                <li>
-                                    <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
-                                </li>
-                                <li>
-                                    <a href="{{ url('/shop-cart') }}">
-                                        <img class="icon" src="assets/img/icon/shuffle.svg" alt="svg-icon">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{{ url('/shop-details') }}"><i class="far fa-eye"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="shop-content">
-                            <h3><a href="/shop-details/21">Dế Mèn Phiêu Lưu Ký</a></h3>
-                            <ul class="price-list">
-                                <li>$3</li>
-                            </ul>
-                            <ul class="author-post">
-                                <li class="authot-list">
-                                        <span class="thumb">
-                                            <img src="https://res.cloudinary.com/dficfkyug/image/upload/v1724058196/rumjn7avlabno8bl6aea.jpg" alt="img" style="width: 30px; height: 30px;">
-                                        </span>
-                                    <span class="content">Tô Hoài</span>
-                                </li>
-                                <li class="star">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="shop-button">
-                            <a href="/shop-details/1" class="theme-btn"><i
-                                    class="fa-solid fa-basket"></i> View</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="shop-box-items style-2">
-                        <div class="book-thumb center">
-                            <a href="/shop-details/25" ><img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723470735/mkir0bdzeurqjgdmnqyj.jpg" alt="img" style="width: 200px; height: 242px;"></a>
-
-                            <ul class="shop-icon d-grid justify-content-center align-items-center">
-                                <li>
-                                    <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
-                                </li>
-                                <li>
-                                    <a href="{{ url('/shop-cart') }}">
-                                        <img class="icon" src="assets/img/icon/shuffle.svg" alt="svg-icon">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{{ url('/shop-details') }}"><i class="far fa-eye"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="shop-content">
-                            <h3><a href="/shop-details/25">Harry Potter</a></h3>
-                            <ul class="price-list">
-                                <li>$8</li>
-                            </ul>
-                            <ul class="author-post">
-                                <li class="authot-list">
-                                        <span class="thumb">
-                                            <img src="assets/img/testimonial/client-1.png" alt="img" style="width: 30px; height: 30px;">
-                                        </span>
-                                    <span class="content">J.K. Rowling (dịch)</span>
-                                </li>
-
-                                <li class="star">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="shop-button">
-                            <a href="/shop-details/1" class="theme-btn"><i
-                                    class="fa-solid fa-basket"></i> View</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>

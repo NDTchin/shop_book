@@ -99,7 +99,9 @@
             <div class="offcanvas__content">
                 <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                     <div class="offcanvas__logo">
+
                         <a href="{{ url('/index') }}">
+
                             <img src="assets/img/logo/black-logo.svg" alt="logo-img">
                         </a>
                     </div>
@@ -153,6 +155,7 @@
                     </ul>
                     <div class="header-button mt-4">
                         <a href="{{ url('/contact') }}" class="theme-btn text-center">
+
                             Get A Quote <i class="fa-solid fa-arrow-right-long"></i>
                         </a>
                     </div>
@@ -188,6 +191,7 @@
             </ul>
             <ul class="list">
                 <li><i class="fa-light fa-comments"></i><a href="{{ url('/contact') }}">Live Chat</a></li>
+
                 <li><i class="fa-light fa-user"></i>
                     <button data-bs-toggle="modal" data-bs-target="#loginModal">
                         Login
@@ -208,6 +212,7 @@
                         <div class="header-left">
                             <div class="logo">
                                 <a href="{{ url('/index') }}" class="header-logo">
+
                                     <img src="assets/img/logo/white-logo.svg" alt="logo-img">
                                 </a>
                             </div>
@@ -223,6 +228,7 @@
                                             </li>
                                             <li>
                                                 <a href="{{ url('/shop-details') }}">
+
                                                     Shop
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
@@ -237,6 +243,7 @@
                                             </li>
                                             <li class="has-dropdown">
                                                 <a href="{{ url('/about') }}">
+
                                                     Pages
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
@@ -244,6 +251,7 @@
                                                     <li><a href="{{ url('/about') }}">About Us</a></li>
                                                     <li class="has-dropdown">
                                                         <a href="{{ url('/team-details') }}">
+
                                                             Author
                                                             <i class="fas fa-angle-down"></i>
                                                         </a>
@@ -258,6 +266,7 @@
                                             </li>
                                             <li>
                                                 <a href="{{ url('/news') }}">
+
                                                     Blog
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
@@ -269,6 +278,7 @@
                                             </li>
                                             <li>
                                                 <a href="{{ url('/contact') }}">Contact</a>
+
                                             </li>
                                         </ul>
                                     </nav>
@@ -343,6 +353,7 @@
                         <div class="header-left">
                             <div class="logo">
                                 <a href="{{ url('/index') }}" class="header-logo">
+
                                     <img src="assets/img/logo/white-logo.svg" alt="logo-img">
                                 </a>
                             </div>
@@ -359,6 +370,7 @@
                                             </li>
                                             <li>
                                                 <a href="{{ url('/shop-details') }}">
+
                                                     Shop
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
@@ -373,6 +385,7 @@
                                             </li>
                                             <li class="has-dropdown">
                                                 <a href="{{ url('/about') }}">
+
                                                     Pages
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
@@ -380,6 +393,7 @@
                                                     <li><a href="{{ url('/about') }}">About Us</a></li>
                                                     <li class="has-dropdown">
                                                         <a href="{{ url('/team-details') }}">
+
                                                             Author
                                                             <i class="fas fa-angle-down"></i>
                                                         </a>
@@ -394,6 +408,7 @@
                                             </li>
                                             <li>
                                                 <a href="{{ url('/news') }}">
+
                                                     Blog
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
@@ -405,6 +420,7 @@
                                             </li>
                                             <li>
                                                 <a href="{{ url('/contact') }}">Contact</a>
+
                                             </li>
                                         </ul>
                                     </nav>
@@ -615,6 +631,7 @@
                 <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".3s">
                     <li>
                         <a href="{{ url('/index') }}">
+
                             Home
                         </a>
                     </li>
@@ -664,6 +681,7 @@
                                     ?>
                                 <tr>
                                     <form action="{{route('shop-cart.update')}}" method="post">
+
                                         @csrf
                                         <input type="hidden" name="id" value="{{$cartItem->id}}">
                                         <td>{{$cartItem->id}}</td>
@@ -684,6 +702,7 @@
                                             {{ Session::get('success') }}
                                         </div>
                                     @endif
+
                                 </tr>
                             @endforeach
                         </table>
@@ -729,6 +748,7 @@
                             </tbody>
                         </table>
                         <a href="{{ url('/checkout') }}" class="theme-btn">Proceed to checkout</a>
+
                     </div>
                 </div>
             </div>
@@ -796,6 +816,7 @@
                     <div class="single-footer-widget">
                         <div class="widget-head">
                             <a href="{{ url('/index') }}">
+
                                 <img src="assets/img/logo/white-logo.svg" alt="logo-img">
                             </a>
                         </div>
@@ -821,24 +842,28 @@
                         <ul class="list-area">
                             <li>
                                 <a href="shop">
+
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Store List
                                 </a>
                             </li>
                             <li>
                                 <a href="{{ url('/contact') }}">
+
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Opening Hours
                                 </a>
                             </li>
                             <li>
                                 <a href="{{ url('/contact') }}">
+
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Contact Us
                                 </a>
                             </li>
                             <li>
                                 <a href="{{ url('/contact') }}">
+
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Return Policy
                                 </a>
@@ -854,24 +879,28 @@
                         <ul class="list-area">
                             <li>
                                 <a href="shop">
+
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Novel Books
                                 </a>
                             </li>
                             <li>
                                 <a href="shop">
+
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Poetry Books
                                 </a>
                             </li>
                             <li>
                                 <a href="contact">
+
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Political Books
                                 </a>
                             </li>
                             <li>
                                 <a href="contact">
+
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     History Books
                                 </a>
@@ -907,21 +936,25 @@
                 <ul class="brand-logo wow fadeInRight" data-wow-delay=".5s">
                     <li>
                         <a href="contact">
+
                             <img src="assets/img/visa-logo.png" alt="img">
                         </a>
                     </li>
                     <li>
                         <a href="contact">
+
                             <img src="assets/img/mastercard.png" alt="img">
                         </a>
                     </li>
                     <li>
                         <a href="contact">
+
                             <img src="assets/img/payoneer.png" alt="img">
                         </a>
                     </li>
                     <li>
                         <a href="contact">
+
                             <img src="assets/img/affirm.png" alt="img">
                         </a>
                     </li>
