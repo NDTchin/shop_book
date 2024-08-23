@@ -40,8 +40,6 @@
 
 <body>
 <!-- Cursor follower -->
-
-
 <!-- Preloader start -->
 <div id="preloader" class="preloader">
     <div class="animation-preloader">
@@ -628,7 +626,6 @@
 </div>
 
 <!-- Shop Details Section Start -->
-
 <section class="shop-details-section fix section-padding">
     <div class="container">
         <div class="shop-details-wrapper">
@@ -638,9 +635,7 @@
                         <div class="tab-content">
                             <div id="thumb1" class="tab-pane fade show active">
                                 <div class="shop-details-thumb">
-
                                     <img src="{{ $product->image }}" alt="img" style="width: 330px; height: 430px;">
-
                                 </div>
                             </div>
                             <div id="thumb2" class="tab-pane fade">
@@ -722,7 +717,6 @@
                                     <i class="fa-solid fa-basket-shopping"></i> Add To Cart
                                 </button>
                             </form>
-
                             <div class="icon-box">
                                 <a href="{{ url('/shop-details') }}" class="icon">
                                     <i class="far fa-heart"></i>
@@ -869,7 +863,6 @@
                             </table>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -892,14 +885,12 @@
                     <div class="shop-box-items style-2">
                         <div class="book-thumb center">
                             <a href="/shop-details/1" ><img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723467899/cvddd2o3nroemgefnfyv.jpg" alt="img" style="width: 200px; height: 242px;"></a>
-
                             <ul class="shop-icon d-grid justify-content-center align-items-center">
                                 <li>
                                     <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
                                 </li>
                                 <li>
                                     <a href="{{ url('/shop-cart') }}">
-
                                         <img class="icon" src="assets/img/icon/shuffle.svg" alt="svg-icon">
                                     </a>
                                 </li>
@@ -912,7 +903,6 @@
                             <h3><a href="/shop-details/1">Tắt Đèn</a></h3>
                             <ul class="price-list">
                                 <li>$2</li>
-
                             </ul>
                             <ul class="author-post">
                                 <li class="authot-list">
@@ -921,7 +911,6 @@
                                         </span>
                                     <span class="content">Ngô Tất Tố</span>
                                 </li>
-
                                 <li class="star">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -934,7 +923,6 @@
                         <div class="shop-button">
                             <a href="/shop-details/1" class="theme-btn"><i
                                     class="fa-solid fa-basket"></i> View</a>
-
                         </div>
                     </div>
                 </div>
@@ -942,14 +930,12 @@
                     <div class="shop-box-items style-2">
                         <div class="book-thumb center">
                             <a href="shop-details/4" ><img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723468175/nefxc9k0t6qohlokntwk.jpg" alt="img" style="width: 200px; height: 242px;"></a>
-
                             <ul class="shop-icon d-grid justify-content-center align-items-center">
                                 <li>
                                     <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
                                 </li>
                                 <li>
                                     <a href="{{ url('/shop-cart') }}">
-
                                         <img class="icon" src="assets/img/icon/shuffle.svg" alt="svg-icon">
                                     </a>
                                 </li>
@@ -962,7 +948,6 @@
                             <h3><a href="/shop-details/4">Đất Rừng Phương Nam</a></h3>
                             <ul class="price-list">
                                 <li>$3</li>
-
                             </ul>
                             <ul class="author-post">
                                 <li class="authot-list">
@@ -971,7 +956,6 @@
                                         </span>
                                     <span class="content">Đoàn Giỏi</span>
                                 </li>
-
                                 <li class="star">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -984,7 +968,6 @@
                         <div class="shop-button">
                             <a href="/shop-details/1" class="theme-btn"><i
                                     class="fa-solid fa-basket"></i> View</a>
-
                         </div>
                     </div>
                 </div>
@@ -992,7 +975,6 @@
                     <div class="shop-box-items style-2">
                         <div class="book-thumb center">
                             <a href="/shop-details/11" ><img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723468816/dnarf2rw4fffjbqk0q01.jpg" alt="img" style="width: 200px; height: 242px;"></a>
-
                             <ul class="shop-icon d-grid justify-content-center align-items-center">
                                 <li>
                                     <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
@@ -1011,7 +993,6 @@
                             <h3><a href="/shop-details/11">Cho Tôi Xin Một Vé Đi Tuổi Thơ</a></h3>
                             <ul class="price-list">
                                 <li>$3</li>
-
                             </ul>
                             <ul class="author-post">
                                 <li class="authot-list">
@@ -1020,7 +1001,6 @@
                                         </span>
                                     <span class="content">Nguyễn Nhật Ánh</span>
                                 </li>
-
                                 <li class="star">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -1111,7 +1091,6 @@
                                         </span>
                                     <span class="content">J.K. Rowling (dịch)</span>
                                 </li>
-
                                 <li class="star">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -1176,7 +1155,6 @@
                 <div class="content">
                     <p>Location</p>
                     <h3>
-
                         8 Tôn Thất Thuyết - Mỹ Đình, Cầu Giấy, Hà Nội
                     </h3>
                 </div>
@@ -1192,7 +1170,6 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                     <div class="single-footer-widget">
                         <div class="widget-head">
-
                             <a href="{{ url('/index') }}">
                                 <img src="assets/img/logo/white-logo.svg" alt="logo-img">
                             </a>
@@ -1218,15 +1195,14 @@
                         </div>
                         <ul class="list-area">
                             <li>
-
                                 <a href="{{ url('/shop') }}">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Store List
                                 </a>
                             </li>
                             <li>
-
                                 <a href="{{ url('/contact') }}">
+
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Opening Hours
                                 </a>
@@ -1238,7 +1214,6 @@
                                 </a>
                             </li>
                             <li>
-
                                 <a href="{{ url('/contact') }}">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Return Policy
@@ -1303,7 +1278,6 @@
         <div class="container">
             <div class="footer-wrapper d-flex align-items-center justify-content-between">
                 <p class="wow fadeInLeft" data-wow-delay=".3s">
-
                     © All Copyright 2024 by <a href="{{ url('/index') }}">Bookle</a>
                 </p>
                 <ul class="brand-logo wow fadeInRight" data-wow-delay=".5s">
@@ -1313,19 +1287,16 @@
                         </a>
                     </li>
                     <li>
-
                         <a href="{{ url('/contact') }}">
                             <img src="assets/img/mastercard.png" alt="img">
                         </a>
                     </li>
                     <li>
-
                         <a href="{{ url('/contact') }}">
                             <img src="assets/img/payoneer.png" alt="img">
                         </a>
                     </li>
                     <li>
-
                         <a href="{{ url('/contact') }}">
                             <img src="assets/img/affirm.png" alt="img">
                         </a>

@@ -35,9 +35,6 @@
 
 <body>
 <!-- Cursor follower -->
-
-
-
 <!-- Preloader start -->
 <div id="preloader" class="preloader">
     <div class="animation-preloader">
@@ -149,7 +146,6 @@
                     </ul>
                     <div class="header-button mt-4">
                         <a href="{{ url('/contact' )}}" class="theme-btn text-center">
-
                             Get A Quote <i class="fa-solid fa-arrow-right-long"></i>
                         </a>
                     </div>
@@ -205,7 +201,6 @@
                         <div class="header-left">
                             <div class="logo">
                                 <a href="{{ url('/index') }}" class="header-logo">
-
                                     <img src="assets/img/logo/white-logo.svg" alt="logo-img">
                                 </a>
                             </div>
@@ -220,7 +215,6 @@
                                             </li>
                                             <li>
                                                 <a href="{{ url('/shop-details') }}">
-
                                                     Shop
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
@@ -234,7 +228,6 @@
                                             </li>
                                             <li class="has-dropdown">
                                                 <a href="{{ url('/about' )}}">
-
                                                     Pages
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
@@ -242,7 +235,6 @@
                                                     <li><a href="{{ url('/about') }}">About Us</a></li>
                                                     <li class="has-dropdown">
                                                         <a href="{{ url('/team-details' )}}">
-
                                                             Author
                                                             <i class="fas fa-angle-down"></i>
                                                         </a>
@@ -257,7 +249,6 @@
                                             </li>
                                             <li>
                                                 <a href="{{ url('/news' )}}">
-
                                                     Blog
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
@@ -269,7 +260,6 @@
                                             </li>
                                             <li>
                                                 <a href="{{ url('/contact') }}">Contact</a>
-
                                             </li>
                                         </ul>
                                     </nav>
@@ -314,7 +304,6 @@
                                     <i class="fa-regular fa-heart"></i>
                                 </a>
                                 <a href="{{ url('/shop-cart') }}" class="cart-icon">
-
                                     <i class="fa-regular fa-cart-shopping"></i>
                                 </a>
                                 <div class="header-humbager ml-30">
@@ -345,7 +334,6 @@
                         <div class="header-left">
                             <div class="logo">
                                 <a href="{{ url('/index') }}" class="header-logo">
-
                                     <img src="assets/img/logo/white-logo.svg" alt="logo-img">
                                 </a>
                             </div>
@@ -356,13 +344,10 @@
                                             <li>
                                                 <a href="{{ url('/index') }}">
                                                     Home
-
                                                 </a>
-
                                             </li>
                                             <li>
                                                 <a href="{{ url('/shop-details') }}">
-
                                                     Shop
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
@@ -377,7 +362,6 @@
                                             </li>
                                             <li class="has-dropdown">
                                                 <a href="{{ url('/about') }}">
-
                                                     Pages
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
@@ -385,7 +369,6 @@
                                                     <li><a href="{{ url('/about' )}}">About Us</a></li>
                                                     <li class="has-dropdown">
                                                         <a href="{{ url('/team-details' )}}">
-
                                                             Author
                                                             <i class="fas fa-angle-down"></i>
                                                         </a>
@@ -400,7 +383,7 @@
                                             </li>
                                             <li>
                                                 <a href="{{ url('/news' )}}">
-                                     Blog
+                                                    Blog
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
                                                 <ul class="submenu">
@@ -411,7 +394,6 @@
                                             </li>
                                             <li>
                                                 <a href="{{ url('/contact') }}">Contact</a>
-
                                             </li>
                                         </ul>
                                     </nav>
@@ -662,7 +644,6 @@
                                     </li>
                                     <li data-value="1" class="option">
                                         Sort by oldest
-
                                     </li>
                                 </ul>
                             </div>
@@ -671,7 +652,6 @@
                             </div>
                             <div class="icon-2 active">
                                 <a href="{{ url('/shop') }}"><i class="fa-sharp fa-regular fa-grid-2"></i></a>
-
                             </div>
                         </div>
                     </div>
@@ -680,7 +660,6 @@
                     <div class="main-sidebar">
 
 {{--                    Search--}}
-
                         <div class="single-sidebar-widget">
                             <div class="wid-title">
                                 <h5>Search</h5>
@@ -807,7 +786,6 @@
 
 
 {{--                        By Review --}}
-
                         <div class="single-sidebar-widget mb-0">
                             <div class="wid-title">
                                 <h5>By Review</h5>
@@ -912,14 +890,12 @@
                         <div class="tab-pane fade show active" id="pills-all" role="tabpanel"
                              aria-labelledby="pills-all-tab" tabindex="0">
                             <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0">
-
                                 <div class="row">
                                     @foreach ($products as $product)
                                         <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
                                             <div class="shop-box-items">
                                                 <div class="book-thumb center">
                                                     <a href="shop-details"><img src="{{ $product->image }}" alt="img" style="width: 190px; height: 265px; object-fit: cover;"></a>
-
                                                     <ul class="shop-icon d-grid justify-content-center align-items-center">
                                                         <li>
                                                             <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
@@ -1479,7 +1455,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -1545,7 +1520,6 @@
                     <div class="single-footer-widget">
                         <div class="widget-head">
                             <a href="index">
-
                                 <img src="assets/img/logo/white-logo.svg" alt="logo-img">
                             </a>
                         </div>
@@ -1571,28 +1545,24 @@
                         <ul class="list-area">
                             <li>
                                 <a href="shop">
-
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Store List
                                 </a>
                             </li>
                             <li>
-                                <a href="contact">
-
+                                <a href="{{ url('/index' )}}">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Opening Hours
                                 </a>
                             </li>
                             <li>
-                                <a href="contact">
-
+                                <a href="{{ url('/index' )}}">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Contact Us
                                 </a>
                             </li>
                             <li>
-                                <a href="contact">
-
+                                <a href="{{ url('/index' )}}">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Return Policy
                                 </a>
@@ -1607,31 +1577,25 @@
                         </div>
                         <ul class="list-area">
                             <li>
-
                                 <a href="shop">
-
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Novel Books
                                 </a>
                             </li>
                             <li>
-
                                 <a href="shop">
-
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Poetry Books
                                 </a>
                             </li>
                             <li>
-                                <a href="contact">
-
+                                <a href="{{ url('/index' )}}">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Political Books
                                 </a>
                             </li>
                             <li>
-                                <a href="contact">
-
+                                <a href="{{ url('/index' )}}">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     History Books
                                 </a>
@@ -1666,26 +1630,22 @@
                 </p>
                 <ul class="brand-logo wow fadeInRight" data-wow-delay=".5s">
                     <li>
-                        <a href="contact">
-
+                        <a href="{{ url('/index' )}}">
                             <img src="assets/img/visa-logo.png" alt="img">
                         </a>
                     </li>
                     <li>
-                        <a href="contact">
-
+                        <a href="{{ url('/index' )}}">
                             <img src="assets/img/mastercard.png" alt="img">
                         </a>
                     </li>
                     <li>
-                        <a href="contact">
-
+                        <a href="{{ url('/index' )}}">
                             <img src="assets/img/payoneer.png" alt="img">
                         </a>
                     </li>
                     <li>
-                        <a href="contact">
-
+                        <a href="{{ url('/index' )}}">
                             <img src="assets/img/affirm.png" alt="img">
                         </a>
                     </li>

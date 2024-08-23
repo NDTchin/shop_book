@@ -92,7 +92,6 @@ Route::post('/shop-cart/update', [ShopCartController::class, 'update'])->name('s
 Route::get('/shop-cart/remove', [ShopCartController::class, 'remove']);
 
 
-
 //Route::view('/team', 'main.team'); // done
 Route::get('/team', [AuthorInformationController::class, 'index']) -> name('main.team'); // done
 //Route::view('/team-details', 'main.team-details'); // done

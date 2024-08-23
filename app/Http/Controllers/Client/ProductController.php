@@ -6,7 +6,7 @@ class ProductController
 {
     public function index()
     {
-        $products = Product::pag
+        $products = Product::paginate(20);
 
         //category
         $products1 = Product::where('category','=','Tiểu thuyết')->get();
@@ -41,7 +41,6 @@ class ProductController
     public function index2(){
         $products = Product::paginate(20);
         return view('main.shop-list', ['products' => $products,]);
-
     }
     public function search(Request $request)
     {
@@ -60,10 +59,8 @@ class ProductController
 
     public function shop_details($id)
     {
-
         $product = Product::find($id);
         return view('main.shop-details',compact('product'));
-
     }
 
 //    public function home_index()

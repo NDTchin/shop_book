@@ -730,7 +730,6 @@
                                         </span>
                                     <span class="content">Ngô Tất Tố</span>
                                 </li>
-
                                 <li class="star">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -776,7 +775,6 @@
                                         </span>
                                     <span class="content">Đoàn Giỏi</span>
                                 </li>
-
                                 <li class="star">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -886,7 +884,6 @@
                     <div class="shop-box-items style-2">
                         <div class="book-thumb center">
                             <a href="/shop-details/25" ><img src="https://res.cloudinary.com/dficfkyug/image/upload/v1723470735/mkir0bdzeurqjgdmnqyj.jpg" alt="img" style="width: 200px; height: 242px;"></a>
-
                             <ul class="shop-icon d-grid justify-content-center align-items-center">
                                 <li>
                                     <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
@@ -913,7 +910,6 @@
                                         </span>
                                     <span class="content">J.K. Rowling (dịch)</span>
                                 </li>
-
                                 <li class="star">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>

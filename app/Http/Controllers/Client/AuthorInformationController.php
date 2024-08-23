@@ -11,7 +11,6 @@ class AuthorInformationController
     {
         $authors = Author::all();
         return view('main.team',['authors' => $authors]);
-
     }
     public function showTeamDetails()
     {

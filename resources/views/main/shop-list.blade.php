@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--<< Header Area >>-->
+
 <link rel="stylesheet" href="{{ asset('main/assets/css/all.min.css') }}">
 <link rel="stylesheet" href="{{ asset('main/assets/css/main.css') }}">
 <img src="{{ asset('main/assets/img/logo.png') }}" alt="Logo">
 <script src="{{ asset('main/assets/js/app.js') }}"></script>
+
 
 <head>
     <!-- ========== Meta Tags ========== -->
@@ -39,8 +41,6 @@
 
 <body>
 <!-- Cursor follower -->
-<div class="cursor-follower"></div>
-
 <!-- Preloader start -->
 <div id="preloader" class="preloader">
     <div class="animation-preloader">
@@ -98,7 +98,7 @@
             <div class="offcanvas__content">
                 <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                     <div class="offcanvas__logo">
-                        <a href="index.html">
+                        <a href="{{ url('/index') }}">
                             <img src="assets/img/logo/black-logo.svg" alt="logo-img">
                         </a>
                     </div>
@@ -121,7 +121,7 @@
                                 <i class="fal fa-map-marker-alt"></i>
                             </div>
                             <div class="offcanvas__contact-text">
-                                <a target="_blank" href="shop-list.html">Main Street, Melbourne, Australia</a>
+                                <a target="_blank" href="{{ url('/shop-list') }}">Main Street, Melbourne, Australia</a>
                             </div>
                         </li>
                         <li class="d-flex align-items-center">
@@ -138,7 +138,7 @@
                                 <i class="fal fa-clock"></i>
                             </div>
                             <div class="offcanvas__contact-text">
-                                <a target="_blank" href="shop-list.html">Mod-friday, 09am -05pm</a>
+                                <a target="_blank" href="{{ url('/shop-list') }}">Mod-friday, 09am -05pm</a>
                             </div>
                         </li>
                         <li class="d-flex align-items-center">
@@ -151,7 +151,7 @@
                         </li>
                     </ul>
                     <div class="header-button mt-4">
-                        <a href="contact.html" class="theme-btn text-center">
+                        <a href="{{ url('/contact') }}" class="theme-btn text-center">
                             Get A Quote <i class="fa-solid fa-arrow-right-long"></i>
                         </a>
                     </div>
@@ -186,7 +186,7 @@
                 </li>
             </ul>
             <ul class="list">
-                <li><i class="fa-light fa-comments"></i><a href="contact.html">Live Chat</a></li>
+                <li><i class="fa-light fa-comments"></i><a href="{{ url('/contact') }}">Live Chat</a></li>
                 <li><i class="fa-light fa-user"></i>
                     <button data-bs-toggle="modal" data-bs-target="#loginModal">
                         Login
@@ -206,7 +206,7 @@
                     <div class="col-6 col-md-6 col-lg-10 col-xl-8 col-xxl-10">
                         <div class="header-left">
                             <div class="logo">
-                                <a href="index.html" class="header-logo">
+                                <a href="{{ url('/index') }}" class="header-logo">
                                     <img src="assets/img/logo/white-logo.svg" alt="logo-img">
                                 </a>
                             </div>
@@ -215,14 +215,10 @@
                                     <nav>
                                         <ul>
                                             <li>
-                                                <a href="index.html">
+                                                <a href="{{ url('/index') }}">
                                                     Home
-                                                    <i class="fas fa-angle-down"></i>
+
                                                 </a>
-                                                <ul class="submenu">
-                                                    <li><a href="index.html">Home 01</a></li>
-                                                    <li><a href="index-2.html">Home 02</a></li>
-                                                </ul>
                                             </li>
                                             <li>
                                                 <a href="shop-details.html">
@@ -230,48 +226,48 @@
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
                                                 <ul class="submenu">
-                                                    <li><a href="shop.html">Shop Default</a></li>
-                                                    <li><a href="shop-list.html">Shop List</a></li>
+                                                    <li><a href="{{ url('/shop') }}">Shop Default</a></li>
+                                                    <li><a href="{{ url('/shop-list') }}">Shop List</a></li>
                                                     <li><a href="shop-details.html">Shop Details</a></li>
                                                     <li><a href="shop-cart.html">Shop Cart</a></li>
                                                     <li><a href="wishlist.html">Wishlist</a></li>
-                                                    <li><a href="checkout.html">Checkout</a></li>
+                                                    <li><a href="{{ url('/checkout') }}">Checkout</a></li>
                                                 </ul>
                                             </li>
                                             <li class="has-dropdown">
-                                                <a href="about.html">
+                                                <a href="{{ url('/about') }}">
                                                     Pages
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
                                                 <ul class="submenu">
-                                                    <li><a href="about.html">About Us</a></li>
+                                                    <li><a href="{{ url('/about') }}">About Us</a></li>
                                                     <li class="has-dropdown">
-                                                        <a href="team-details.html">
+                                                        <a href="{{ url('/team-details') }}">
                                                             Author
                                                             <i class="fas fa-angle-down"></i>
                                                         </a>
                                                         <ul class="submenu">
-                                                            <li><a href="team.html">Author</a></li>
-                                                            <li><a href="team-details.html">Author Profile</a></li>
+                                                            <li><a href="{{ url('/team') }}">Author</a></li>
+                                                            <li><a href="{{ url('/team-details') }}">Author Profile</a></li>
                                                         </ul>
                                                     </li>
-                                                    <li><a href="faq.html">Faq's</a></li>
-                                                    <li><a href="404.html">404 Page</a></li>
+                                                    <li><a href="{{ url('/faq') }}">Faq's</a></li>
+                                                    <li><a href="{{ url('/404') }}">404 Page</a></li>
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="news.html">
+                                                <a href="{{ url('/news') }}">
                                                     Blog
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
                                                 <ul class="submenu">
                                                     <li><a href="news-grid.html">Blog Grid</a></li>
-                                                    <li><a href="news.html">Blog List</a></li>
-                                                    <li><a href="news-details.html">Blog Details</a></li>
+                                                    <li><a href="{{ url('/news') }}">Blog List</a></li>
+                                                    <li><a href="{{ url('/news-details') }}">Blog Details</a></li>
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="contact.html">Contact</a>
+                                                <a href="{{ url('/contact') }}">Contact</a>
                                             </li>
                                         </ul>
                                     </nav>
@@ -345,7 +341,7 @@
                     <div class="col-6 col-md-6 col-lg-10 col-xl-8 col-xxl-10">
                         <div class="header-left">
                             <div class="logo">
-                                <a href="index.html" class="header-logo">
+                                <a href="{{ url('/index') }}" class="header-logo">
                                     <img src="assets/img/logo/white-logo.svg" alt="logo-img">
                                 </a>
                             </div>
@@ -354,14 +350,10 @@
                                     <nav id="mobile-menu">
                                         <ul>
                                             <li>
-                                                <a href="index.html">
+                                                <a href="{{ url('/index') }}">
                                                     Home
-                                                    <i class="fas fa-angle-down"></i>
+
                                                 </a>
-                                                <ul class="submenu">
-                                                    <li><a href="index.html">Home 01</a></li>
-                                                    <li><a href="index-2.html">Home 02</a></li>
-                                                </ul>
                                             </li>
                                             <li>
                                                 <a href="shop-details.html">
@@ -369,48 +361,48 @@
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
                                                 <ul class="submenu">
-                                                    <li><a href="shop.html">Shop Default</a></li>
-                                                    <li><a href="shop-list.html">Shop List</a></li>
+                                                    <li><a href="{{ url('/shop') }}">Shop Default</a></li>
+                                                    <li><a href="{{ url('/shop-list') }}">Shop List</a></li>
                                                     <li><a href="shop-details.html">Shop Details</a></li>
                                                     <li><a href="shop-cart.html">Shop Cart</a></li>
                                                     <li><a href="wishlist.html">Wishlist</a></li>
-                                                    <li><a href="checkout.html">Checkout</a></li>
+                                                    <li><a href="{{ url('/checkout') }}">Checkout</a></li>
                                                 </ul>
                                             </li>
                                             <li class="has-dropdown">
-                                                <a href="about.html">
+                                                <a href="{{ url('/about') }}">
                                                     Pages
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
                                                 <ul class="submenu">
-                                                    <li><a href="about.html">About Us</a></li>
+                                                    <li><a href="{{ url('/about') }}">About Us</a></li>
                                                     <li class="has-dropdown">
-                                                        <a href="team-details.html">
+                                                        <a href="{{ url('/team-details') }}">
                                                             Author
                                                             <i class="fas fa-angle-down"></i>
                                                         </a>
                                                         <ul class="submenu">
-                                                            <li><a href="team.html">Author</a></li>
-                                                            <li><a href="team-details.html">Author Profile</a></li>
+                                                            <li><a href="{{ url('/team') }}">Author</a></li>
+                                                            <li><a href="{{ url('/team-details') }}">Author Profile</a></li>
                                                         </ul>
                                                     </li>
-                                                    <li><a href="faq.html">Faq's</a></li>
-                                                    <li><a href="404.html">404 Page</a></li>
+                                                    <li><a href="{{ url('/faq') }}">Faq's</a></li>
+                                                    <li><a href="{{ url('/404') }}">404 Page</a></li>
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="news.html">
+                                                <a href="{{ url('/news') }}">
                                                     Blog
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
                                                 <ul class="submenu">
                                                     <li><a href="news-grid.html">Blog Grid</a></li>
-                                                    <li><a href="news.html">Blog List</a></li>
-                                                    <li><a href="news-details.html">Blog Details</a></li>
+                                                    <li><a href="{{ url('/news') }}">Blog List</a></li>
+                                                    <li><a href="{{ url('/news-details') }}">Blog Details</a></li>
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="contact.html">Contact</a>
+                                                <a href="{{ url('/contact') }}">Contact</a>
                                             </li>
                                         </ul>
                                     </nav>
@@ -620,7 +612,7 @@
             <div class="page-header">
                 <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".3s">
                     <li>
-                        <a href="index.html">
+                        <a href="{{ url('/index') }}">
                             Home
                         </a>
                     </li>
@@ -665,245 +657,51 @@
                                 </ul>
                             </div>
                             <div class="icon active">
-                                <a href="shop-list.html"><i class="fas fa-list"></i></a>
+                                <a href="{{ url('/shop-list') }}"><i class="fas fa-list"></i></a>
                             </div>
                             <div class="icon-2">
-                                <a href="shop.html"><i class="fa-sharp fa-regular fa-grid-2"></i></a>
+                                <a href="{{ url('/shop') }}"><i class="fa-sharp fa-regular fa-grid-2"></i></a>
                             </div>
                         </div>
                     </div>
+
                     <div class="row">
+                        @foreach($products as $product)
                         <div class="col-lg-12 wow fadeInUp" data-wow-delay=".3s">
-{{--                            <div class="shop-list-items">--}}
-{{--                                <div class="shop-list-thumb">--}}
-{{--                                    <img src="assets/img/shop-list/01.png" alt="img">--}}
-{{--                                </div>--}}
-{{--                                <div class="shop-list-content">--}}
-{{--                                    <h3><a href="shop-details.html">Castle In The Sky</a></h3>--}}
-{{--                                    <h5>$16.00</h5>--}}
-{{--                                    <div class="star">--}}
-{{--                                        <i class="fa-solid fa-star"></i>--}}
-{{--                                        <i class="fa-solid fa-star"></i>--}}
-{{--                                        <i class="fa-solid fa-star"></i>--}}
-{{--                                        <i class="fa-solid fa-star"></i>--}}
-{{--                                        <i class="fa-regular fa-star"></i>--}}
-{{--                                    </div>--}}
-{{--                                    <p>--}}
-{{--                                        Vestibulum consectetur fringilla tellus, et pulvinar massa tempus nec. Fusce--}}
-{{--                                        nibh nibh, consectetur vitae felis quis, sagittis ullamcorper enim. Nullam--}}
-{{--                                        maximus vehicula justo, vel vestibulum turpis dictum at. Nam sed laoreet--}}
-{{--                                        sem. Aliquam urna massa,--}}
-{{--                                    </p>--}}
-{{--                                    <div class="shop-btn">--}}
-{{--                                        <a href="shop-details.html" class="theme-btn"><i--}}
-{{--                                                class="fa-solid fa-basket-shopping"></i> Add To Cart</a>--}}
-{{--                                        <ul class="shop-icon d-flex justify-content-center align-items-center">--}}
-{{--                                            <li>--}}
-{{--                                                <a href="shop-cart.html"><i class="far fa-heart"></i></a>--}}
-{{--                                            </li>--}}
-{{--                                            <li>--}}
-{{--                                                <a href="shop-cart.html">--}}
-{{--                                                    <img class="icon" src="assets/img/icon/shuffle.svg"--}}
-{{--                                                         alt="svg-icon">--}}
-{{--                                                </a>--}}
-{{--                                            </li>--}}
-{{--                                            <li>--}}
-{{--                                                <a href="shop-details.html"><i class="far fa-eye"></i></a>--}}
-{{--                                            </li>--}}
-{{--                                        </ul>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                            <div class="shop-list-items">--}}
-{{--                                <div class="shop-list-thumb">--}}
-{{--                                    <img src="assets/img/shop-list/02.png" alt="img">--}}
-{{--                                    <ul class="post-box">--}}
-{{--                                        <li>--}}
-{{--                                            Hot--}}
-{{--                                        </li>--}}
-{{--                                        <li>--}}
-{{--                                            -30%--}}
-{{--                                        </li>--}}
-{{--                                    </ul>--}}
-{{--                                </div>--}}
-{{--                                <div class="shop-list-content">--}}
-{{--                                    <h3><a href="shop-details.html">Simple things you to Save to Book</a></h3>--}}
-{{--                                    <h5>$30.00</h5>--}}
-{{--                                    <div class="star">--}}
-{{--                                        <i class="fa-solid fa-star"></i>--}}
-{{--                                        <i class="fa-solid fa-star"></i>--}}
-{{--                                        <i class="fa-solid fa-star"></i>--}}
-{{--                                        <i class="fa-solid fa-star"></i>--}}
-{{--                                        <i class="fa-regular fa-star"></i>--}}
-{{--                                    </div>--}}
-{{--                                    <p>--}}
-{{--                                        Vestibulum consectetur fringilla tellus, et pulvinar massa tempus nec. Fusce--}}
-{{--                                        nibh nibh, consectetur vitae felis quis, sagittis ullamcorper enim. Nullam--}}
-{{--                                        maximus vehicula justo, vel vestibulum turpis dictum at. Nam sed laoreet--}}
-{{--                                        sem. Aliquam urna massa,--}}
-{{--                                    </p>--}}
-{{--                                    <div class="shop-btn">--}}
-{{--                                        <a href="shop-details.html" class="theme-btn"><i--}}
-{{--                                                class="fa-solid fa-basket-shopping"></i> Add To Cart</a>--}}
-{{--                                        <ul class="shop-icon d-flex justify-content-center align-items-center">--}}
-{{--                                            <li>--}}
-{{--                                                <a href="shop-cart.html"><i class="far fa-heart"></i></a>--}}
-{{--                                            </li>--}}
-{{--                                            <li>--}}
-{{--                                                <a href="shop-cart.html">--}}
-{{--                                                    <img class="icon" src="assets/img/icon/shuffle.svg"--}}
-{{--                                                         alt="svg-icon">--}}
-{{--                                                </a>--}}
-{{--                                            </li>--}}
-{{--                                            <li>--}}
-{{--                                                <a href="shop-details.html"><i class="far fa-eye"></i></a>--}}
-{{--                                            </li>--}}
-{{--                                        </ul>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                            <div class="shop-list-items">--}}
-{{--                                <div class="shop-list-thumb">--}}
-{{--                                    <img src="assets/img/shop-list/03.png" alt="img">--}}
-{{--                                </div>--}}
-{{--                                <div class="shop-list-content">--}}
-{{--                                    <h3><a href="shop-details.html">Flovely And Unicom Erna</a></h3>--}}
-{{--                                    <h5>$19.00</h5>--}}
-{{--                                    <div class="star">--}}
-{{--                                        <i class="fa-solid fa-star"></i>--}}
-{{--                                        <i class="fa-solid fa-star"></i>--}}
-{{--                                        <i class="fa-solid fa-star"></i>--}}
-{{--                                        <i class="fa-solid fa-star"></i>--}}
-{{--                                        <i class="fa-regular fa-star"></i>--}}
-{{--                                    </div>--}}
-{{--                                    <p>--}}
-{{--                                        Vestibulum consectetur fringilla tellus, et pulvinar massa tempus nec. Fusce--}}
-{{--                                        nibh nibh, consectetur vitae felis quis, sagittis ullamcorper enim. Nullam--}}
-{{--                                        maximus vehicula justo, vel vestibulum turpis dictum at. Nam sed laoreet--}}
-{{--                                        sem. Aliquam urna massa,--}}
-{{--                                    </p>--}}
-{{--                                    <div class="shop-btn">--}}
-{{--                                        <a href="shop-details.html" class="theme-btn"><i--}}
-{{--                                                class="fa-solid fa-basket-shopping"></i> Add To Cart</a>--}}
-{{--                                        <ul class="shop-icon d-flex justify-content-center align-items-center">--}}
-{{--                                            <li>--}}
-{{--                                                <a href="shop-cart.html"><i class="far fa-heart"></i></a>--}}
-{{--                                            </li>--}}
-{{--                                            <li>--}}
-{{--                                                <a href="shop-cart.html">--}}
-{{--                                                    <img class="icon" src="assets/img/icon/shuffle.svg"--}}
-{{--                                                         alt="svg-icon">--}}
-{{--                                                </a>--}}
-{{--                                            </li>--}}
-{{--                                            <li>--}}
-{{--                                                <a href="shop-details.html"><i class="far fa-eye"></i></a>--}}
-{{--                                            </li>--}}
-{{--                                        </ul>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                            <div class="shop-list-items">--}}
-{{--                                <div class="shop-list-thumb">--}}
-{{--                                    <img src="assets/img/shop-list/04.png" alt="img">--}}
-{{--                                </div>--}}
-{{--                                <div class="shop-list-content">--}}
-{{--                                    <h3><a href="shop-details.html">Qple Gpod with Retina Sisplay</a></h3>--}}
-{{--                                    <h5>$39.00</h5>--}}
-{{--                                    <div class="star">--}}
-{{--                                        <i class="fa-solid fa-star"></i>--}}
-{{--                                        <i class="fa-solid fa-star"></i>--}}
-{{--                                        <i class="fa-solid fa-star"></i>--}}
-{{--                                        <i class="fa-solid fa-star"></i>--}}
-{{--                                        <i class="fa-regular fa-star"></i>--}}
-{{--                                    </div>--}}
-{{--                                    <p>--}}
-{{--                                        Vestibulum consectetur fringilla tellus, et pulvinar massa tempus nec. Fusce--}}
-{{--                                        nibh nibh, consectetur vitae felis quis, sagittis ullamcorper enim. Nullam--}}
-{{--                                        maximus vehicula justo, vel vestibulum turpis dictum at. Nam sed laoreet--}}
-{{--                                        sem. Aliquam urna massa,--}}
-{{--                                    </p>--}}
-{{--                                    <div class="shop-btn">--}}
-{{--                                        <a href="shop-details.html" class="theme-btn"><i--}}
-{{--                                                class="fa-solid fa-basket-shopping"></i> Add To Cart</a>--}}
-{{--                                        <ul class="shop-icon d-flex justify-content-center align-items-center">--}}
-{{--                                            <li>--}}
-{{--                                                <a href="shop-cart.html"><i class="far fa-heart"></i></a>--}}
-{{--                                            </li>--}}
-{{--                                            <li>--}}
-{{--                                                <a href="shop-cart.html">--}}
-{{--                                                    <img class="icon" src="assets/img/icon/shuffle.svg"--}}
-{{--                                                         alt="svg-icon">--}}
-{{--                                                </a>--}}
-{{--                                            </li>--}}
-{{--                                            <li>--}}
-{{--                                                <a href="shop-details.html"><i class="far fa-eye"></i></a>--}}
-{{--                                            </li>--}}
-{{--                                        </ul>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-
-{{--                                @foreach ($products as $product)--}}
-{{--                            <div class="shop-list-items">--}}
-{{--                                <div class="shop-list-thumb">--}}
-{{--                                    <img style="width: 120px" src="{{ $product->image }}" alt="img">--}}
-{{--                                </div>--}}
-{{--                                <div class="shop-list-content">--}}
-{{--                                    <h3><a href="shop-details.html">{{ $product->name }}</a></h3>--}}
-{{--                                    <h5>${{ $product->price }}</h5>--}}
-{{--                                    <div class="star">--}}
-{{--                                        <i class="fa-solid fa-star"></i>--}}
-{{--                                        <i class="fa-solid fa-star"></i>--}}
-{{--                                        <i class="fa-solid fa-star"></i>--}}
-{{--                                        <i class="fa-solid fa-star"></i>--}}
-{{--                                        <i class="fa-regular fa-star"></i>--}}
-{{--                                    </div>--}}
-{{--                                    <h5>{{ $product->category }}</h5>--}}
-{{--                                    <p> {{ $product->content }}--}}
-{{--                                    </p>--}}
-{{--                                    <div class="shop-btn">--}}
-
-{{--                                        <form action="{{ route('main.shop-cart') }}" method="POST">--}}
-{{--                                            @csrf--}}
-{{--                                            <input type="hidden" name="id" value="{{ $product->id }}">--}}
-{{--                                            <input type="number" name="amount" value="1" min="1">--}}
-{{--                                            <button type="submit">--}}
-{{--                                                <a  class="theme-btn">--}}
-{{--                                                    <i class="fa-solid fa-basket-shopping"></i> Add To Cart</a>--}}
-{{--                                            </button>--}}
-{{--                                        </form>--}}
-{{--                                        <ul class="shop-icon d-flex justify-content-center align-items-center">--}}
-{{--                                            <li>--}}
-{{--                                                <a href="shop-cart.html"><i class="far fa-heart"></i></a>--}}
-{{--                                            </li>--}}
-{{--                                            <li>--}}
-{{--                                                <a href="shop-cart.html">--}}
-{{--                                                    <img class="icon" src="assets/img/icon/shuffle.svg"--}}
-{{--                                                         alt="svg-icon">--}}
-{{--                                                </a>--}}
-{{--                                            </li>--}}
-{{--                                            <li>--}}
-{{--                                                <a href="shop-details.html"><i class="far fa-eye"></i></a>--}}
-{{--                                            </li>--}}
-{{--                                        </ul>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                            @endforeach--}}
+                            <div class="shop-list-items">
+                                <div class="shop-list-thumb">
+                                    <img src="{{ $product -> image }}" alt="img" style="width: 226px; height: 282px; object-fit: cover;">
+                                </div>
+                                <div class="shop-list-content">
+                                    <h3><a href="shop-details.html">{{ $product -> name }}</a></h3>
+                                    <h5>${{ $product -> price }}</h5>
+                                    <h3>Author:{{ $product -> author }}</h3>
+                                    <h3>Category:{{ $product->category }}</h3>
+                                    <div class="star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <p>
+                                        {{ $product -> content }}
+                                    </p>
+                                    <form action="{{ route('main.shop-cart') }}" method="POST">
+                                        @csrf
+                                        <input type="hidden" name="id" value="{{ $product->id }}">
+                                        <input type="number" name="amount" value="1" min="1">
+                                        <button type="submit" class="theme-btn">
+                                            <i class="fa-solid fa-basket-shopping"></i> Add To Cart
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
-                        </div>
+                        @endforeach
                     </div>
-
-
                     <div class="page-nav-wrap text-center">
-                        <ul>
-                            <li><a class="previous" href="shop-list.html">Previous</a></li>
-                            <li><a class="page-numbers" href="shop-list.html">1</a></li>
-                            <li><a class="page-numbers" href="shop-list.html">2</a></li>
-                            <li><a class="page-numbers" href="shop-list.html">3</a></li>
-                            <li><a class="page-numbers" href="shop-list.html">...</a></li>
-                            <li><a class="next" href="shop-list.html">Next</a></li>
-                        </ul>
+                        @include('pagination.default', ['paginator' => $products])
                     </div>
                 </div>
             </div>
@@ -970,7 +768,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                     <div class="single-footer-widget">
                         <div class="widget-head">
-                            <a href="index.html">
+                            <a href="index">
                                 <img src="assets/img/logo/white-logo.svg" alt="logo-img">
                             </a>
                         </div>
@@ -995,25 +793,25 @@
                         </div>
                         <ul class="list-area">
                             <li>
-                                <a href="shop.html">
+                                <a href="shop">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Store List
                                 </a>
                             </li>
                             <li>
-                                <a href="contact.html">
+                                <a href="contact">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Opening Hours
                                 </a>
                             </li>
                             <li>
-                                <a href="contact.html">
+                                <a href="contact">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Contact Us
                                 </a>
                             </li>
                             <li>
-                                <a href="contact.html">
+                                <a href="contact">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Return Policy
                                 </a>
@@ -1028,25 +826,25 @@
                         </div>
                         <ul class="list-area">
                             <li>
-                                <a href="shop.html">
+                                <a href="shop">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Novel Books
                                 </a>
                             </li>
                             <li>
-                                <a href="shop.html">
+                                <a href="shop">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Poetry Books
                                 </a>
                             </li>
                             <li>
-                                <a href="contact.html">
+                                <a href="contact">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Political Books
                                 </a>
                             </li>
                             <li>
-                                <a href="contact.html">
+                                <a href="contact">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     History Books
                                 </a>
@@ -1077,26 +875,26 @@
         <div class="container">
             <div class="footer-wrapper d-flex align-items-center justify-content-between">
                 <p class="wow fadeInLeft" data-wow-delay=".3s">
-                    © All Copyright 2024 by <a href="index.html">Bookle</a>
+                    © All Copyright 2024 by <a href="index">Bookle</a>
                 </p>
                 <ul class="brand-logo wow fadeInRight" data-wow-delay=".5s">
                     <li>
-                        <a href="contact.html">
+                        <a href="contact">
                             <img src="assets/img/visa-logo.png" alt="img">
                         </a>
                     </li>
                     <li>
-                        <a href="contact.html">
+                        <a href="contact">
                             <img src="assets/img/mastercard.png" alt="img">
                         </a>
                     </li>
                     <li>
-                        <a href="contact.html">
+                        <a href="contact">
                             <img src="assets/img/payoneer.png" alt="img">
                         </a>
                     </li>
                     <li>
-                        <a href="contact.html">
+                        <a href="contact">
                             <img src="assets/img/affirm.png" alt="img">
                         </a>
                     </li>
