@@ -2,6 +2,12 @@
 <html lang="en">
 <!--<< Header Area >>-->
 
+<link rel="stylesheet" href="{{ asset('main/assets/css/all.min.css') }}">
+<link rel="stylesheet" href="{{ asset('main/assets/css/main.css') }}">
+<img src="{{ asset('main/assets/img/logo.png') }}" alt="Logo">
+<script src="{{ asset('main/assets/js/app.js') }}"></script>
+
+
 <head>
     <!-- ========== Meta Tags ========== -->
     <meta charset="UTF-8">
@@ -35,7 +41,6 @@
 
 <body>
 <!-- Cursor follower -->
-
 <!-- Preloader start -->
 <div id="preloader" class="preloader">
     <div class="animation-preloader">
@@ -214,7 +219,6 @@
                                                     Home
 
                                                 </a>
-
                                             </li>
                                             <li>
                                                 <a href="shop-details.html">
@@ -350,7 +354,6 @@
                                                     Home
 
                                                 </a>
-
                                             </li>
                                             <li>
                                                 <a href="shop-details.html">

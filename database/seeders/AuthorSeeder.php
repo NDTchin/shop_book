@@ -128,8 +128,6 @@ class AuthorSeeder extends Seeder
                 'email' => 'doangio@example.com',
                 'status' => '1',
             ],
-
-
         ]);
     }
 }

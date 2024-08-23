@@ -218,7 +218,6 @@
                                                 <a href="{{ url('/index') }}">
                                                     Home
                                                 </a>
-
                                             </li>
                                             <li>
                                                 <a href="{{ url('/shop-details') }}">
@@ -352,9 +351,7 @@
                                             <li>
                                                 <a href="{{ url('/index') }}">
                                                     Home
-
                                                 </a>
-
                                             </li>
                                             <li>
                                                 <a href="{{ url('/shop-details') }}">

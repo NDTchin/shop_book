@@ -6,7 +6,6 @@ use App\Http\Controllers\Admin\Users\LoginController;
 use App\Http\Controllers\Admin\MenuController;
 
 use App\Http\Controllers\Client\AuthorInformationController;
-use App\Http\Controllers\Client\HomeController;
 use App\Http\Controllers\Client\ProductController;
 use App\Http\Controllers\Client\ShopCartController;
 use Illuminate\Support\Facades\Route;
@@ -50,6 +49,7 @@ Route::middleware(['auth'])->group(function () {
 
 //Route::Client
 //Route::view('/', 'main.index');
+
 Route::view('/about', 'main.about');
 
 //Route::view('/shop', 'main.shop');
@@ -76,6 +76,7 @@ Route::get('/index', [HomeController::class, 'index']);
 Route::get('/news', [EventController::class, 'index']) -> name('main.news'); // done
 
 //Route::view('/news-details', 'main.news-details');
+
 Route::view('/news-grid', 'main.news-grid');
 
 //Route::view('/shop-details', 'main.shop-details');

@@ -39,7 +39,6 @@
 
 <body>
 <!-- Cursor follower -->
-
 <!-- Preloader start -->
 <div id="preloader" class="preloader">
     <div class="animation-preloader">
@@ -217,7 +216,6 @@
                                                 <a href="{{ url('/index') }}">
                                                     Home
                                                 </a>
-
                                             </li>
                                             <li>
                                                 <a href="{{ url('/shop') }}">
@@ -871,6 +869,7 @@
                         </div>
                         <div class="shop-button">
                             <a href="/shop-details/1" class="theme-btn"><i
+
                                     class="fa-solid fa-basket"></i> View</a>
                         </div>
                     </div>

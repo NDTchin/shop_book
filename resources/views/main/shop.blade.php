@@ -35,8 +35,6 @@
 
 <body>
 <!-- Cursor follower -->
-
-
 <!-- Preloader start -->
 <div id="preloader" class="preloader">
     <div class="animation-preloader">
@@ -346,9 +344,7 @@
                                             <li>
                                                 <a href="{{ url('/index') }}">
                                                     Home
-
                                                 </a>
-
                                             </li>
                                             <li>
                                                 <a href="{{ url('/shop-details') }}">
@@ -889,7 +885,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-xl-9 col-lg-8 order-1 order-md-2">
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-all" role="tabpanel"

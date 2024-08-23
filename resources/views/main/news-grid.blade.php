@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <!--<< Header Area >>-->
@@ -122,7 +121,7 @@
                                 <i class="fal fa-map-marker-alt"></i>
                             </div>
                             <div class="offcanvas__contact-text">
-                                <a target="_blank" href="shop-cart.html">Main Street, Melbourne, Australia</a>
+                                <a target="_blank" href="{{ url('/news-grid') }}">Main Street, Melbourne, Australia</a>
                             </div>
                         </li>
                         <li class="d-flex align-items-center">
@@ -130,8 +129,8 @@
                                 <i class="fal fa-envelope"></i>
                             </div>
                             <div class="offcanvas__contact-text">
-                                <a href="mailto:info@example.com"><span
-                                        class="mailto:info@example.com">info@example.com</span></a>
+                                <a href="mailto:bookstoreaptech@example.com"><span
+                                        class="mailto:bookstoreaptech@example.com">bookstoreaptech@example.com</span></a>
                             </div>
                         </li>
                         <li class="d-flex align-items-center">
@@ -139,7 +138,7 @@
                                 <i class="fal fa-clock"></i>
                             </div>
                             <div class="offcanvas__contact-text">
-                                <a target="_blank" href="shop-cart.html">Mod-friday, 09am -05pm</a>
+                                <a target="_blank" href="{{ url('/news-grid') }}">Mod-friday, 09am -05pm</a>
                             </div>
                         </li>
                         <li class="d-flex align-items-center">
@@ -175,11 +174,11 @@
             <ul class="contact-list">
                 <li>
                     <i class="fa-regular fa-phone"></i>
-                    <a href="tel:+20866660112">+208-6666-0112</a>
+                    <a href="tel:0986.999.888">0986.999.888</a>
                 </li>
                 <li>
                     <i class="far fa-envelope"></i>
-                    <a href="mailto:info@example.com">info@example.com</a>
+                    <a href="mailto:bookstoreaptech@example.com">bookstoreaptech@example.com</a>
                 </li>
                 <li>
                     <i class="far fa-clock"></i>
@@ -218,8 +217,12 @@
                                             <li>
                                                 <a href="{{ url('/index') }}">
                                                     Home
+                                                    <i class="fas fa-angle-down"></i>
                                                 </a>
-
+                                                <ul class="submenu">
+                                                    <li><a href="{{ url('/index') }}">Home 01</a></li>
+                                                    <li><a href="{{ url('/index-2') }}">Home 02</a></li>
+                                                </ul>
                                             </li>
                                             <li>
                                                 <a href="{{ url('/shop-details') }}">
@@ -230,8 +233,8 @@
                                                     <li><a href="{{ url('/shop') }}">Shop Default</a></li>
                                                     <li><a href="{{ url('/shop-list') }}">Shop List</a></li>
                                                     <li><a href="{{ url('/shop-details') }}">Shop Details</a></li>
-                                                    <li><a href="shop-cart.html">Shop Cart</a></li>
-                                                    <li><a href="wishlist.html">Wishlist</a></li>
+                                                    <li><a href="{{ url('/shop-cart') }}">Shop Cart</a></li>
+                                                    <li><a href="{{ url('/wishlist') }}">Wishlist</a></li>
                                                     <li><a href="{{ url('/checkout') }}">Checkout</a></li>
                                                 </ul>
                                             </li>
@@ -262,7 +265,7 @@
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
                                                 <ul class="submenu">
-                                                    <li><a href="news-grid.html">Blog Grid</a></li>
+                                                    <li><a href="{{ url('/news-grid') }}">Blog Grid</a></li>
                                                     <li><a href="{{ url('/news') }}">Blog List</a></li>
                                                     <li><a href="{{ url('/news-details') }}">Blog Details</a></li>
                                                 </ul>
@@ -309,10 +312,10 @@
                                 </form>
                             </div>
                             <div class="menu-cart">
-                                <a href="wishlist.html" class="cart-icon">
+                                <a href="{{ url('/wishlist') }}" class="cart-icon">
                                     <i class="fa-regular fa-heart"></i>
                                 </a>
-                                <a href="shop-cart.html" class="cart-icon">
+                                <a href="{{ url('/shop-cart') }}" class="cart-icon">
                                     <i class="fa-regular fa-cart-shopping"></i>
                                 </a>
                                 <div class="header-humbager ml-30">
@@ -353,9 +356,12 @@
                                             <li>
                                                 <a href="{{ url('/index') }}">
                                                     Home
-
+                                                    <i class="fas fa-angle-down"></i>
                                                 </a>
-
+                                                <ul class="submenu">
+                                                    <li><a href="{{ url('/index') }}">Home 01</a></li>
+                                                    <li><a href="{{ url('/index-2') }}">Home 02</a></li>
+                                                </ul>
                                             </li>
                                             <li>
                                                 <a href="{{ url('/shop-details') }}">
@@ -366,8 +372,8 @@
                                                     <li><a href="{{ url('/shop') }}">Shop Default</a></li>
                                                     <li><a href="{{ url('/shop-list') }}">Shop List</a></li>
                                                     <li><a href="{{ url('/shop-details') }}">Shop Details</a></li>
-                                                    <li><a href="shop-cart.html">Shop Cart</a></li>
-                                                    <li><a href="wishlist.html">Wishlist</a></li>
+                                                    <li><a href="{{ url('/shop-cart') }}">Shop Cart</a></li>
+                                                    <li><a href="{{ url('/wishlist') }}">Wishlist</a></li>
                                                     <li><a href="{{ url('/checkout') }}">Checkout</a></li>
                                                 </ul>
                                             </li>
@@ -398,7 +404,7 @@
                                                     <i class="fas fa-angle-down"></i>
                                                 </a>
                                                 <ul class="submenu">
-                                                    <li><a href="news-grid.html">Blog Grid</a></li>
+                                                    <li><a href="{{ url('/news-grid') }}">Blog Grid</a></li>
                                                     <li><a href="{{ url('/news') }}">Blog List</a></li>
                                                     <li><a href="{{ url('/news-details') }}">Blog Details</a></li>
                                                 </ul>
@@ -445,10 +451,10 @@
                                 </form>
                             </div>
                             <div class="menu-cart">
-                                <a href="wishlist.html" class="cart-icon">
+                                <a href="{{ url('/wishlist') }}" class="cart-icon">
                                     <i class="fa-regular fa-heart"></i>
                                 </a>
-                                <a href="shop-cart.html" class="cart-icon">
+                                <a href="{{ url('/shop-cart') }}" class="cart-icon">
                                     <i class="fa-regular fa-cart-shopping"></i>
                                 </a>
                                 <div class="header-humbager ml-30">
@@ -463,6 +469,8 @@
                     </div>
                 </div>
             </div>
+
+
         </div>
     </div>
 </header>
@@ -486,10 +494,10 @@
                                        id="saveForNext">
                                 <label for="saveForNext">Remember me</label>
                             </div>
-                            <div class="text"> <a href="index-2.html">Forgot Your password?</a> </div>
+                            <div class="text"> <a href="{{ url('/index-2') }}">Forgot Your password?</a> </div>
                         </div>
                         <div class="loginBtn">
-                            <a href="index-2.html" class="theme-btn rounded-0"> Log in </a>
+                            <a href="{{ url('/index-2') }}" class="theme-btn rounded-0"> Log in </a>
                         </div>
                         <div class="orting-badge">
                             Or
@@ -554,10 +562,10 @@
                                        id="rememberMe">
                                 <label for="rememberMe">Remember me</label>
                             </div>
-                            <div class="text"> <a href="index-2.html">Forgot Your password?</a> </div>
+                            <div class="text"> <a href="{{ url('/index-2') }}">Forgot Your password?</a> </div>
                         </div>
                         <div class="loginBtn">
-                            <a href="index-2.html" class="theme-btn rounded-0"> Log in </a>
+                            <a href="{{ url('/index-2') }}" class="theme-btn rounded-0"> Log in </a>
                         </div>
                         <div class="orting-badge">
                             Or
@@ -608,7 +616,7 @@
     </div>
     <div class="container">
         <div class="page-heading">
-            <h1>Cart</h1>
+            <h1>Blog Grid</h1>
             <div class="page-header">
                 <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".3s">
                     <li>
@@ -620,7 +628,7 @@
                         <i class="fa-solid fa-chevron-right"></i>
                     </li>
                     <li>
-                        Cart
+                        Blog Grid
                     </li>
                 </ul>
             </div>
@@ -628,111 +636,340 @@
     </div>
 </div>
 
-<!-- Shop Cart Section Start -->
-<div class="cart-section section-padding">
+<!-- News Section Start -->
+<section class="news-section fix section-padding">
     <div class="container">
-        <div class="main-cart-wrapper">
-            <div class="row g-5">
-                <div class="col-xl-9">
-                    <div class="table-responsive">
-                        <h2>Shopping cart</h2>
-                        <p>Update your cart information</p>
-
-                        <table class="table">
-                            <thead>
-                            <tr>
-                                <th>Product Id</th>
-                                <th>Product Name</th>
-{{--                                <th>Image</th>--}}
-                                <th>Price</th>
-                                <th>Amount</th>
-                                <th>Total Price</th>
-                                <th>Action</th>
-                            </tr>
-                            </thead>
-                            <button class="w3-button w3-indigo">Update</button>
-                            <?php
-                            $totalPrice = 0;
-                            ?>
-                            @foreach( $shoppingCart as $cartItem )
-                                    <?php
-                                    if (isset($cartItem)) {
-                                        $totalPrice += $cartItem->price * $cartItem->amount;
-                                    }
-                                    ?>
-                                <tr>
-                                    <form action="{{route('shop-cart.update')}}" method="post">
-                                        @csrf
-                                        <input type="hidden" name="id" value="{{$cartItem->id}}">
-                                        <td>{{$cartItem->id}}</td>
-                                        <td>{{$cartItem->name}}</td>
-                                        <td>${{$cartItem->price}}</td>
-                                        <td>
-                                            <input type="hidden" name="id" value="{{$cartItem->id}}">
-                                            <input name="amount" class="w3-input w3-border w3-quarter" type="number" min="1" value="{{$cartItem->amount}}">
-                                        </td>
-                                        <td>{{$cartItem->price * $cartItem->amount}}</td>
-                                        <td>
-                                            <button type="submit" class="w3-button w3-indigo" >Update</button>
-                                            <a href="/shop-cart/remove?id={{$cartItem->id}}" onclick="return confirm('Bạn có chắc muốn xoá sản phẩm này khỏi giỏ hàng?')" class="w3-button w3-red">Delete</a>
-                                        </td>
-                                    </form>
-                                    @if (Session::has('success'))
-                                        <div class="alert alert-success">
-                                            {{ Session::get('success') }}
-                                        </div>
-                                    @endif
-                                </tr>
-                            @endforeach
-                        </table>
+        <div class="row g-4">
+            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                <div class="news-card-items style-2 mt-0">
+                    <div class="news-image">
+                        <img src="assets/img/news/05.jpg" alt="img">
+                        <img src="assets/img/news/05.jpg" alt="img">
+                        <div class="post-box">
+                            Books Store
+                        </div>
                     </div>
-
-
+                    <div class="news-content">
+                        <ul>
+                            <li>
+                                <i class="fa-light fa-calendar-days"></i>
+                                Feb 10, 2024
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-user"></i>
+                                By Admin
+                            </li>
+                        </ul>
+                        <h3><a href="{{ url('/news-details') }}">Top 5 Tarot Decks for the Tarot World Summit</a></h3>
+                        <a href="{{ url('/news-details') }}" class="theme-btn-2">Read More <i
+                                class="fa-regular fa-arrow-right-long"></i></a>
+                    </div>
                 </div>
-                <div class="col-xl-3">
-                    <div class="table-responsive cart-total">
-                        <table class="table">
-                            <thead>
-                            <tr>
-                                <th>Cart Total</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>
-                                            <span class="d-flex gap-5 align-items-center justify-content-between">
-                                                <span class="sub-title">Subtotal:</span>
-                                                <span class="sub-price">${{$totalPrice}}</span>
-                                            </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                            <span class="d-flex gap-5 align-items-center  justify-content-between">
-                                                <span class="sub-title">Shipping:</span>
-                                                <span class="sub-text">
-                                                    Free
-                                                </span>
-                                            </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                            <span class="d-flex gap-5 align-items-center  justify-content-between">
-                                                <span class="sub-title">Total:  </span>
-                                                <span class="sub-price sub-price-total">${{$totalPrice}}</span>
-                                            </span>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        <a href="{{ url('/checkout') }}" class="theme-btn">Proceed to checkout</a>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                <div class="news-card-items style-2 mt-0">
+                    <div class="news-image">
+                        <img src="assets/img/news/06.jpg" alt="img">
+                        <img src="assets/img/news/06.jpg" alt="img">
+                        <div class="post-box">
+                            Educations
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <ul>
+                            <li>
+                                <i class="fa-light fa-calendar-days"></i>
+                                Mar 20, 2024
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-user"></i>
+                                By Admin
+                            </li>
+                        </ul>
+                        <h3><a href="{{ url('/news-details') }}">Behind the Scenes with Author Victoria Aveyard</a></h3>
+                        <a href="{{ url('/news-details') }}" class="theme-btn-2">Read More <i
+                                class="fa-regular fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                <div class="news-card-items style-2 mt-0">
+                    <div class="news-image">
+                        <img src="assets/img/news/07.jpg" alt="img">
+                        <img src="assets/img/news/07.jpg" alt="img">
+                        <div class="post-box">
+                            Romance
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <ul>
+                            <li>
+                                <i class="fa-light fa-calendar-days"></i>
+                                Jun 14, 2024
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-user"></i>
+                                By Admin
+                            </li>
+                        </ul>
+                        <h3><a href="{{ url('/news-details') }}">Tiny Emporium: Playful Picks for Kids’ Delightful Days.</a>
+                        </h3>
+                        <a href="{{ url('/news-details') }}" class="theme-btn-2">Read More <i
+                                class="fa-regular fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                <div class="news-card-items style-2 mt-0">
+                    <div class="news-image">
+                        <img src="assets/img/news/08.jpg" alt="img">
+                        <img src="assets/img/news/08.jpg" alt="img">
+                        <div class="post-box">
+                            Activities
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <ul>
+                            <li>
+                                <i class="fa-light fa-calendar-days"></i>
+                                Mar 12, 2024
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-user"></i>
+                                By Admin
+                            </li>
+                        </ul>
+                        <h3><a href="{{ url('/news-details') }}">Eu parturient dictumst fames quam tempor</a></h3>
+                        <a href="{{ url('/news-details') }}" class="theme-btn-2">Read More <i
+                                class="fa-regular fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                <div class="news-card-items style-2 mt-0">
+                    <div class="news-image">
+                        <img src="assets/img/news/09.jpg" alt="img">
+                        <img src="assets/img/news/09.jpg" alt="img">
+                        <div class="post-box">
+                            Books Store
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <ul>
+                            <li>
+                                <i class="fa-light fa-calendar-days"></i>
+                                Feb 10, 2024
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-user"></i>
+                                By Admin
+                            </li>
+                        </ul>
+                        <h3><a href="{{ url('/news-details') }}">How to Keep Children Safe Online In Simple Steps</a></h3>
+                        <a href="{{ url('/news-details') }}" class="theme-btn-2">Read More <i
+                                class="fa-regular fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                <div class="news-card-items style-2 mt-0">
+                    <div class="news-image">
+                        <img src="assets/img/news/10.jpg" alt="img">
+                        <img src="assets/img/news/10.jpg" alt="img">
+                        <div class="post-box">
+                            Activities
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <ul>
+                            <li>
+                                <i class="fa-light fa-calendar-days"></i>
+                                Mar 20, 2024
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-user"></i>
+                                By Admin
+                            </li>
+                        </ul>
+                        <h3><a href="{{ url('/news-details') }}">That jerk Form Finance
+                                really threw me</a></h3>
+                        <a href="{{ url('/news-details') }}" class="theme-btn-2">Read More <i
+                                class="fa-regular fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                <div class="news-card-items style-2 mt-0">
+                    <div class="news-image">
+                        <img src="assets/img/news/11.jpg" alt="img">
+                        <img src="assets/img/news/11.jpg" alt="img">
+                        <div class="post-box">
+                            Adventure
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <ul>
+                            <li>
+                                <i class="fa-light fa-calendar-days"></i>
+                                Jun 14, 2024
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-user"></i>
+                                By Admin
+                            </li>
+                        </ul>
+                        <h3><a href="{{ url('/news-details') }}">Students Intelligence in Education Building Resilient</a>
+                        </h3>
+                        <a href="{{ url('/news-details') }}" class="theme-btn-2">Read More <i
+                                class="fa-regular fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                <div class="news-card-items style-2 mt-0">
+                    <div class="news-image">
+                        <img src="assets/img/news/12.jpg" alt="img">
+                        <img src="assets/img/news/12.jpg" alt="img">
+                        <div class="post-box">
+                            Books Store
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <ul>
+                            <li>
+                                <i class="fa-light fa-calendar-days"></i>
+                                Mar 12, 2024
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-user"></i>
+                                By Admin
+                            </li>
+                        </ul>
+                        <h3><a href="{{ url('/news-details') }}">From without content
+                                style without </a></h3>
+                        <a href="{{ url('/news-details') }}" class="theme-btn-2">Read More <i
+                                class="fa-regular fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                <div class="news-card-items style-2 mt-0">
+                    <div class="news-image">
+                        <img src="assets/img/news/13.jpg" alt="img">
+                        <img src="assets/img/news/13.jpg" alt="img">
+                        <div class="post-box">
+                            Romance
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <ul>
+                            <li>
+                                <i class="fa-light fa-calendar-days"></i>
+                                Feb 10, 2024
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-user"></i>
+                                By Admin
+                            </li>
+                        </ul>
+                        <h3><a href="{{ url('/news-details') }}">All Inclusive Ultimate Circle Island Day with Lunch</a></h3>
+                        <a href="{{ url('/news-details') }}" class="theme-btn-2">Read More <i
+                                class="fa-regular fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                <div class="news-card-items style-2 mt-0">
+                    <div class="news-image">
+                        <img src="assets/img/news/14.jpg" alt="img">
+                        <img src="assets/img/news/14.jpg" alt="img">
+                        <div class="post-box">
+                            Adnenture
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <ul>
+                            <li>
+                                <i class="fa-light fa-calendar-days"></i>
+                                Mar 20, 2024
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-user"></i>
+                                By Admin
+                            </li>
+                        </ul>
+                        <h3><a href="{{ url('/news-details') }}">Playful Picks Paradise: Kids’ Essentials with Dash.</a></h3>
+                        <a href="{{ url('/news-details') }}" class="theme-btn-2">Read More <i
+                                class="fa-regular fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                <div class="news-card-items style-2 mt-0">
+                    <div class="news-image">
+                        <img src="assets/img/news/15.jpg" alt="img">
+                        <img src="assets/img/news/15.jpg" alt="img">
+                        <div class="post-box">
+                            Educations
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <ul>
+                            <li>
+                                <i class="fa-light fa-calendar-days"></i>
+                                Jun 14, 2024
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-user"></i>
+                                By Admin
+                            </li>
+                        </ul>
+                        <h3><a href="{{ url('/news-details') }}">Tiny Emporium: Playful Picks for Kids’ Delightful Days.</a>
+                        </h3>
+                        <a href="{{ url('/news-details') }}" class="theme-btn-2">Read More <i
+                                class="fa-regular fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                <div class="news-card-items style-2 mt-0">
+                    <div class="news-image">
+                        <img src="assets/img/news/16.jpg" alt="img">
+                        <img src="assets/img/news/16.jpg" alt="img">
+                        <div class="post-box">
+                            Books Store
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <ul>
+                            <li>
+                                <i class="fa-light fa-calendar-days"></i>
+                                Mar 12, 2024
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-user"></i>
+                                By Admin
+                            </li>
+                        </ul>
+                        <h3><a href="{{ url('/news-details') }}">Top 10 Tarot Decks for the Tarot World Summit</a></h3>
+                        <a href="{{ url('/news-details') }}" class="theme-btn-2">Read More <i
+                                class="fa-regular fa-arrow-right-long"></i></a>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="page-nav-wrap text-center wow fadeInUp" data-wow-delay=".3s">
+            <ul>
+                <li><a class="previous" href="{{ url('/news-grid') }}">Previous</a></li>
+                <li><a class="page-numbers" href="{{ url('/news-grid') }}">1</a></li>
+                <li><a class="page-numbers" href="{{ url('/news-grid') }}">2</a></li>
+                <li><a class="page-numbers" href="{{ url('/news-grid') }}">3</a></li>
+                <li><a class="page-numbers" href="{{ url('/news-grid') }}">...</a></li>
+                <li><a class="next" href="{{ url('/news-grid') }}">Next</a></li>
+            </ul>
+        </div>
     </div>
-</div>
+</section>
 
 <!-- Footer Section Start -->
 <footer class="footer-section footer-bg">
@@ -745,7 +982,7 @@
                 <div class="content">
                     <p>Call Us 7/24</p>
                     <h3>
-                        <a href="tel:+2085550112">+208-555-0112</a>
+                        <a href="tel:0986.999.888">0986.999.888</a>
                     </h3>
                 </div>
             </div>
@@ -756,7 +993,7 @@
                 <div class="content">
                     <p>Make a Quote</p>
                     <h3>
-                        <a href="mailto:example@gmail.com">example@gmail.com</a>
+                        <a href="mailto:bookstoreaptech@gmail.com">bookstoreaptech@gmail.com</a>
                     </h3>
                 </div>
             </div>
@@ -778,7 +1015,7 @@
                 <div class="content">
                     <p>Location</p>
                     <h3>
-                        4517 Washington ave.
+                        8 Tôn Thất Thuyết - Mỹ Đình, Cầu Giấy, Hà Nội
                     </h3>
                 </div>
             </div>
@@ -818,7 +1055,7 @@
                         </div>
                         <ul class="list-area">
                             <li>
-                                <a href="shop">
+                                <a href="{{ url('/shop') }}">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Store List
                                 </a>
@@ -851,25 +1088,25 @@
                         </div>
                         <ul class="list-area">
                             <li>
-                                <a href="shop">
+                                <a href="{{ url('/shop') }}">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Novel Books
                                 </a>
                             </li>
                             <li>
-                                <a href="shop">
+                                <a href="{{ url('/shop') }}">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Poetry Books
                                 </a>
                             </li>
                             <li>
-                                <a href="contact">
+                                <a href="{{ url('/contact') }}">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Political Books
                                 </a>
                             </li>
                             <li>
-                                <a href="contact">
+                                <a href="{{ url('/contact') }}">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     History Books
                                 </a>
@@ -900,26 +1137,26 @@
         <div class="container">
             <div class="footer-wrapper d-flex align-items-center justify-content-between">
                 <p class="wow fadeInLeft" data-wow-delay=".3s">
-                    © All Copyright 2024 by <a href="index">Bookle</a>
+                    © All Copyright 2024 by <a href="{{ url('/index') }}">Bookle</a>
                 </p>
                 <ul class="brand-logo wow fadeInRight" data-wow-delay=".5s">
                     <li>
-                        <a href="contact">
+                        <a href="{{ url('/contact') }}">
                             <img src="assets/img/visa-logo.png" alt="img">
                         </a>
                     </li>
                     <li>
-                        <a href="contact">
+                        <a href="{{ url('/contact') }}">
                             <img src="assets/img/mastercard.png" alt="img">
                         </a>
                     </li>
                     <li>
-                        <a href="contact">
+                        <a href="{{ url('/contact') }}">
                             <img src="assets/img/payoneer.png" alt="img">
                         </a>
                     </li>
                     <li>
-                        <a href="contact">
+                        <a href="{{ url('/contact') }}">
                             <img src="assets/img/affirm.png" alt="img">
                         </a>
                     </li>

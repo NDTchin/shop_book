@@ -40,7 +40,6 @@
 
 <body>
 <!-- Cursor follower -->
-
 <!-- Preloader start -->
 <div id="preloader" class="preloader">
     <div class="animation-preloader">
@@ -217,9 +216,7 @@
                                             <li>
                                                 <a href="{{ url('/index') }}">
                                                     Home
-
                                                 </a>
-
                                             </li>
                                             <li>
                                                 <a href="{{ url('/shop-details') }}">
@@ -354,7 +351,6 @@
                                                 <a href="{{ url('/index') }}">
                                                     Home
                                                 </a>
-
                                             </li>
                                             <li>
                                                 <a href="{{ url('/shop-details') }}">
@@ -1159,7 +1155,7 @@
                 <div class="content">
                     <p>Location</p>
                     <h3>
-                        4517 Washington ave.
+                        8 Tôn Thất Thuyết - Mỹ Đình, Cầu Giấy, Hà Nội
                     </h3>
                 </div>
             </div>
@@ -1174,7 +1170,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                     <div class="single-footer-widget">
                         <div class="widget-head">
-                            <a href="index.html">
+                            <a href="{{ url('/index') }}">
                                 <img src="assets/img/logo/white-logo.svg" alt="logo-img">
                             </a>
                         </div>
@@ -1199,25 +1195,26 @@
                         </div>
                         <ul class="list-area">
                             <li>
-                                <a href="shop.html">
+                                <a href="{{ url('/shop') }}">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Store List
                                 </a>
                             </li>
                             <li>
-                                <a href="contact.html">
+                                <a href="{{ url('/contact') }}">
+
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Opening Hours
                                 </a>
                             </li>
                             <li>
-                                <a href="contact.html">
+                                <a href="{{ url('/contact') }}">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Contact Us
                                 </a>
                             </li>
                             <li>
-                                <a href="contact.html">
+                                <a href="{{ url('/contact') }}">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Return Policy
                                 </a>
@@ -1232,25 +1229,25 @@
                         </div>
                         <ul class="list-area">
                             <li>
-                                <a href="shop.html">
+                                <a href="{{ url('/shop') }}">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Novel Books
                                 </a>
                             </li>
                             <li>
-                                <a href="shop.html">
+                                <a href="{{ url('/shop') }}">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Poetry Books
                                 </a>
                             </li>
                             <li>
-                                <a href="contact.html">
+                                <a href="{{ url('/contact') }}">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     Political Books
                                 </a>
                             </li>
                             <li>
-                                <a href="contact.html">
+                                <a href="{{ url('/contact') }}">
                                     <i class="fa-solid fa-chevrons-right"></i>
                                     History Books
                                 </a>
@@ -1281,26 +1278,26 @@
         <div class="container">
             <div class="footer-wrapper d-flex align-items-center justify-content-between">
                 <p class="wow fadeInLeft" data-wow-delay=".3s">
-                    © All Copyright 2024 by <a href="index.html">Bookle</a>
+                    © All Copyright 2024 by <a href="{{ url('/index') }}">Bookle</a>
                 </p>
                 <ul class="brand-logo wow fadeInRight" data-wow-delay=".5s">
                     <li>
-                        <a href="contact.html">
+                        <a href="{{ url('/contact') }}">
                             <img src="assets/img/visa-logo.png" alt="img">
                         </a>
                     </li>
                     <li>
-                        <a href="contact.html">
+                        <a href="{{ url('/contact') }}">
                             <img src="assets/img/mastercard.png" alt="img">
                         </a>
                     </li>
                     <li>
-                        <a href="contact.html">
+                        <a href="{{ url('/contact') }}">
                             <img src="assets/img/payoneer.png" alt="img">
                         </a>
                     </li>
                     <li>
-                        <a href="contact.html">
+                        <a href="{{ url('/contact') }}">
                             <img src="assets/img/affirm.png" alt="img">
                         </a>
                     </li>
